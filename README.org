@@ -1,0 +1,166 @@
+#+title: BSc Academic Writing
+
+** Table of Contents :TOC_2:
+  - [[#lecture-information][Lecture Information]]
+  - [[#requirements-and-the-learning-outcomes][Requirements and the Learning Outcomes]]
+  - [[#grading-of-the-lecture][Grading of the Lecture]]
+  - [[#lecture-sources][Lecture Sources]]
+  - [[#content-and-unit-distribution][Content and Unit Distribution]]
+  - [[#lecture-table-of-contents][Lecture Table of Contents]]
+  - [[#documentation][Documentation]]
+  - [[#related-links][Related Links]]
+
+** Lecture Information
+
+- *WARNING:* This is the content only covered by me as this lecture is shared by
+  both me and Dipl.-Ing. Dr. techn. Phillip Kronthaler.
+- The goal of this lecture is to teach the newcoming students on how to
+  prepare scientific documents and learn academic typesetting practices.
+    
+| DESCRIPTION        | VALUE                              |
+| Official Name      | Presenting & Moderating in English |
+| Lecture Code       | SWE                                |
+| Module Code        | MECH-B-2-SWE-ENG-ILV               |
+| Degree             | M.Sc                               |
+| Program Name       | Mechatronik                        |
+| Lecture Name       | Academic Writing                   |
+| Semester           | 2                                  |
+| Season             | WS                                 |
+| Room Type          | ILV                                |
+| Assignments        | Personal Assignment                |
+| Lecturer           | D. T. McGuiness, P. Kronthaler     |
+| Module Responsible | SaH                                |
+| Software           | LaTeX                              |
+| Hardware           | -                                  |
+| SWS Total          | 2                                  |
+| SWS Teaching       | 2                                  |
+| UE Total           | 30                                 |
+| ECTS               | 2.5                                |
+| Lecture Type       | ILV                                |
+| Work Language      | English                            |
+
+** Requirements and the Learning Outcomes
+
+- The student should not need any prior knowledge, however a brief knowledge
+  of programming would be beneficial and knowing where the keyboard is on
+  a computer is a plus.
+- After completion, the student will have a good understanding of academic
+  writing practices and learn to type typographically excellent documents.
+
+| REQUIREMENTS | TAUGHT LECTURE | CODE | DEGREE | OUTCOME |
+| -            | -              | -    | -      | -       |
+| -            | -              | -    | -      | -       |
+| -            | -              |      |        |         |
+| -            | -              | -    | -      | -       |
+| -            | -              | -    | -      | -       |
+
+** Grading of the Lecture
+
+- There is only ONE assignment required of student which will be focused on
+  preparing an academic paper using LaTeX
+   
+| ASSIGNMENT TYPE     | VALUE | QUANTITY |
+| Personal Assignment |   100 |        1 |
+| SUM                 |   100 |          |
+
+** Lecture Sources
+
+The following is a reference material table with useful resources which
+complement well with the lecture.
+
+| AUTHOR                 | TITLE                       | PUBLISHER              |
+| Indian TeX Users Group | LaTeX Tutorials: A primer   | Indian TEX Users Group |
+| Frank Mittelbach       | The LaTeX Companion Part I  | Addison-Wesley         |
+| Frank Mittelbach       | The LaTeX Companion Part II | Addison-Wesley         |
+| Donald Knuth           | The TeXBook                 | Addison-Wesley         |
+
+** Content and Unit Distribution
+
+    
+- The content and unit distribution of the lecture is as follows where a unit
+  is defined as 45 min lecture.
+    
+| TOPIC                   | UNITS | SELF STUDY |
+| Introduction            |     4 |          8 |
+| Looking at the Basics   |     4 |          8 |
+| The Document            |     4 |          8 |
+| Typesetting Mathematics |     4 |          8 |
+| Cross Referencing       |     4 |          8 |
+| SUM                     |    20 |         40 |
+
+** Lecture Table of Contents
+
+- Introduction
+  - Introduction
+  - A Historical Overview
+    - Inception
+    - Adding Macros: LaTeX
+    - Reworking Fonts and the LaTeX Project
+  - Current State
+    - Files During Compilation
+    - A Hello, World!
+  - Installation
+    - Windows
+    - macOS
+  - TeX Studio Crash Course
+- Looking at the Basics
+  - The Process of LaTeX
+    - A Small Example
+    - What is the Point of LaTeX
+  - Basics of Typesetting
+    - The Use of Spaces
+    - Quotations
+    - Dashes
+    - Accents
+    - Special Symbols
+    - Position of Text
+  - Fonts
+    - Type Style
+  - Type Size
+- The Document
+  - The Document Class
+    - Font Size
+    - Paper Size
+    - Page Formats
+  - Page Style
+    - Heading Declarations
+  - Page Numbering
+  - Formatting Lengths
+  - Parts of a Document
+    - The Title
+    - Abstract
+    - Dividing the Document
+    - Additional Information
+- Typesetting Mathematics
+  - True Purpose of TeX
+  - Fundamentals
+    - Superscripts and Subscripts
+    - Roots
+    - Symbols in Mathematics
+  - Custom Commands
+  - Additional Math
+    - Single Equations
+    - Groups of Equations
+    - Numbered Equations
+  - Additional Commands
+    - Matrices
+    - Dots
+    - Delimiters
+    - Putting One Over Another
+    - Putting Symbols Over or Under
+  - New Operators
+  - Fonts for Mathematics
+- Cross-Referencing
+  - The Purpose of Cross-Referencing
+  - Making LaTeX do the Work
+    - Referencing Items
+    - Cross-Referencing in Math
+  - Pointing to a Page using the varioref Package
+
+** Documentation
+
+For any student in need of a LaTeX class designed from the ground-up for
+assignment/lab/thesis/slide for MCI needs please have a look at ~mcidoc~ class
+hosted at [[https://github.com/dTmC0945/C-MCI-LaTeX-Class-mcidoc][GitHub]].
+
+(-DTMc 2025)
