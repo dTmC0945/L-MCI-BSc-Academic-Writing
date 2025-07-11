@@ -4,8 +4,9 @@
   <title>
    1 Introduction
   </title>
+    <link rel='icon' type='image/x-icon' href='figures/logo.svg'></link>
   <meta charset="utf-8"/>
-  <meta content="TeX4ht (https://tug.org/tex4ht/)" name="generator"/>
+  <meta content="ParSnip" name="generator"/>
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <link href="AcademicWritingLectureBook.css" rel="stylesheet" type="text/css"/>
   <meta content="AcademicWritingLectureBook.tex" name="src"/>
@@ -20,14 +21,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js">
   </script>
   <script src="texlive.js">
-  </script>
-  <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css"/>
-  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.3.1/highlight.min.js">
-  </script>
-  <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js">
-  </script>
-  <link href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" rel="stylesheet"/>
-  <script src="flatjs.js">
   </script>
   <header>
   </header>
@@ -154,17 +147,7 @@
          1.4.2
         </small>
         <a href="#x3-130001.4.2">
-         macOS
-        </a>
-       </span>
-      </li>
-      <li>
-       <span class="sectionToc">
-        <small>
-         1.5
-        </small>
-        <a href="#x3-140001.5">
-         TeX Studio Crash Course
+         Creating a Document
         </a>
        </span>
       </li>
@@ -172,7 +155,7 @@
     </ul>
     <div class="prev-next" style="text-align: center">
      <p class="noindent">
-      <a href="AcademicWritingLectureBookli2.html" style="float:right; font-size:10px">
+      <a href="AcademicWritingLectureBookch2.html" style="float:right; font-size:10px">
        NEXT →
       </a>
       <a href="index.html" style="float:left; font-size:10px">
@@ -192,6 +175,17 @@
          WebBook | D. T. McGuiness, P.hD
         </h4>
        </div>
+      </div>
+      <div id="author-text" style="bottom: 0; padding-top: 50px;border-top: solid 1px #3b4b5e;font-size: 12px;">
+       <p>
+        <b>
+         Authors Note
+        </b>
+        The website you are viewing is auto-generated
+    using ParSnip and therefore subject to slight errors in
+    typography and formatting. When in doubt, please consult the
+    LectureBook.
+       </p>
       </div>
      </div>
     </div>
@@ -215,95 +209,106 @@
       Next Section →
      </a>
     </div>
-    <div class="section-head" id="section-1" sec="section-1">
-     <h2 class="sectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.1.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.1
-      </small>
-      <a id="x3-30001.1">
-      </a>
-      Introduction
-     </h2>
-     <aside class="wrapfig-r">
-      <img alt="PIC" height="" src="figures/Introduction/vector/CTAN-lion.svg" width="100%"/>
-      <a id="x3-3001r1">
-      </a>
-      <figcaption class="caption">
-       <span class="id">
-        Figure
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.1.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.1
+     </small>
+     <a id="x3-30001.1">
+     </a>
+     Introduction
+    </h2>
+    <aside class="wrapfig-r">
+     <img alt="PIC" height="" src="figures/Introduction/vector/CTAN-lion.svg" width="100%"/>
+     <a id="x3-3001r1">
+     </a>
+     <figcaption class="caption">
+      <span class="id">
+       Figure
        1.1:
-       </span>
-       <span class="content">
-        The           unofficial
-       mascot of TeX such as "CTAN lion
-       drawing by Duane Bibby; thanks to
-       www.ctan.org".
-       </span>
-      </figcaption>
-     </aside>
-     <p class="noindent">
-      It would be a great disservice to say that LaTeX is just a system for typesetting mathematics. Its
+      </span>
+      <span class="content">
+       The unofficial mascot
+       of     TeX     the
+       <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:ctan">
+        Comprehensive
+        T
+        E
+        X
+        Archive Network (CTAN)
+       </a>
+       Lion <span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-Bibby2025">[1]</a></span>.
+      </span>
+     </figcaption>
+    </aside>
+    <p class="noindent">
+     It would be a great disservice to say LaTeX is just a system for typesetting mathematics. Its
 applications span writing business and personal letters, newsletters, articles, and books covering the
 whole range of the sciences and humanities, right up to full-scale volumes and encyclopaedias and
-reference works on all topics <a id="x3-3002"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#mittelbach2004latex">[1]</a></span>.
-     </p>
-     <p class="noindent">
-      Nowadays, versions of LaTeX exist for practically every type of computer and
-      <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:os">
-       Operating System
+reference works on all topics <a id="x3-3003"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>.
+    </p>
+    <p class="noindent">
+     Nowadays, distributions of LaTeX exist for practically every type of computer and
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:os">
+      Operating System
 (OS)
-      </a>. This chapter hopes to provide a strong justification of its use along with a wealth of
+     </a>. This chapter hopes to provide a strong justification of its use along with a wealth of
 information about its many present-day uses. First, however, let’s look at some background
 information.
-     </p>
-    </div>
-    <div class="section-head" id="section-2" sec="section-2">
-     <h2 class="sectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.1.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.2
-      </small>
-      <a id="x3-40001.2">
-      </a>
-      A Historical Overview
-     </h2>
-     <h3 class="subsectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.2.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.2.1
-      </small>
-      <a id="x3-50001.2.1">
-      </a>
-      Inception
-     </h3>
-     <p class="noindent">
-      In
+    </p>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.1.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.2
+     </small>
+     <a id="x3-40001.2">
+     </a>
+     A Historical Overview
+    </h2>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.2.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.2.1
+     </small>
+     <a id="x3-50001.2.1">
+     </a>
+     Inception
+    </h3>
+    <p class="noindent">
+     In
 May
 1977,
 Donald
 Knuth
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        1
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
@@ -311,16 +316,8 @@ Knuth
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          1
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor1">
-        An
+      <span style="color:#313244;">
+       An
        American
        computer
        scientist,
@@ -340,23 +337,27 @@ Knuth
        the
        ACM
        Turing
-       Award..
+       Award.
        Knuth
        has
        been
        called
        the
-       “father
-       of
-       the
-       analysis
-       of
-       algorithms”.
-       </span>
+       “
+       <italic>
+        father
+of
+the
+analysis
+of
+algorithms
+       </italic>
+       ”.
       </span>
-      of
+     </span>
+     of
      Stanford
-     University <a id="x3-5001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#knuth1986computers">[2]</a></span>
+     University <a id="x3-5001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-knuth1986computers">[3]</a></span>
      started
      work
      on
@@ -369,34 +370,52 @@ Knuth
      known
      as
      TeXand
-      <span class="logo-8">
-       METAFONT
-      </span> <a id="x3-5002"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#knuth1984literate">[3]</a> <a id="x3-5003"></a><a href="AcademicWritingLectureBookad1.html#knuth1989metafont">[4]</a></span>.
+     <span class="logo-8">
+      METAFONT
+     </span>
+     [
+     <a id="x3-5002">
+     </a>
+     <a href="AcademicWritingLectureBookad1.html#X0-knuth1984literate">
+      4
+     </a>,
+     <a id="x3-5003">
+     </a>
+     <a href="AcademicWritingLectureBookad1.html#X0-knuth1989metafont">
+      5
+     </a>
+     ].
      In
      the
      framework
      of
-     The
-     TeXbook <a id="x3-5004"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#knuth1984texbook">[5]</a></span>,
+     the
+     TeXbook <a id="x3-5004"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-knuth1984texbook">[6]</a></span>,
      He
      writes:
-     </p>
-     <blockquote class="quotation">
-      <p class="indent">
-       “TeX
+    </p><blockquote class="quotation">
+     <p class="indent">TeX
       a new typesetting system intended for the creation of beautiful books–and especially for books
       that contain a lot of mathematics. By preparing a manuscript in TeX format, you will be telling a computer
       exactly how the manuscript is to be transformed into pages whose typographic: quality is comparable to
       that of the world’s finest printers”
-      </p>
-     </blockquote>
-     <p class="noindent">
-      In 1979, Gordon Bell wrote in a foreword to an earlier book, TeX
+     </p>
+    </blockquote>
+    <p class="noindent">
+     In 1979, Gordon Bell wrote in a foreword to an earlier book, TeX
      and
-      <span class="logo-8">
-       METAFONT
+     <span class="logo-8">
+      METAFONT
+     </span>
+     ,
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        2
+       </sup>
       </span>
-      ,
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
@@ -404,23 +423,17 @@ Knuth
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          2
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor2">
-        A description language used to define raster fonts.
-       </span>
+      <span style="color:#313244;">
+       A description language used to define raster fonts.
       </span>
-      New Directions in Typesetting <a id="x3-5005"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#knuth1979tex">[6]</a></span>:
-     </p>
-     <blockquote class="quotation">
-      <p class="indent">
-       “Don
+     </span>
+     New Directions in Typesetting <a id="x3-5005"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-knuth1979tex">[7]</a></span>:
+     <span class="marginnote">
+      <embed height="200" src="https://www.youtube.com/embed/emmBqIO46Qg" width="300"/>
+      Knuth on designing and implementing TeX
+     </span>
+    </p><blockquote class="quotation">
+     <p class="indent">Donald
       Knuth’s
       Tau
       Epsilon
@@ -457,41 +470,118 @@ Knuth
       of
       the
       Gutenberg
-      press.”
-      </p>
-     </blockquote>
-     <p class="noindent">
-      In the early 1990s, Donald Knuth officially announced that TeX
-     would
-      <span id="bold" style="font-weight:bold;">
-       NOT
-      </span>
-      undergo any further development <a id="x3-5006"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#knuth1990future">[7]</a></span> in the interest of
-     stability. The 1990s saw a flowering of experimental projects that extended TeX
-     in various directions; many of these are coming to fruition
-     in the early
-      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-       <msup>
-        <mrow>
-         <mstyle class="text">
-          <mtext>
-           21
-          </mtext>
-         </mstyle>
-        </mrow>
-        <mrow>
-         <mstyle class="text">
-          <mtext>
-           st
-          </mtext>
-         </mstyle>
-        </mrow>
-       </msup>
-      </math>
-      century, making it an exciting time to be involved in automated typography <a id="x3-5007"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#mittelbach2004latex">[1]</a></span>.
+      press”
      </p>
-     <p class="noindent">
-      The
+    </blockquote>
+    <p class="noindent">
+     In
+     the
+     early
+     1990s,
+     Donald
+     Knuth
+     officially
+     announced
+     TeX
+     would
+     <span id="bold" style="font-weight:bold;">
+      NOT
+     </span>
+     undergo
+     any
+     further
+     development <a id="x3-5006"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-knuth1990future">[8]</a></span>
+     in
+     the
+     interest
+     of
+     stability.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        3
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         3
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       The
+       current
+       version
+       can
+       be
+       seen
+       in
+       <a href="https://ctan.org/pkg/tex">
+        CTAN
+       </a>.
+      </span>
+     </span>
+     The
+     1990s
+     saw
+     a
+     flowering
+     of
+     experimental
+     projects
+     which
+     extended
+     TeX
+     in
+     various
+     directions
+     which
+     many
+     of
+     these
+     are
+     coming
+     to
+     fruition
+     in
+     the
+     early
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <msup>
+       <mrow>
+        <mstyle class="text">
+         <mtext>
+          21
+         </mtext>
+        </mstyle>
+       </mrow>
+       <mrow>
+        <mstyle class="text">
+         <mtext>
+          st
+         </mtext>
+        </mstyle>
+       </mrow>
+      </msup>
+     </math>
+     century,
+     making
+     it
+     an
+     exciting
+     time
+     to
+     be
+     involved
+     in
+     automated
+     typography <a id="x3-5007"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>.
+    </p>
+    <p class="noindent">
+     The
      development
      of
      TeX
@@ -501,27 +591,28 @@ Knuth
      as
      one
      of
-     Don’s
+     Donald
+     Knuth’s
      “personal
      productivity
      tools”
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        4
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         3
+         4
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          3
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor3">
-        created
+      <span style="color:#313244;">
+       created
        simply
        to
        ensure
@@ -536,83 +627,80 @@ Knuth
        then-current
        work
        on
-        <italic>
-         The
+       <italic>
+        The
 Art
 of
 Computer
 Programming
-        </italic>
-       </span>
+       </italic>
       </span>
-      was
+     </span>
+     was
      largely
      influenced
      and
-     nourished
+     improved
      by
      the
-     American
-     Mathematical
-     Society
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:ams">
+      American
+      Mathematical
+      Society
+      (AMS)
+     </a>
      on
      behalf
      of
-     U.S.
+     US
      research
      mathematicians.
-     </p>
-     <div class="informationblock" id="tcolobox-1">
-      <div class="title">
-       <p class="noindent">
-        <span id="bold" style="font-weight:bold;">
-         Information
-        </span>
-        :
-       The
-       Art
-       of
-       Computer
-       Programming
-       </p>
-      </div>
-      <div class="box-content">
-       <aside class="wrapfig-r">
-        <img alt="PIC" height="" src="figures/Introduction/raster/taocp.png" width="100%"/>
-       </aside>
-       <p class="noindent">
-        Knuth is known for working on the Art of Computer Programming rather than LaTeXand therefore it is worth
-       mentioning it here.
-       </p>
-       <p class="noindent">
-        A comprehensive multi-volume monograph written by the computer scientist Donald Knuth presenting
-       programming algorithms and their analysis. As of 2025 it consists of published volumes 1, 2, 3, 4A, and 4B, with
-       more expected to be released in the future. The Volumes 1-5 are intended to represent the central core of
-       computer programming for sequential machines; the subjects of Volumes 6 and 7 are important but more
-       specialised.
-       </p>
-      </div>
+    </p>
+    <div class="informationblock" id="tcolobox-1">
+     <div class="title">
+      <p class="noindent">
+       <span id="bold" style="font-weight:bold;">
+        Information
+       </span>
+       : The Art of Computer Programming
+      </p>
      </div>
-     <h3 class="subsectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.2.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.2.2
-      </small>
-      <a id="x3-60001.2.2">
-      </a>
-      Adding
-     Macros:
-     LaTeX
-     </h3>
-     <p class="noindent">
-      While
+     <div class="box-content">
+      <aside class="wrapfig-r">
+       <img alt="PIC" height="" src="figures/Introduction/raster/taocp.png" width="100%"/>
+      </aside>
+      <p class="noindent">
+       Donald Knuth is known for working on the Art of Computer Programming rather than LaTeX
+       and therefore it is worth
+       taking a slight detour here and look at it.
+      </p>
+      <p class="noindent">
+       It is a comprehensive, multi-volume monograph presenting programming algorithms and their analysis. As of 2025 it
+       consists of published volumes 1, 2, 3, 4A, and 4B, with more expected to be released in the future. The Volumes 1-5 are
+       intended to represent the central core of computer programming for sequential machines with the subjects of Volumes 6
+       and 7 are important but more specialised. The books are known to be hard to read but contain a detailed and scientific
+       look at the performance of algorithms.
+      </p>
+     </div>
+    </div>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.2.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.2.2
+     </small>
+     <a id="x3-60001.2.2">
+     </a>
+     Adding  Macros:  LaTeX
+    </h3>
+    <p class="noindent">
+     While
      Knuth
      was
      developing
@@ -623,24 +711,24 @@ Programming
      1980s,
      Leslie
      Lamport
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        5
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <img alt="PIC" height="" src="figures/Introduction/raster/portrait-lamport.jpg" width="100%"/>
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         4
+         5
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <img alt="PIC" height="" src="figures/Introduction/raster/portrait-lamport.jpg" width="100%"/>
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          4
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor4">
-        An
+      <span style="color:#313244;">
+       An
        American
        computer
        scientist
@@ -672,9 +760,9 @@ Programming
        its
        first
        manual.
-       </span>
       </span>
-      started
+     </span>
+     started
      work
      on
      the
@@ -709,7 +797,7 @@ Programming
      Scribe
      by
      Brian
-     Reid <a id="x3-6001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#reid1984scribe">[8]</a></span>.
+     Reid <a id="x3-6001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-reid1984scribe">[9]</a></span>.
      The
      appeal
      of
@@ -736,8 +824,8 @@ Programming
      range
      of
      documents
-      <alert style="color: #821131;">
-       without
+     <alert style="color: #821131;">
+      without
 having
 to
 worry
@@ -746,41 +834,61 @@ about
 their
 typographical
 appearance
-      </alert>
-      .
-     </p>
-     <div class="knowledge">
-      <p class="noindent">
-       The details of the layout can be left for the document designer to specify elsewhere.
-      </p>
-     </div>
+     </alert>
+     .
+    </p>
+    <div class="knowledge">
      <p class="noindent">
       The
-      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-       <msup>
-        <mrow>
-         <mstyle class="text">
-          <mtext>
-           2
-          </mtext>
-         </mstyle>
-        </mrow>
-        <mrow>
-         <mstyle class="text">
-          <mtext>
-           nd
-          </mtext>
-         </mstyle>
-        </mrow>
-       </msup>
-      </math>
-      edition of LaTeX: A Document Preparation System <a id="x3-6002"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#lamport1994document">[9]</a></span> begins with:
+      details
+      of
+      the
+      layout
+      can
+      be
+      left
+      for
+      the
+      document
+      designer
+      to
+      specify
+      elsewhere.
      </p>
-     <p class="noindent">
-     </p>
-     <blockquote class="quotation">
-      <p class="indent">
-       “LaTeX
+    </div>
+    <p class="noindent">
+     The
+     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <msup>
+       <mrow>
+        <mstyle class="text">
+         <mtext>
+          2
+         </mtext>
+        </mstyle>
+       </mrow>
+       <mrow>
+        <mstyle class="text">
+         <mtext>
+          nd
+         </mtext>
+        </mstyle>
+       </mrow>
+      </msup>
+     </math>
+     edition
+     of
+     LaTeX:
+     A
+     Document
+     Preparation
+     System <a id="x3-6002"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-lamport1994document">[10]</a></span>
+     begins
+     with:
+    </p>
+    <p class="noindent">
+    </p><blockquote class="quotation">
+     <p class="indent">LaTeX
       is
       a
       system
@@ -798,41 +906,128 @@ appearance
       appeared
       in
       1985.”
-      </p>
-     </blockquote>
+     </p>
+    </blockquote>
+    <p class="noindent">
+     This
+     release
+     of
+     a
+     <span id="bold" style="font-weight:bold;">
+      stable
+     </span>
+     and
+     <span id="bold" style="font-weight:bold;">
+      well-documented
+     </span>
+     LaTeX
+     led
+     directly
+     to
+     the
+     rapid
+     spread
+     of
+     LaTeX-based
+     document
+     processing
+     beyond
+     the
+     mathematical
+     community.
+    </p>
+    <p class="noindent">
+     LaTeX
+     was
+     the
+     first
+     widely
+     used
+     language
+     for
+     describing
+     the
+     logical
+     structure
+     of
+     a
+     large
+     range
+     of
+     documents
+     and
+     hence
+     introducing
+     the
+     philosophy
+     of
+     logical
+     design.
+    </p>
+    <div class="warning">
      <p class="noindent">
-      This release of a
-      <span id="bold" style="font-weight:bold;">
-       stable
-      </span>
+      The
+      essence
+      of
+      “logical
+      design”
+      is
+      that
+      the
+      author
+      should
+      be
+      concerned
+      only
+      with
+      the
+      logical
+      content
+      of
+      his
+      or
+      her
+      work
       and
-      <span id="bold" style="font-weight:bold;">
-       well-documented
-      </span>
+      not
+      its
+      visual
+      appearance.
+     </p>
+    </div>
+    <p class="noindent">
+     Back
+     then,
+     LaTeX
+     was
+     described
+     variously
+     as
+     TeX
+     for
+     the
+     common
+     men.
+     Its
+     use
+     spread
+     very
+     rapidly
+     during
+     the
+     next
+     decade.
+     By
+     1994
+     Leslie
+     could
+     write,
+    </p>
+    <p class="noindent">
+    </p>
+    <blockquote class="quotation">
+     <p class="indent">
       LaTeX
-     led directly to the rapid
-     spread of LaTeX-based document processing beyond the mathematical community.
-     </p>
-     <p class="noindent">
-      LaTeX
-     was the first widely used language for describing the logical structure of a
-     large range of documents and hence introducing the philosophy of logical design.
-     </p>
-     <div class="warning">
-      <p class="noindent">
-       The essence of “logical design” is that the author should be concerned only with the logical content of his or her work and not its visual appearance.
-      </p>
-     </div>
-     <p class="noindent">
-      Back then, LaTeX
-     was described variously as TeX
-     for the common men. Its use spread very rapidly during the next decade. By 1994 Leslie could write,
-     </p>
-     <p class="noindent">
-     </p>
-     <blockquote class="quotation">
-      <p class="indent">
-       LaTeX
       is
       now
       extremely
@@ -849,11 +1044,11 @@ appearance
       used
       extensively
       in
-      industry <a id="x3-6003"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#mittelbach2004latex">[1]</a></span>
-      </p>
-     </blockquote>
-     <p class="noindent">
-      The
+      industry <a id="x3-6003"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>
+     </p>
+    </blockquote>
+    <p class="noindent">
+     The
      worldwide
      availability
      of
@@ -883,47 +1078,47 @@ appearance
      because
      of
      its
-      <alert style="color: #821131;">
-       clear
+     <alert style="color: #821131;">
+      clear
 structure
-      </alert>
-      and
-      <alert style="color: #821131;">
-       straightforward
-      </alert>
-      style.
+     </alert>
+     and
+     <alert style="color: #821131;">
+      straightforward
+     </alert>
+     style.
      There
      were
      two
      <alert style="color: #821131;">(2)</alert>
      pivotal
      conferences
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        6
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         5
+         6
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          5
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor5">
-        Exeter
+      <span style="color:#313244;">
+       Exeter
        UK,
        1988,
        and
        Karlsruhe
        Germany,
        1989
-       </span>
       </span>
-      which
+     </span>
+     which
      established
      clearly
      the
@@ -944,7 +1139,7 @@ structure
      led
      by
      Johannes
-     Raman <a id="x3-6004"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#braams1991babel">[10]</a></span>
+     Raman <a id="x3-6004"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-braams1991babel">[11]</a></span>
      on
      more
      general
@@ -955,21 +1150,22 @@ structure
      switching
      between
      them.
-     </p>
-     <div class="warning">
-      <p class="noindent">
-       in
-      the
+    </p>
+    <div class="warning">
+     <p class="noindent">
+      In
       context
       of
       typography,
       the
       word
-       <italic>
-        language
-       </italic>
-       does
-      not
+      <italic>
+       language
+      </italic>
+      does
+      <span id="bold" style="font-weight:bold;">
+       NOT
+      </span>
       refer
       exclusively
       to
@@ -990,10 +1186,10 @@ structure
       a
       wider
       meaning.
-      </p>
-     </div>
-     <p class="noindent">
-      For
+     </p>
+    </div>
+    <p class="noindent">
+     For
      typography,
      “language”
      covers
@@ -1030,10 +1226,10 @@ structure
      typographic
      differences
      are
-      <span id="bold" style="font-weight:bold;">
-       NOT
-      </span>
-      necessarily
+     <span id="bold" style="font-weight:bold;">
+      NOT
+     </span>
+     necessarily
      in
      line
      with
@@ -1051,30 +1247,30 @@ structure
      distinct
      publishing
      communities.
-     </p>
-     <h3 class="subsectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.2.3" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.2.3
-      </small>
-      <a id="x3-70001.2.3">
-      </a>
-      Reworking
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.2.3" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.2.3
+     </small>
+     <a id="x3-70001.2.3">
+     </a>
+     Reworking
      Fonts
      and
      the
      LaTeX
      Project
-     </h3>
-     <p class="noindent">
-      Another
+    </h3>
+    <p class="noindent">
+     Another
      important
      contribution
      to
@@ -1089,24 +1285,24 @@ structure
      of
      Frank
      Mittelbach.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        7
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <img alt="PIC" height="" src="figures/Introduction/raster/portrait-mittelbach.jpeg" width="100%"/>
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         6
+         7
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <img alt="PIC" height="" src="figures/Introduction/raster/portrait-mittelbach.jpeg" width="100%"/>
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          6
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor6">
-        A
+      <span style="color:#313244;">
+       A
        Senior
        IT
        professional,
@@ -1129,10 +1325,10 @@ structure
        beginning
        of
        the
-       90’s.
-       </span>
+       90’s <a id="x3-7001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-MittelbachTeX2025">[12]</a></span>.
       </span>
-      and
+     </span>
+     and
      Rainer
      Schopf
      on
@@ -1172,9 +1368,9 @@ structure
      capabilities
      to
      LaTeX.
-     </p>
-     <p class="noindent">
-      As
+    </p>
+    <p class="noindent">
+     As
      a
      reward
      for
@@ -1199,11 +1395,11 @@ structure
      and
      Schopf
      had
-      <alert style="color: #821131;">
-       been
+     <alert style="color: #821131;">
+      been
 allowed
-      </alert>
-      to
+     </alert>
+     to
      take
      over
      the
@@ -1238,10 +1434,10 @@ allowed
      typographical
      standards
      of
-     Europe <a id="x3-7001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#mittelbach2004latex">[1]</a></span>.
-     </p>
-     <p class="noindent">
-      Very
+     Europe <a id="x3-7002"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>.
+    </p>
+    <p class="noindent">
+     Very
      soon
      Version
      2.09
@@ -1340,9 +1536,9 @@ allowed
      under
      one
      branch.
-     </p>
-     <p class="noindent">
-      The
+    </p>
+    <p class="noindent">
+     The
      development
      of
      this
@@ -1361,7 +1557,7 @@ allowed
      the
      LaTeX3
      Project
-     Team <a id="x3-7002"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#mittelbach1993latex3">[11]</a></span>.
+     Team <a id="x3-7003"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach1993latex3">[13]</a></span>.
      Although
      the
      major
@@ -1402,23 +1598,23 @@ allowed
      by
      David
      Carlisle.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        8
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         7
+         8
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          7
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor7">
-        Principal
+      <span style="color:#313244;">
+       Principal
        Technical
        Consulant
        and
@@ -1456,17 +1652,9 @@ allowed
        this
        book
        included.
-       </span>
       </span>
-      A
-     Access
-     to
-     fonts
-     for
-     the
-     new
-     system
-     incorporated
+     </span>
+     Additional
      work
      by
      Mark
@@ -1474,7 +1662,13 @@ allowed
      on
      extensions
      of
-     NFSS
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:nfss">
+      New
+      Font
+      Selection
+      Scheme
+      (NFSS)
+     </a>
      to
      better
      support
@@ -1485,20 +1679,20 @@ allowed
      scalable
      fonts
      [
-      <a id="x3-7003">
-      </a>
-      <a href="AcademicWritingLectureBookad1.html#mittelbach2004latex">
-       1
-      </a>,
-      <a id="x3-7004">
-      </a>
-      <a href="AcademicWritingLectureBookad1.html#carlisle1996alatex">
-       12
-      </a>
-      ].
-     </p>
-     <p class="noindent">
-      Although
+     <a id="x3-7004">
+     </a>
+     <a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">
+      2
+     </a>,
+     <a id="x3-7005">
+     </a>
+     <a href="AcademicWritingLectureBookad1.html#X0-carlisle1996alatex">
+      14
+     </a>
+     ].
+    </p>
+    <p class="noindent">
+     Although
      the
      original
      goal
@@ -1561,10 +1755,10 @@ allowed
      the
      support
      systems.
-     </p>
-     <div class="knowledge">
-      <p class="noindent">
-       This
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      This
       system
       remains
       the
@@ -1572,46 +1766,44 @@ allowed
       standard
       LaTeX
       system.
-      </p>
-     </div>
-     <div class="figure">
-      <p class="noindent">
-       <img alt="PIC" height="" src="figures/Introduction/vector/latex-bird-logo-.svg" width="150%"/>
-       <a id="x3-7005r2">
-       </a>
-      </p>
-      <figcaption class="caption">
-       <span class="id">
-        Figure
-       1.2:
-       </span>
-       <span class="content">
-        The LaTeX
-       Project logo, found on its official website <span class="cite"><a href="AcademicWritingLectureBookad1.html#Timothy2020">[13]</a></span>.
-       </span>
-      </figcaption>
-     </div>
+     </p>
     </div>
-    <div class="section-head" id="section-3" sec="section-3">
-     <h2 class="sectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.1.3" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.3
-      </small>
-      <a id="x3-80001.3">
-      </a>
-      Current
-     State
-     </h2>
+    <div class="figure">
      <p class="noindent">
-      Before
+      <img alt="PIC" height="" src="figures/Introduction/vector/latex-bird-logo-.svg" width="150%"/>
+      <a id="x3-7006r2">
+      </a>
+     </p>
+     <figcaption class="caption">
+      <span class="id">
+       Figure
+       1.2:
+      </span>
+      <span class="content">
+       The LaTeX
+       Project logo, found on its official website <span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-Timothy2020">[15]</a></span>.
+      </span>
+     </figcaption>
+    </div>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.1.3" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.3
+     </small>
+     <a id="x3-80001.3">
+     </a>
+     Current
+     State
+    </h2>
+    <p class="noindent">
+     Before
      diving
      into
      how
@@ -1652,7 +1844,6 @@ allowed
      how
      the
      various
-     program
      components
      interact
      with
@@ -1667,36 +1858,23 @@ allowed
      compiler.
      Most
      users
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        9
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         8
+         9
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          8
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor8">
-        This
-       will
-       undoubtedly
-       will
-       include
-       most
-       who
-       will
-       read
-       this
-       but
-       I
-       think
-       for
+      <span style="color:#313244;">
+       For
        anyone
        who
        wants
@@ -1714,13 +1892,15 @@ allowed
        understanding
        the
        internal
-       mechanics
+       cogs
+       and
+       gears
        of
        the
        software.
-       </span>
       </span>
-      will
+     </span>
+     will
      never
      need
      to
@@ -1730,7 +1910,7 @@ allowed
      this
      software
      environment
-     that
+     which
      supports
      their
      work,
@@ -1755,123 +1935,18 @@ allowed
      technical
      parts
      of
-     this
-     book.
-     </p>
+     the
+     lecture
+     book <a id="x3-8001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>.
+    </p>
+    <div class="knowledge">
      <p class="noindent">
-      The
-     following
-     description
-     assumes
-     familiarity
-     with
-     a
-     standard
-     computer
-     file
-     system
-     in
-     which
-     a
+      The following description assumes familiarity with a standard computer file system in which a
       <alert style="color: #821131;">
-       file
-extension
+       file extension
       </alert>
-      is
-     used
-     to
-     denote
-     the
-     the
-     file
-     type.
-      <alert style="color: #821131;">
-       <span id="bold" style="font-weight:bold;">
-        <sup class="textsuperscript">
-         9
-        </sup>
-       </span>
-      </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          9
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor9">
-        For
-       example,
-       a <span id="textcolor10"><code class="verb">.doc</code></span>
-        extension
-       would
-       tell
-       the
-       computer
-       that
-       it
-       is
-       a
-       Word
-       file,
-       or <span id="textcolor11"><code class="verb">.txt</code></span>
-        file
-       would
-       imply
-       it
-       is
-       a
-       text
-       file.
-       Most
-       of
-       the
-       time
-       these
-       extensions
-       are
-       just
-       a
-       way
-       to
-       tell
-       the
-       computer
-       what
-       can
-       be
-       done
-       with
-       them.
-       </span>
-      </span>
-     </p>
-     <p class="noindent">
-      When
-     processing
-     a
-     document,
-     the
-     LaTeX
-     program
-     reads
-     and
-     writes
-      <alert style="color: #821131;">
-       several
-files
-      </alert>
-      ,
-     some
-     of
-     which
-     are
-     further
-     processed
-     by
-     other
-     applications.
+      is used to denote
+      the the file type.
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
@@ -1887,8 +1962,55 @@ files
          </sup>
         </span>
        </alert>
-       <span id="textcolor12">
-        For
+       <span style="color:#313244;">
+        i.e., a <span style="color:#054C5C;"><code class="verb">.doc</code></span>
+        extension would tell it is a Word file, or <span style="color:#054C5C;"><code class="verb">.txt</code></span>
+        file would imply it is a text file.
+       </span>
+      </span>
+     </p>
+    </div>
+    <p class="noindent">
+     When
+     processing
+     a
+     document,
+     LaTeX
+     reads
+     and
+     writes
+     <alert style="color: #821131;">
+      several
+files
+     </alert>
+     ,
+     some
+     of
+     which
+     are
+     further
+     processed
+     by
+     other
+     smaller
+     applications.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        11
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         11
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       For
        example,
        if
        you
@@ -1903,41 +2025,33 @@ files
        your
        document,
        an
-       additional <span id="textcolor13"><code class="verb">.glo</code></span>
-        would
+       additional <span style="color:#054C5C;"><code class="verb">.glo</code></span>
+       would
        be
        generated
        during
        its
        compilation.
-       </span>
       </span>
-      These
+     </span>
+     These
+     files,
+     in
+     a
+     non-exhaustive
+     list,
      are
      listed
      in
-     Table
-     1.1,
-     and
-     Figure
-     1.1
-     shows
-     schematically
-     the
-     flow
-     of
-     information
-     behind
-     the
-     scenes
-     (on
-     pages
-     8
-     and
-     9).
-     </p>
-     <p class="noindent">
-      The
+     <span id="bold" style="font-weight:bold;">
+      Table
+     </span>
+     <a href="#x3-9001r1">
+      1.1
+     </a>.
+    </p>
+    <p class="noindent">
+     The
      most
      obviously
      important
@@ -1949,11 +2063,11 @@ files
      project
      are
      the
-      <alert style="color: #821131;">
-       input
+     <alert style="color: #821131;">
+      input
 source
-      </alert>
-      files.
+     </alert>
+     files.
      Typically,
      there
      will
@@ -1972,17 +2086,17 @@ source
      often
      have
      the
-     extension <span id="textcolor14"><code class="verb">.tex</code></span>,
+     extension <span style="color:#054C5C;"><code class="verb">.tex</code></span>,
      which
      are
      known
      as
-      <alert style="color: #821131;">
-       plain
+     <alert style="color: #821131;">
+      plain
 text
 files
-      </alert>
-      as
+     </alert>
+     as
      they
      can
      be
@@ -1992,219 +2106,127 @@ files
      basic
      text
      editor.
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      Often, several graphical images are included in the typeset document utilizing the <span style="color:#054C5C;"><code class="verb">graphicx</code></span>
+      which we will talk later.
      </p>
-     <div class="knowledge">
+    </div>
+    <p class="noindent">
+     For LaTeX
+     to operate, it also needs several files containing structure and layout definitions:
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
       <p class="noindent">
-       Often,
-      several
-      graphical
-      images
-      are
-      included
-      in
-      the
-      typeset
-      document
-      utilizing
-      the <span id="textcolor15"><code class="verb">graphicsx</code></span>
-       which
-      we
-      will
-      talk
-      later.
+       <italic>
+        class
+       </italic>
+       files
+       with
+       the
+       extension <span style="color:#054C5C;"><code class="verb">.cls</code></span>
+       ;
       </p>
-     </div>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       <italic>
+        package
+       </italic>
+       files
+       with
+       the
+       extension <span style="color:#054C5C;"><code class="verb">.sty</code></span>
+      </p>
+     </li>
+    </ul>
+    <p class="noindent">
+     Many of these aforementioned files are provided by the basic system set-up, but others may be supplied by
+     individual users as customisation. LaTeX
+     is distributed with five <alert style="color: #821131;">(5)</alert>
+     standard document classes out-of-the-box:
+    </p>
+    <div class="center">
      <p class="noindent">
-      For
-     LaTeX
-     to
-     operate,
-     it
-     also
-     needs
-     several
-     files
-     containing
-     structure
+     </p>
+     <p class="noindent"> <span style="color:#054C5C;"><code class="verb">article</code></span>, <span style="color:#054C5C;"><code class="verb">report</code></span>, <span style="color:#054C5C;"><code class="verb">book</code></span>, <span style="color:#054C5C;"><code class="verb">slides</code></span>, and <span style="color:#054C5C;"><code class="verb">letter</code></span>.
+     </p>
+    </div>
+    <p class="noindent">
+     These document classes can further be customised by the contents of other files specified either by class options <span style="color:#054C5C;">(<code class="verb">.cls</code>)</span> or by
+     loading additional packages <span style="color:#054C5C;">(<code class="verb">.sty</code>)</span>. In addition, many LaTeX
+     documents will implicitly input language definition files of the <span style="color:#054C5C;"><code class="verb">babel</code></span>
+     system with the extension <span style="color:#054C5C;"><code class="verb">.ldf</code></span>
      and
-     layout
-     definitions:
-     </p>
-     <ul class="itemize1">
-      <li class="itemize">
-       <p class="noindent">
-        <italic>
-         class
-        </italic>
-        files
-       with
-       the
-       extension.cls;
-       </p>
-      </li>
-      <li class="itemize">
-       <p class="noindent">
-        <italic>
-         option
-        </italic>
-        files
-       with
-       the
-       extension.cls;
-       </p>
-      </li>
-      <li class="itemize">
-       <p class="noindent">
-        <italic>
-         package
-        </italic>
-        files
-       with
-       the
-       extension.sety
-       </p>
-      </li>
-     </ul>
-     <p class="noindent">
-      Many
-     of
-     these
-     aforementioned
-     files
-     are
-     provided
-     by
-     the
-     basic
-     system
-     set-up,
-     but
-     others
-     may
-     be
-     supplied
-     by
-     individual
-     users
-     as
-     customisation.
-     LaTeX
-     is
-     distributed
-     with
-     five
-     <alert style="color: #821131;">(5)</alert>
-     standard
-     document
-     classes
-     out-of-the-box:
-     </p>
-     <blockquote class="quotation">
-      <p class="indent">
-       article,
-      report,
-      book,
-      slides,
-      and
-      letter.
-      </p>
-     </blockquote>
-     <p class="noindent">
-      These
-     document
-     classes
-     can
-     further
-     be
-     customised
-     by
-     the
-     contents
-     of
-     other
-     files
-     specified
-     either
-     by
-     class
-     options <span id="textcolor19">(<code class="verb">.cls</code>)</span>
-     or
-     by
-     loading
-     additional
-     packages <span id="textcolor20">(<code class="verb">.sty</code>)</span>.
-     In
-     addition,
-     many
-     LaTeX
-     documents
-     will
-     implicitly
-     input
-     language
-     definition
-     files
-     of
-     the <span id="textcolor21"><code class="verb">babel</code></span>
-      system
-     with
-     the
-     extension <span id="textcolor22"><code class="verb">.ldf</code></span>
-      and
-      <alert style="color: #821131;">
-       encoding
-definition
-files
-      </alert>
-      of
-     the <span id="textcolor23"><code class="verb">inputenc/fontent</code></span>
-      packages
-     with
-     the
-     extension <span id="textcolor24"><code class="verb">.def</code></span>.
-     </p>
-     <p class="noindent">
-      The
+     <alert style="color: #821131;">
+      encoding definition files
+     </alert>
+     of the <span style="color:#054C5C;"><code class="verb">inputenc/fontent</code></span>
+     packages with the extension <span style="color:#054C5C;"><code class="verb">.def</code></span>.
+    </p>
+    <p class="noindent">
+     The
      information
-     that
      LaTeX
      needs
      about
      the
      glyphs
-     to
-     be
-     typeset
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        12
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         12
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       a
+       glyph
+       is
+       “
+       <italic>
+        the
+specific
+shape,
+design,
+or
+representation
+of
+a
+character
+       </italic>
+       ”.
+      </span>
+     </span>
      is
      found
      in
      TeX
      font
      metric
-     files <span id="textcolor25">(<code class="verb">.tfm</code>)</span>.
-     </p>
-     <div class="warning">
-      <p class="noindent">
-       This
-      does
-       <span id="bold" style="font-weight:bold;">
-        NOT
-       </span>
-       include
-      information
-      about
-      the
-      shapes
-      of
-      glyphs,
-      only
-      about
-      their
-      dimensions.
-      </p>
-     </div>
+     files <span style="color:#054C5C;">(<code class="verb">.tfm</code>)</span>.
+    </p>
+    <div class="warning">
      <p class="noindent">
-      Information
+      This does
+      <span id="bold" style="font-weight:bold;">
+       NOT
+      </span>
+      include information about the shapes of glyphs, only about their dimensions.
+     </p>
+    </div>
+    <p class="noindent">
+     Information
      about
      which
      font
@@ -2216,69 +2238,69 @@ files
      is
      stored
      in
-      <alert style="color: #821131;">
-       font
+     <alert style="color: #821131;">
+      font
 definition
-      </alert>
-      files
+     </alert>
+     files
      <alert style="color: #821131;">(.fd)</alert>.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        13
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         11
+         13
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          11
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor26">
-        Both
+      <span style="color:#313244;">
+       Both
        types
        are
        loaded
        automatically
        when
        necessary.
-       </span>
       </span>
-     </p>
-     <div class="knowledge">
-      <p class="noindent">
-       The output from LaTeX
+     </span>
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      The output from LaTeX
       itself is a collection of
-       <alert style="color: #821131;">
-        internal
-       </alert>
-       files mentioned previously, plus one <alert style="color: #821131;">(1)</alert>
+      <alert style="color: #821131;">
+       internal
+      </alert>
+      files mentioned previously, plus one <alert style="color: #821131;">(1)</alert>
       very
       important file that contains all the information produced by TeX
       about the typeset form of the document.
-      </p>
-     </div>
-     <h3 class="subsectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.3.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.3.1
-      </small>
-      <a id="x3-90001.3.1">
-      </a>
-      Files  During  Compilation
-     </h3>
-     <p class="noindent">
-      TeX’s
+     </p>
+    </div>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.3.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.3.1
+     </small>
+     <a id="x3-90001.3.1">
+     </a>
+     Files  During  Compilation
+    </h3>
+    <p class="noindent">
+     TeX’s
      own
      particular
      representation
@@ -2290,10 +2312,10 @@ definition
      that
      of
      a
-      <alert style="color: #821131;">
-       device-independent
+     <alert style="color: #821131;">
+      device-independent
 file
-      </alert> <span id="textcolor27">(<code class="verb">.dvi</code>)</span>.
+     </alert> <span style="color:#054C5C;">(<code class="verb">.dvi</code>)</span>.
      TeX
      positions
      glyphs
@@ -2306,26 +2328,28 @@ file
      better
      than
      0.01
-     ţ
+     <span class="eurm-7">
+      μ
+     </span>
      m
      .
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        14
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         12
+         14
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          12
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor28">
-        This
+      <span style="color:#313244;">
+       This
        is
        one
        of
@@ -2339,11 +2363,11 @@ file
        TeX
        is
        considered
-        <alert style="color: #821131;">
-         device
+       <alert style="color: #821131;">
+        device
 independent
-        </alert>
-        as
+       </alert>
+       as
        no
        device
        can
@@ -2357,11 +2381,11 @@ independent
        TeX
        describes
        internally.
-       </span>
       </span>
-     </p>
-     <p class="noindent">
-      Some
+     </span>
+    </p>
+    <p class="noindent">
+     Some
      variants
      of
      the
@@ -2369,23 +2393,20 @@ independent
      program,
      such
      as
-     pdfEN
-     [159,
-     161]
-     and
-     TVE
-     [168],
+     pdfTeX,
      can
      produce
      device-independent
-     He
+     file
      formats
      including
      the
-     portable
-     Document
-     Format
-     (PDF) <span id="textcolor29">(<code class="verb">.pdf</code>)</span>,
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:pdf">
+      Portable
+      Document
+      Format
+      (PDF)
+     </a> <span style="color:#054C5C;">(<code class="verb">.pdf</code>)</span>,
      which
      is
      the
@@ -2395,214 +2416,245 @@ independent
      of
      Adobe
      Acrobat.
+    </p>
+    <div class="warning">
+     <p class="noindent"> <span style="color:#054C5C;"><code class="verb">.dvi</code></span>
+      specifies
+      <span id="bold" style="font-weight:bold;">
+       ONLY
+      </span>
+      the
+      names/locations
+      of
+      fonts
+      and
+      their
+      glyphs.
+      It
+      does
+      <span id="bold" style="font-weight:bold;">
+       NOT
+      </span>
+      contain
+      any
+      rendering
+      information
+      for
+      those
+      glyphs
+      whereas <span style="color:#054C5C;"><code class="verb">.pdf</code></span>
+      file
+      format
+      can
+      contain
+      such
+      rendering
+      information.
      </p>
-     <p class="noindent">
-      The.dvi
-     file
-     format
-     specifies
-     only
-     the
-     names/locations
-     of
-     fonts
-     and
-     their
-     glyphs–it
-     does
-     not
-     contain
-     any
-     rendering
-     information
-     for
-     those
-     glyphs.
-     The.pdf
-     file
-     format
-     can
-     contain
-     such
-     rendering
-     information.
-     </p>
-     <p class="noindent">
-     </p>
-     <figure class="float">
-      <table class="tabularray tblr" id="tbl-1">
-       <div display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <tr id="row-1-1-">
-         <td id="cell1-1-1" style="text-align:right;vertical-align:top;background-color:#F2F2F2;">
-         </td>
-         <td id="cell1-1-2" style="vertical-align:top;background-color:#F2F2F2;">
-          File
+    </div>
+    <p class="noindent">
+    </p>
+    <figure class="float">
+     <table class="tabularray tblr" id="tbl-1">
+      <tr id="row-1-1-">
+       <th id="cell1-1-1" style="text-align:right;vertical-align:top;background-color:#F2F2F2;">
+       </th>
+
+       <th id="cell1-1-2" style="vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         File 
 Type
-         </td>
-         <td id="cell1-1-3" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
-          Common
-File
-Extension(s)
-         </td>
-        </tr>
-        <tr id="row-1-2-">
-         <td id="cell1-2-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-          Document
+        </span>
+       </th>
+
+       <th id="cell1-1-3" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Common File Extension(s)
+        </span>
+       </th>
+      </tr>
+      <tr id="row-1-2-">
+
+       <td id="cell1-2-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Document 
 Input
-         </td>
-         <td id="cell1-2-2" style="vertical-align:top;">
-          text
-         </td>
-         <td id="cell1-2-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor114"><code class="verb">.tex</code></span> <span id="textcolor115"><code class="verb">.dtx</code></span> <span id="textcolor116"><code class="verb">.ltx</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-3-">
-         <td id="cell1-3-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-         </td>
-         <td id="cell1-3-2" style="vertical-align:top;">
-          Bibliography
-         </td>
-         <td id="cell1-3-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor117"><code class="verb">.bbl</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-4-">
-         <td id="cell1-4-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-         </td>
-         <td id="cell1-4-2" style="vertical-align:top;">
-          Index/Glossary
-         </td>
-         <td id="cell1-4-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor118"><code class="verb">.ind</code></span> <span id="textcolor119"><code class="verb">.glo</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-5-">
-         <td id="cell1-5-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-          Graphics
-         </td>
-         <td id="cell1-5-2" style="vertical-align:top;">
-          Internal
-         </td>
-         <td id="cell1-5-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor120"><code class="verb">.tex</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-6-">
-         <td id="cell1-6-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-         </td>
-         <td id="cell1-6-2" style="vertical-align:top;">
-          External
-         </td>
-         <td id="cell1-6-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor121"><code class="verb">.ps</code></span> <span id="textcolor122"><code class="verb">.eps</code></span> <span id="textcolor123"><code class="verb">.tif</code></span> <span id="textcolor124"><code class="verb">.png</code></span> <span id="textcolor125"><code class="verb">.jpg</code></span> <span id="textcolor126"><code class="verb">.gif</code></span> <span id="textcolor127"><code class="verb">.pdf</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-7-">
-         <td id="cell1-7-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-          Other
+        </span>
+       </td>
+       <td id="cell1-2-2" style="vertical-align:top;">
+        text
+       </td>
+       <td id="cell1-2-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.tex</code></span> <span style="color:#054C5C;"><code class="verb">.dtx</code></span> <span style="color:#054C5C;"><code class="verb">.ltx</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-3-">
+
+       <td id="cell1-3-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell1-3-2" style="vertical-align:top;">
+        Bibliography
+       </td>
+       <td id="cell1-3-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.bbl</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-4-">
+
+       <td id="cell1-4-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell1-4-2" style="vertical-align:top;">
+        Index/Glossary
+       </td>
+       <td id="cell1-4-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.ind</code></span> <span style="color:#054C5C;"><code class="verb">.glo</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-5-">
+
+       <td id="cell1-5-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Graphics
+        </span>
+       </td>
+       <td id="cell1-5-2" style="vertical-align:top;">
+        Internal
+       </td>
+       <td id="cell1-5-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.tex</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-6-">
+
+       <td id="cell1-6-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell1-6-2" style="vertical-align:top;">
+        External
+       </td>
+       <td id="cell1-6-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.ps</code></span> <span style="color:#054C5C;"><code class="verb">.eps</code></span> <span style="color:#054C5C;"><code class="verb">.tif</code></span> <span style="color:#054C5C;"><code class="verb">.png</code></span> <span style="color:#054C5C;"><code class="verb">.jpg</code></span> <span style="color:#054C5C;"><code class="verb">.gif</code></span> <span style="color:#054C5C;"><code class="verb">.pdf</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-7-">
+
+       <td id="cell1-7-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Other 
 Input
-         </td>
-         <td id="cell1-7-2" style="vertical-align:top;">
-          Layout
-and
+        </span>
+       </td>
+       <td id="cell1-7-2" style="vertical-align:top;">
+        Layout 
+and 
 Structure
-         </td>
-         <td id="cell1-7-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor128"><code class="verb">.cls</code></span> <span id="textcolor129"><code class="verb">.sty</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-8-">
-         <td id="cell1-8-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-          Internal
-         </td>
-         <td id="cell1-8-2" style="vertical-align:top;">
-          Auxiliary
-         </td>
-         <td id="cell1-8-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor130"><code class="verb">.aux</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-9-">
-         <td id="cell1-9-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-         </td>
-         <td id="cell1-9-2" style="vertical-align:top;">
-          Tables
-of
+       </td>
+       <td id="cell1-7-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.cls</code></span> <span style="color:#054C5C;"><code class="verb">.sty</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-8-">
+
+       <td id="cell1-8-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Internal
+        </span>
+       </td>
+       <td id="cell1-8-2" style="vertical-align:top;">
+        Auxiliary
+       </td>
+       <td id="cell1-8-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.aux</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-9-">
+
+       <td id="cell1-9-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell1-9-2" style="vertical-align:top;">
+        Tables 
+of 
 Content
-         </td>
-         <td id="cell1-9-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor131"><code class="verb">.toc</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-10-">
-         <td id="cell1-10-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-         </td>
-         <td id="cell1-10-2" style="vertical-align:top;">
-          List
-of
+       </td>
+       <td id="cell1-9-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.toc</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-10-">
+
+       <td id="cell1-10-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell1-10-2" style="vertical-align:top;">
+        List 
+of 
 figures/tables
-         </td>
-         <td id="cell1-10-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor132"><code class="verb">.lof</code></span> <span id="textcolor133"><code class="verb">.lot</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-11-">
-         <td id="cell1-11-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-          Output
-         </td>
-         <td id="cell1-11-2" style="vertical-align:top;">
-          Results
-         </td>
-         <td id="cell1-11-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor134"><code class="verb">.pdf</code></span> <span id="textcolor135"><code class="verb">.dvi</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-12-">
-         <td id="cell1-12-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-         </td>
-         <td id="cell1-12-2" style="vertical-align:top;">
-          Transcript
-         </td>
-         <td id="cell1-12-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor136"><code class="verb">.log</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-13-">
-         <td id="cell1-13-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-          Bibliography
-         </td>
-         <td id="cell1-13-2" style="vertical-align:top;">
-          Input
-and
+       </td>
+       <td id="cell1-10-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.lof</code></span> <span style="color:#054C5C;"><code class="verb">.lot</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-11-">
+
+       <td id="cell1-11-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Output
+        </span>
+       </td>
+       <td id="cell1-11-2" style="vertical-align:top;">
+        Results
+       </td>
+       <td id="cell1-11-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.pdf</code></span> <span style="color:#054C5C;"><code class="verb">.dvi</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-12-">
+
+       <td id="cell1-12-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell1-12-2" style="vertical-align:top;">
+        Transcript
+       </td>
+       <td id="cell1-12-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.log</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-13-">
+
+       <td id="cell1-13-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Bibliography
+        </span>
+       </td>
+       <td id="cell1-13-2" style="vertical-align:top;">
+        Input 
+and 
 Ouput
-         </td>
-         <td id="cell1-13-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor137"><code class="verb">.aux</code></span> <span id="textcolor138"><code class="verb">.bib</code></span>
-         </td>
-        </tr>
-        <tr id="row-1-14-">
-         <td id="cell1-14-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
-         </td>
-         <td id="cell1-14-2" style="vertical-align:top;">
-          Database,
-Style,
+       </td>
+       <td id="cell1-13-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.aux</code></span> <span style="color:#054C5C;"><code class="verb">.bib</code></span>
+       </td>
+      </tr>
+      <tr id="row-1-14-">
+
+       <td id="cell1-14-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell1-14-2" style="vertical-align:top;">
+        Database, 
+Style, 
 Transcript
-         </td>
-         <td id="cell1-14-3" style="text-align:justify;vertical-align:top;"> <span id="textcolor139"><code class="verb">.bib</code></span> <span id="textcolor140"><code class="verb">.bst</code></span> <span id="textcolor141"><code class="verb">.blg</code></span>
-         </td>
-        </tr>
-       </div>
-      </table>
-      <a id="x3-9001r1">
-      </a>
-      <figcaption class="caption">
-       <span class="id">
-        Table
+       </td>
+       <td id="cell1-14-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">.bib</code></span> <span style="color:#054C5C;"><code class="verb">.bst</code></span> <span style="color:#054C5C;"><code class="verb">.blg</code></span>
+       </td>
+      </tr>
+     </table>
+     <a id="x3-9001r1">
+     </a>
+     <figcaption class="caption">
+      <span class="id">
+       Table
        1.1:
-       </span>
-       <span class="content">
-        An overview of all important files being generated during a LaTeX
-       compilation process (Adapted from <span class="cite"><a href="AcademicWritingLectureBookad1.html#mittelbach2004latex">[1]</a></span>).
-       </span>
-      </figcaption>
-     </figure>
-     <p class="noindent">
-      Some
+      </span>
+      <span class="content">
+       An overview of all important files being generated during a LaTeX
+       compilation process (Adapted from <span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>).
+      </span>
+     </figcaption>
+    </figure>
+    <p class="noindent">
+     Some
      of
      the
-      <italic>
-       internal
-      </italic>
-      files
+     <italic>
+      internal
+     </italic>
+     files
      contain
      code
      needed
@@ -2620,31 +2672,31 @@ Transcript
      as
      for
      cross-references.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        15
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         13
+         15
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          13
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor142">
-        the
-        <italic>
-         auxiliary
-        </italic>
-        file
+      <span style="color:#313244;">
+       the
+       <italic>
+        auxiliary
+       </italic>
+       file
        extension.
-       </span>
       </span>
-      and
+     </span>
+     and
      for
      typesetting
      particular
@@ -2657,80 +2709,53 @@ Transcript
      the
      table
      of
-     contents
-     (extension.
-     toc)
-     and
+     contents <span style="color:#054C5C;">(<code class="verb">.toc</code>)</span>,
      the
      lists
      of
-     figures
-     (extension.1of)
+     figures <span style="color:#054C5C;">(<code class="verb">.lof</code>)</span>,
      and
      of
-     tables
-     (extension.1of).
-     Others
-     are
-     specific
-     to
-     particular
-     packages
-     (such
-     as
-     minito,
-     Section
-     2.3.6,
-     or
-     endnotes,
-     Section
-     3.2.7)
-     or
-     to
-     other
-     parts
-     of
-     the
-     system
-     (see
-     below).
-     </p>
+     tables <span style="color:#054C5C;">(<code class="verb">.lot</code>)</span>.
+    </p>
+    
+    <div class="knowledge">
      <p class="noindent">
-      Finally,
-     LaTeX
-     generates
-     a
-     transcript
-     file
-     of
-     its
-     activities
-     with
-     the
-     extension <span id="textcolor143"><code class="verb">.log</code></span>.
-     This
-     file
-     contains
-     a
-     lot
-     of
-     information,
-     such
-     as
-     the
-     names
-     of
-     the
-     files
-     read,
-     the
-     numbers
-     of
-     the
-     pages
-     processed, <span id="textcolor144"><code class="verb">warning</code></span>
-      and <span id="textcolor145"><code class="verb">error</code></span>
-      messages,
+      There can be others which can be specific to particular packages or to other parts of the system.
+     </p>
+    </div>
+    <p class="noindent">
+     Finally, LaTeX
+     generates a transcript file of its activities with the extension <span style="color:#054C5C;"><code class="verb">.log</code></span>. This file contains a lot of information, such as:
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
+      <p class="noindent">
+       the
+       names
+       of
+       the
+       files
+       read,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       numbers
+       of
+       the
+       pages
+       processed,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent"> <span style="color:#054C5C;"><code class="verb">warning</code></span>
+       and <span style="color:#054C5C;"><code class="verb">error</code></span>
+       messages,
+      </p>
+     </li>
+    </ul>
+    <p class="noindent">
      and
      other
      pertinent
@@ -2742,23 +2767,23 @@ Transcript
      when
      debugging
      errors.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        16
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         14
+         16
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          14
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor146">
-        It
+      <span style="color:#313244;">
+       It
        is
        an
        infamous
@@ -2781,10 +2806,10 @@ Transcript
        the
        errors
        may
-        <span id="bold" style="font-weight:bold;">
-         NOT
-        </span>
-        give
+       <span id="bold" style="font-weight:bold;">
+        NOT
+       </span>
+       give
        exact
        information,
        it
@@ -2793,163 +2818,55 @@ Transcript
        you
        enough
        information.
-       </span>
       </span>
-     </p>
-     <p class="noindent">
-      Information
+     </span>
+    </p>
+    <p class="noindent">
+     Information
      about
-     bibliographic
      citations
-     (see
-     Chapter
-     12)
      in
      document
      is
-     a
-     document
-     is
-     correct!
-     we
-     need
+     written
+     by
+     LaTeX
      to
-     use
-      <italic>
-       adlavor
-      </italic>
-      file.
+     a <span style="color:#054C5C;"><code class="verb">.aux</code></span>
+     file.
      This
      information
      is
      used
      first
      to
-     convert
+     extract
      the
-     query
-     to
-     the
-     following
      information
+     from
+     a
+     <alert style="color: #821131;">
+      database
+     </alert>
+     (i.e., <span style="color:#054C5C;"><code class="verb">.bib</code></span>
+     )
      and
      then
-     to
      sort
-     the
-     stored
-     version
+     it
+     which
      is
-     put
-     into
-     a
-      <italic>
-       bullaborative
-      </italic>
-      (between
-      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-       <mo class="MathClass-bin" stretchy="false">
-        ⋅
-       </mo>
-      </math>
-      bbl)
-     that
-     is
-     itself
-     input
-     to
-      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-       <mi>
-        𝔼
-       </mi>
-       <mi>
-        𝕀
-       </mi>
-       <mi>
-        𝔼
-       </mi>
-       <mi>
-        𝕏
-       </mi>
-      </math>
-      .
-     If
-     the
-     system
-     uses
-      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-       <mi>
-        𝔼
-       </mi>
-       <mi>
-        𝕀
-       </mi>
-       <mi>
-        𝔼
-       </mi>
-       <mi>
-        𝕏
-       </mi>
-      </math>
-      (see
-     Chapter
-     13)
-     for
-     this
-     task,
      then
-     the
-      <italic>
-       bullographic
-database
-      </italic>
-      files
-     will
-     have
-     an
-     extension
-     of
-      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-       <mo class="MathClass-bin" stretchy="false">
-        ⋅
-       </mo>
-      </math>
-      bbl.
-     and
-     information
-     about
-     the
-     process
-     will
-     be
-     in
+     written
+     to
      a
-      <italic>
-       bullographity
-      </italic>
-      style
-     (extension
-      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-       <mo class="MathClass-bin" stretchy="false">
-        ⋅
-       </mo>
-      </math>
-      bst).
-     Its
-     transcript
-     file
-     has
-     the
-     extension
-      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-       <mo class="MathClass-bin" stretchy="false">
-        ⋅
-       </mo>
-      </math>
-      blg.
-     </p>
-     <p class="noindent">
-      Because
+     <alert style="color: #821131;">
+      bibliography
+     </alert>
+     file <span style="color:#054C5C;">(<code class="verb">.bbl</code>)</span> <a id="x3-9003"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>.
+    </p>
+    <p class="noindent">
+     Because
      of
      the
      limitations
@@ -2976,10 +2893,10 @@ database
      the
      typeset
      document
-      <alert style="color: #821131;">
-       after
-      </alert>
-      TeX
+     <alert style="color: #821131;">
+      after
+     </alert>
+     TeX
      has
      positioned
      everything
@@ -2988,16 +2905,16 @@ database
      this
      information
      to
-     the <span id="textcolor147"><code class="verb">.dvi</code></span>
-      file.
+     the <span style="color:#054C5C;"><code class="verb">.dvi</code></span>
+     file.
      This
      is
      normally
      done
      by
-     TeX’s <span id="textcolor148"><code class="verb">\special</code></span>
-      primitive
-     that
+     TeX’s <span style="color:#054C5C;"><code class="verb">\special</code></span>
+     primitive
+     which
      simply
      puts
      this
@@ -3007,71 +2924,71 @@ database
      correct
      place
      in
-     the <span id="textcolor149"><code class="verb">.dvi</code></span>
-      file.
+     the <span style="color:#054C5C;"><code class="verb">.dvi</code></span>
+     file.
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      This information may be simply the name of a graphs file to be input; or it may be instructions in a graphics language.
      </p>
-     <div class="knowledge">
-      <p class="noindent">
-       This information may be simply the name of a graphs file to be input; or it may be instructions in a graphics language.
-      </p>
-     </div>
-     <aside class="wrapfig-r">
-      <img alt="PIC" height="" src="figures/Introduction/raster/looking-at-the-pdf.png" width="100%"/>
-      <a id="x3-9003r3">
-      </a>
-      <figcaption class="caption">
-       <span class="id">
-        Figure
+    </div>
+    <aside class="wrapfig-r">
+     <img alt="PIC" height="" src="figures/Introduction/raster/looking-at-the-pdf.png" width="100%"/>
+     <a id="x3-9004r3">
+     </a>
+     <figcaption class="caption">
+      <span class="id">
+       Figure
        1.3:
-       </span>
-       <span class="content">
-        Once your document is compiled,
+      </span>
+      <span class="content">
+       Once your document is compiled,
        it is always a good practice to see the generated
        file and look if everything is fine. Here Lamport
        (author  of  LaTeX
        is  running  Emacs  with  a
        Latex and message buffer open. Along with a
-       PDF  viewer <span class="cite"><a href="AcademicWritingLectureBookad1.html#ACMLamport2022">[14]</a></span>.  It  is  worth  mentioning,  the
+       PDF  viewer <span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-ACMLamport2022">[16]</a></span>.  It  is  worth  mentioning,  the
        preferred editor of this document’s author is also
        Emacs.
-       </span>
-      </figcaption>
-     </aside>
-     <p class="noindent">
-      Once the document has been successfully processed by TeX, you will probably want to take a look at the format. This is commonly
-     done on screen, but detailed inspection of printed output should always be performed via printing on paper at the highest available
-     resolution. A current favorite approach is to use a <span id="textcolor150"><code class="verb">.pdf</code></span>
-      file, especially when electronic distribution of the formatted document is required.
-     </p>
-     <p class="noindent">
-      Occasionally you will find that some applications will produce much better quality screen output than others; this is due to limitations of the
-     different technologies and the availability of suitable font resources. Of course we shouldn’t end this text file without an exmaple of what it can do
-     </p>
-     <h3 class="subsectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.3.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.3.2
-      </small>
-      <a id="x3-100001.3.2">
-      </a>
-      A  Hello,  World!
-     </h3>
-     <p class="noindent">
-      LaTeX
+      </span>
+     </figcaption>
+    </aside>
+    <p class="noindent">
+     Once the document has been successfully processed by TeX, we will probably want to take a look at the format. This is commonly done
+     on screen, but detailed inspection of printed output should always be performed via printing on paper at the highest available resolution.
+     A current favorite approach is to use a <span style="color:#054C5C;"><code class="verb">.pdf</code></span>
+     file, especially when electronic distribution of the formatted document is required <a id="x3-9006"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>.
+    </p>
+    <p class="noindent">
+     Occasionally you will find that some applications will produce much better quality screen output than
+     others; this is due to limitations of the different technologies and the availability of suitable font resources.
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.3.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.3.2
+     </small>
+     <a id="x3-100001.3.2">
+     </a>
+     A  Hello,  World!
+    </h3>
+    <p class="noindent">
+     LaTeX
      is
      a
-      <alert style="color: #821131;">
-       programming
+     <alert style="color: #821131;">
+      programming
 language
-      </alert>
-      .
+     </alert>
+     .
      It
      is
      a
@@ -3079,23 +2996,23 @@ language
      fledged
      language,
      technically
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        17
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         15
+         17
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          15
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor151">
-        When
+      <span style="color:#313244;">
+       When
        I
        say
        technically,
@@ -3116,7 +3033,6 @@ language
        of
        computation
        like
-       the
        other
        languages.
        However,
@@ -3126,9 +3042,9 @@ language
        it
        is
        easy.
-       </span>
       </span>
-      with
+     </span>
+     with
      similar
      capabilities
      to
@@ -3151,8 +3067,10 @@ language
      that
      is
      generally
-     a <span id="textcolor152"><code class="verb">Hello, World!</code></span>
-      programme.
+     a <span style="color:#054C5C;"><code class="verb">Hello, World!</code></span>
+     programme.
+    </p>
+    <p class="noindent">
      Below
      you
      can
@@ -3162,16 +3080,16 @@ language
      version
      of
      it.
-     </p>
-     <p class="noindent">
-     </p>
-     <div class="code-block">
-      <div class="code-lang">
-       latex
-      </div>
-      <pre><div class="language-latex" id="fancyvrb1" style="padding:20px;border-radius: 3px;"><a id="x3-10002r23"></a><span id="textcolor153">\documentclass</span>[a4paper,12pt]<span id="textcolor154">{</span>article<span id="textcolor155">}</span> 
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb1" style="padding:20px;border-radius: 3px;"><a id="x3-10002r23"></a><span style="color:#2B2BFF;">\documentclass</span>[a4paper,12pt]<span style="color:#2B2BFF;">{</span>article<span style="color:#2B2BFF;">}</span> 
 <a id="x3-10004r24"></a> 
-<a id="x3-10006r25"></a><span id="textcolor156">\begin</span><span id="textcolor157">{</span>document<span id="textcolor158">}</span> 
+<a id="x3-10006r25"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span> 
 <a id="x3-10008r26"></a> 
 <a id="x3-10010r27"></a>If one merely wishes to type in ordinary text, without complicated 
 <a id="x3-10012r28"></a>mathematical formulae or special effects such as font changes, then one merely 
@@ -3190,12 +3108,14 @@ language
 <a id="x3-10038r41"></a>whereas three dashes in succession are required to produce a dash of the sort 
 <a id="x3-10040r42"></a>used for punctuation---such as the one used in this sentence. 
 <a id="x3-10042r43"></a> 
-<a id="x3-10044r44"></a><span id="textcolor159">\end</span><span id="textcolor160">{</span>document<span id="textcolor161">}</span></div></pre>
-     </div>
-     <p class="noindent">
-      For
+<a id="x3-10044r44"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     For
 anyone
 curious,
+                                                                                
+                                                                                
 this
 is
 a
@@ -3205,7 +3125,7 @@ a
 semi-famous
 document
 about
-LaTeX <a id="x3-10045"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#wilkins1995getting">[15]</a></span>.
+LaTeX <a id="x3-10045"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-wilkins1995getting">[17]</a></span>.
 While
 the
 language
@@ -3233,62 +3153,46 @@ typed
 and
 designed
 documents.
+    </p>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.1.4" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.4
+     </small>
+     <a id="x3-110001.4">
+     </a>
+     Installation
+    </h2>
+    <p class="noindent">
+     As with most software which is free and open-source, there are many ways in which we can install LaTeX on our computers <a id="x3-11001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-nyulib2025">[18]</a></span>.
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      The
+      <alert style="color: #821131;">
+       core
+      </alert>
+      of LaTeX is a back end software package that complies the LaTeX code (.tex file) and creates the final document (PDF).
      </p>
     </div>
-    <div class="section-head" id="section-4" sec="section-4">
-     <h2 class="sectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.1.4" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.4
-      </small>
-      <a id="x3-110001.4">
-      </a>
-      Installation
-     </h2>
-     <aside class="wrapfig-r">
-      <img alt="PIC" height="" src="figures/Introduction/vector/latex-project-logo-.svg" width="100%"/>
-      <a id="x3-11001r4">
-      </a>
-      <figcaption class="caption">
-       <span class="id">
-        Figure 1.4:
-       </span>
-       <span class="content">
-        The    LaTeX project
-logo <span class="cite"><a href="AcademicWritingLectureBookad1.html#latexteam2025">[16]</a></span>.
-       </span>
-      </figcaption>
-     </aside>
-     <p class="noindent">
-      As with most software which is free and open-source, there are many ways in which we can install LaTeX on our computers <a id="x3-11003"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#nyulib2025">[17]</a></span>.
-     </p>
-     <div class="knowledge">
-      <p class="noindent">
-       The
-       <alert style="color: #821131;">
-        core
-       </alert>
-       of LaTeX is a back end software package that complies the LaTeX code (.tex file) and creates the final document (PDF).
-      </p>
-     </div>
-     <p class="noindent">
-      There are a various programs available to compile your document depending on your
-      <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:os">
-       OS
-      </a>.
-     </p>
-     <p class="noindent">
-     </p>
-     <blockquote class="quotation">
-      <p class="indent">
-       The
+    <p class="noindent">
+     There are a various programs available to compile your document depending on your
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:os">
+      OS
+     </a>.
+    </p>
+    <p class="noindent">
+    </p>
+    <blockquote class="quotation">
+     <p class="indent">
+      The
 LaTeX Project
 provides
 information
@@ -3299,6 +3203,9 @@ install
 LaTeX
 on
 Windows,
+                                                                                
+                                                                                
+     
 macOS,
 and
 Linux,
@@ -3308,13 +3215,13 @@ as
 online
 (Overleaf)
 services.
-      </p>
-     </blockquote>
-     <p class="noindent">
-      We will look at the instruction on how to install the most common LaTeX programs for Windows and macOS in the next section.
      </p>
-     <p class="noindent">
-      Aside
+    </blockquote>
+    <p class="noindent">
+     We will look at the instruction on how to install the most common LaTeX programs for Windows and macOS in the next section.
+    </p>
+    <p class="noindent">
+     Aside
 from
 the
 back
@@ -3325,44 +3232,42 @@ to
 run
 LaTeX It
 is
-      <span id="bold" style="font-weight:bold;">
-       highly
+     <span id="bold" style="font-weight:bold;">
+      highly
 recommend
-      </span>
-      to
+     </span>
+     to
 use
 a
 text
 editor.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        18
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         16
+         18
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          16
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor162">
-        It
+      <span style="color:#313244;">
+       It
 would
-        <span id="bold" style="font-weight:bold;">
-         NOT
-        </span>
-        be
+       <span id="bold" style="font-weight:bold;">
+        NOT
+       </span>
+       be
 the
 best
 practice
 to
 use
-                                                                                
-                                                                                
 notepad
 or
 textedit
@@ -3375,237 +3280,272 @@ your
 academic
 writing
 on.
-       </span>
       </span>
-     </p>
-     <p class="noindent">
-      A text editor, to put it simply, is a front-end software which can be used to create <span id="textcolor163"><code class="verb">.tex</code></span>
-      file used by the compiler and provides numerous benefits such as:
-     </p>
-     <ul class="itemize1">
-      <li class="itemize">
-       <p class="noindent">
-        Syntax-highlighting,
-       </p>
-      </li>
-      <li class="itemize">
-       <p class="noindent">
-        Auto-completion,
-       </p>
-      </li>
-      <li class="itemize">
-       <p class="noindent">
-        Auto-reference
+     </span>
+    </p>
+    <p class="noindent">
+     A
+text
+editor,
+to
+put
+it
+simply,
+is
+a
+front-end
+software
+which
+can
+be
+used
+to
+                                                                                
+                                                                                
+                                                                            
+create <span style="color:#054C5C;"><code class="verb">.tex</code></span>
+     file
+used
+by
+the
+compiler
+and
+provides
+numerous
+benefits
+such
+as:
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
+      <p class="noindent">
+       Syntax-highlighting,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Auto-completion,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Auto-reference
 inserting,
-       </p>
-      </li>
-      <li class="itemize">
-       <p class="noindent">
-        Easy
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Easy
 navigation
 between
 files.
-       </p>
-      </li>
-     </ul>
-     <p class="noindent">
-      Text editor programs such as
-      <a href="https://www.tug.org/texworks/">
-       TeXwork
-      </a>,
-      <a href="https://www.tug.org/texworks/">
-       TexStudio
-      </a>,
-      <a href="https://www.xm1math.net/texmaker/">
-       TexMaker
-      </a>, and
-      <a href="https://pages.uoregon.edu/koch/texshop/">
-       TexShop
-      </a>
-      provide
-a friendly interface for users and are usable out of the box with minimal configuration.
-     </p>
-     <p class="noindent">
-      Often these front end programs include help menus, wizards for creating LaTeX objects, drop down menus for
-inserting symbols or altering text, and many other features that will support both new and experienced LaTeX
-users. You will find more information about these frontend programs in the "LaTeX Interfaces" box below.
-     </p>
-     <div class="informationblock" id="tcolobox-2">
-      <div class="title">
-       <p class="noindent">
-        <span id="bold" style="font-weight:bold;">
-         Information
-        </span>
-        : Advanced Editors
-       </p>
-      </div>
-      <div class="box-content">
-       <p class="noindent">
-        Of course, these are
-        <span id="bold" style="font-weight:bold;">
-         NOT
-        </span>
-        the only editors capable of working with LaTeX. As it is written in
-        <span id="bold" style="font-weight:bold;">
-         plain text
-        </span>
-        , any
+      </p>
+     </li>
+    </ul>
+    <p class="noindent">
+     Text
+editor
+programs
+such
+as
+     <a href="https://www.tug.org/texworks/">
+      TeXwork
+     </a>,
+     <a href="https://www.tug.org/texworks/">
+      TexStudio
+     </a>,
+     <a href="https://www.xm1math.net/texmaker/">
+      TexMaker
+     </a>,
+and
+     <a href="https://pages.uoregon.edu/koch/texshop/">
+      TexShop
+     </a>
+     provide
+a
+friendly
+interface
+for
+users
+and
+are
+usable
+out
+of
+the
+box
+with
+minimal
+configuration.
+    </p>
+    <p class="noindent">
+     Often
+these
+front
+end
+programs
+include
+help
+menus,
+wizards
+for
+creating
+LaTeX
+objects,
+drop
+down
+menus
+for
+inserting
+symbols
+or
+altering
+text,
+and
+many
+other
+features
+that
+will
+support
+both
+new
+and
+experienced
+LaTeX
+users.
+You
+will
+find
+more
+information
+about
+these
+frontend
+programs
+in
+the
+"LaTeX
+Interfaces"
+box
+below.
+    </p>
+    <div class="informationblock" id="tcolobox-2">
+     <div class="title">
+      <p class="noindent">
+       <span id="bold" style="font-weight:bold;">
+        Information
+       </span>
+       :
+Advanced
+Editors
+      </p>
+     </div>
+     <div class="box-content">
+      <p class="noindent">
+       Of course, these are
+       <span id="bold" style="font-weight:bold;">
+        NOT
+       </span>
+       the only editors capable of working with LaTeX. As it is written in
+       <span id="bold" style="font-weight:bold;">
+        plain text
+       </span>
+       , any
 editor can technically work with it. For anyone who has a pre-defined work-flow or have an affinity to working
 with a specific editor they are welcome to use their own editors.
-       </p>
-      </div>
+      </p>
      </div>
-     <p class="noindent">
-      For this course, we will look at
-      <span id="bold" style="font-weight:bold;">
-       TeXStudio
-      </span>
-      , a well-crafted and supported editor.
-     </p>
-     <h3 class="subsectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.4.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.4.1
-      </small>
-      <a id="x3-120001.4.1">
-      </a>
-      Windows
-     </h3>
-     <p class="noindent">
-      For
+    </div>
+    <p class="noindent">
+     For
+this
+course,
+we
+                                                                                
+                                                                                
+                                                                             
+will
+look
+at
+     <span id="bold" style="font-weight:bold;">
+      TeXStudio
+     </span>
+     ,
 a
-Windows
-computer
-it
-is
-      <span id="bold" style="font-weight:bold;">
-       strongly
-recommend
-      </span>
-      to
-                                                                                
-                                                                                
-                                                                              
-use
-the
-common
-MiKTeX
-distribution.
-The
-MiKTeX/about
-page
-contains
-several
-links
-including
-how
-to
-install,
-deploy,
+well-crafted
 and
-update
-MiKTeX.
+supported
+editor.
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.4.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.4.1
+     </small>
+     <a id="x3-120001.4.1">
+     </a>
+     Windows
+    </h3>
+    <p class="noindent">
+     For a Windows computer it is
+     <span id="bold" style="font-weight:bold;">
+      strongly recommend
+     </span>
+     to use the common MiKTeX distribution. The MiKTeX/about page contains
+several links including how to install, deploy, and update MiKTeX.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        19
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <img alt="PIC" height="" src="figures/Introduction/vector/miktex-logo-.svg" width="100%"/>
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         17
+         19
         </sup>
        </span>
       </alert>
-      <span class="marginnote">
-       <img alt="PIC" height="" src="figures/Introduction/vector/miktex-logo-.svg" width="100%"/>
-       <alert style="color: #821131;">
-        <span id="bold" style="font-weight:bold;">
-         <sup class="textsuperscript">
-          17
-         </sup>
-        </span>
-       </alert>
-       <span id="textcolor168">
-        The
-logo
-for
-miktex
-       </span>
+      <span style="color:#313244;">
+       The logo for miktex
       </span>
-      A
-basic
-set
-of
-installation
-instruction
-can
-be
-found
-below,
-but
-if
-you
-are
-having
-trouble
-be
-sure
-to
-check
-the
+     </span>
+     A basic set of installation
+instruction can be found below, but if you are having trouble be sure to check the MiKTeX page (click the previous install hyperlink):
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
+      <p class="noindent">
+       Download
 MiKTeX
-page
-(click
-the
-previous
-install
-hyperlink):
-     </p>
-     <ul class="itemize1">
-      <li class="itemize">
-       <p class="noindent">
+by
+clicking
+       <kbd>
         Download
-MiKTeX
-(make
-sure
-you
-choice
-the
-right
-                                                                                
-                                                                                
-     
-option
-either
-basic
-MiKTeX
-64
-or
-basic
-MiKTeX
-32
-depending
-on
-your
-computer)
-       </p>
-      </li>
-      <li class="itemize">
-       <p class="noindent">
-        After
-the
-download
-is
-complete
-run
+       </kbd>
+       .
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Run
 the
 installer.
 During
 the
 installation
+process,
 you
 will
 be
@@ -3613,27 +3553,53 @@ prompted
 to
 select
 the
-paper
-size.
+       <alert style="color: #821131;">
+        paper
+size
+       </alert>
+       .
 It
 is
 recommend
 that
 you
 choice
-letter
-(this
+       <kbd>
+        A4
+       </kbd>
+       .
+This
 can
 be
 changed
 later
 if
-needed).
-       </p>
-      </li>
-      <li class="itemize">
-       <p class="noindent">
-        Once
+needed.
+In
+additon,
+it
+is
+recommended
+to
+                                                                                
+                                                                                
+     
+choose
+       <kbd>
+        Yes
+       </kbd>
+       to
+the
+option,
+Install
+missing
+packages
+on-the-fly.
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Once
 the
 installation
 is
@@ -3645,9 +3611,6 @@ that
 you
 check
 for
-                                                                                
-                                                                                
-     
 any
 updates.
 The
@@ -3660,522 +3623,192 @@ through
 the
 Windows
 start
-menu.
-Following
+menu
+under
 the
-steps
-provided
-by
+name
+       <kbd>
+        MiKTeX
+       </kbd>
+       .
+Once
 the
-update
-wizard
-should
-be
+window
+opens
+up,
+click
+on
+       <kbd>
+        Updates
+       </kbd>
+       on
+the
+left
+side.
+If
+not
+clicked,
+please
+click
+on
+       <kbd>
+        Check
+for
+updates
+       </kbd>
+       .
+It
+may
+take
 a
-simple,
-but
-if
-you
-are
-having
-trouble
-instructions
-can
-be
-found
-by
-clicking
-the
-update
-hyperlink
-above.
-       </p>
-      </li>
-      <li class="itemize">
-       <p class="noindent">
-        With
-everything
-installed
-and
-updated
-the
-last
-step
-is
-to
-try
-typesetting.
-MiKTeX
-comes
-with
-a
-front
-end
-text
-editor
-built
-in,
                                                                                 
                                                                                 
      
-TexWork.
-To
-open
-TeXwork
-go
-to
-Start
-&gt;
-All
-Programs
-&gt;
-MiKTeX
-&gt;
-TeXwork.
-       </p>
-      </li>
-     </ul>
-     <p class="noindent">
-      At
-this
-point
-you
-may
-want
-to
-play
-around
-and
-try
-typesetting
-your
-own
-document.
-For
-your
-first
-document
-you
-should
-go
-to
-the
-Getting
-Started:
-Creating
-a
-document
-page.
-Once
-you
-have
-gone
-through
-that
-if
-you
-are
-looking
-for
-some
-additional
-ideas
-or
-exercises
-go
-to
-the
-Exercises
-tab.
-     </p>
-     <h3 class="subsectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.4.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.4.2
-      </small>
-      <a id="x3-130001.4.2">
-      </a>
-      macOS
-     </h3>
-     <p class="noindent">
-      For
-Mac
-OS
-X
-it
-is
-strongly
-recommended
-that
-you
-use
-MacTex.
-Information
-about
-MacTex
-can
-be
-found
-on
-their
-main
-page.
-It
-is
-recommended
-that
-you
+few
+seconds
+but
+once
+done,
+please
+then
 click
-the
-link
-"download
-MacTex".
-This
-link
-will
-take
-you
-to
-a
-page
-with
-the
-download
-package,
-as
-well
-as,
-the
-instructions
-for
-downloading
-MacTex.
-If
-you
-are
-having
-trouble
-locating
-you
-can
-download
-package.
-Follow
-                                                                                
-                                                                                
-                                                                              
-the
-instruction
 on
-that
-page
-or
-the
-simple
-instructions
-listed
-below:
-     </p>
-     <p class="noindent">
-      Click
-on
-"MacTex.pkg"
-near
-the
-top
-of
-the
-page
-to
-begin
-the
-download.
-One
-the
-download
-is
-complete
-open
-the
-package
-and
-following
-along
-the
-installation
-wizard.
-The
-"MacTex.pkg"
-contains
-several
-different
-programs
-and
-documents.
-If
-you
-did
-not
-change
-the
-path
-during
-installation
-these
-items
-should
-appear
-in
-a
-folder
-with
-the
-following
-location
-Application/TeX.
-                                                                                
-                                                                                
-                                                                             
-The
-two
-most
-important
-items
-contained
-in
-the
-TeX
-folder
-are
-TeX
-Live
-Utility
-a
-program
-that
-you
-can
-use
-to
-update
-MacTex,
-and
-TeXShop
-a
-front
-end
-text
-editor.
-It
-is
-recommended
-that
-your
-run
-Tex
-Live
-Utility
-before
-getting
-started
-to
-check
-for
-updates.
-     </p>
-     <p class="noindent">
-      With
-everything
-installed
-and
-up
-to
-date
-you
-may
-want
-to
-play
-around
-and
-try
-typesetting
-your
-own
-document,
-to
-do
-                                                                                
-                                                                                
-                                                                             
-this
-open
-TeXShop.
-For
-your
-first
-document
-you
-should
-go
-to
-the
-Getting
-Started:
-Creating
-a
-document
-tab.
-Once
-you
-have
-gone
-through
-that
-if
-you
-are
-looking
-for
-some
-additional
-ideas
-or
-exercises
-go
-to
-the
-Exercises
-tab.
-     </p>
-     <p class="noindent">
-      When
-starting
-a
-new
-document
-in
-TeXShop
-you
-may
-want
-to
-begin
-by
-going
-to
-File
-&gt;
-New
-from
-Stationary
-&gt;
-AMS-Article
-this
-will
-open
-a
-text
-editor
-                                                                                
-                                                                                
-                                                                             
-with
-a
-standard
-template
-for
-creating
-an
-article.
-You
-will
-see
-other
-templates
-in
-New
-from
-Stationary
-that
-you
-may
-want
-to
-use
-in
-the
-future,
-such
-as
-beamer
-for
-creating
-slide
-show.
-     </p>
-    </div>
-    <div class="section-head" id="section-5" sec="section-5">
-     <h2 class="sectionHead">
-      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.1.5" style="color: red;  position: absolute;  left: -30px;" target="_blank">
-       <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-        </path>
-        <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-        </path>
-       </svg>
-      </a>
-      <small class="titlemark">
-       1.5
-      </small>
-      <a id="x3-140001.5">
-      </a>
-      TeX
-Studio
-Crash
-Course
-     </h2>
-     <p class="noindent">
-      As
-mentioned
-previously,
-TeXStudio,
-is
-a
-very-specialised
-editor
-for
-editin
-LaTex
-documents.
-     </p>
-     <div class="figure">
+       <kbd>
+        Update
+now
+       </kbd>
+       .
+      </p>
+     </li>
+    </ul>
+    <p class="noindent">
+     We should have a working LaTeX distribution on our computer. Next we need to install a nice editor and as mentioned we shall install
+     <a href="https://www.tug.org/texworks/">
+      TexStudio
+     </a>.
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
       <p class="noindent">
-       <img alt="PIC" height="" src="figures/Introduction/raster/tex-studio-main-page.png" width="150%"/>
-       <a id="x3-14001r5">
+       Download
+TeXStudio
+by
+clicking
+       <kbd>
+        Download
+       </kbd>
+       .
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Run
+the
+installer.
+      </p>
+     </li>
+    </ul>
+    <p class="noindent">
+     The installation should be very straightforward. Once the installation is finished. Please click
+on the icon to start the application which you will be greeted with the following window
+    </p>
+    <div class="figure">
+     <p class="noindent">
+      <img alt="PIC" height="" src="figures/Introduction/raster/win-texstudio-startup.jpg" width="150%"/>
+      <a id="x3-12001r4">
+      </a>
+     </p>
+     <figcaption class="caption">
+      <span class="id">
+       Figure 1.4:
+      </span>
+      <span class="content">
+       Startup of TeXStudio on Windows 11.
+      </span>
+     </figcaption>
+    </div>
+    <p class="noindent">
+     On the left we have the side panel which is currently showing an empty structure view. On the lower right you
+see the messages panel which can be switched to the log panel, the preview panel, or the search results
+panel. The toolbar allows easy access to some often needed functions, three of them are marked as we will
+use them soon. The central toolbar offers access to some common latex commands as we will see <a id="x3-12002"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-texstudio2025">[19]</a></span>.
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.1.4.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      1.4.2
+     </small>
+     <a id="x3-130001.4.2">
+     </a>
+     Creating  a  Document
+    </h3>
+    <p class="noindent">
+     To start easy, lets use their “Quick start” option. Inside the TeXStudio, please click on the
+menu <span style="color:#054C5C;"><code class="verb">File/New From Template</code></span>. You will be greeted with the following menu in
+     <span id="bold" style="font-weight:bold;">
+      Fig.
+     </span>
+     <a href="#x3-13001r1">
+      1.4a
+     </a>
+     :
+    </p>
+    <p class="noindent">
+     Here we choose the <span style="color:#054C5C;"><code class="verb">article</code></span>
+     class. Once chosen, we can see some boilerplate code being entered into our editor.
+    </p>
+    <figure class="figure">
+     <div class="subfigure" style="width:49%;">
+      <p class="noindent">
+      </p>
+      <p class="noindent">
+       <img alt="PIC" height="" src="figures/Introduction/raster/win-texstudio-template.png" width=""/>
+       <a id="x3-13001r1">
        </a>
       </p>
-      <figcaption class="caption">
+      <div class="caption">
        <span class="id">
-        Figure 1.5:
+        (a)
        </span>
        <span class="content">
+        Default installed LaTeX templates.
        </span>
-      </figcaption>
+      </div>
      </div>
-    </div>
+     <div class="subfigure" style="width:49%;">
+      <p class="noindent">
+      </p>
+      <p class="noindent">
+       <img alt="PIC" height="" src="figures/Introduction/raster/win-texstudio-entered-tex.png" width=""/>
+       <a id="x3-13002r2">
+       </a>
+      </p>
+      <div class="caption">
+       <span class="id">
+        (b)
+       </span>
+       <span class="content">
+        Template entered to the editor, ready to be compiled.
+       </span>
+      </div>
+     </div>
+    </figure>
+    <p class="noindent">
+     As a final part of this chapter, to see if everything is working, please click on the green triangle button
+to run the LaTeX compiler and then click on the document with the magnifier to see your output.
+    </p>
    </article>
    <footer>
     <div class="next">
      <p class="noindent">
-      <a href="AcademicWritingLectureBookli2.html" style="float: right;">
+      <a href="AcademicWritingLectureBookch2.html" style="float: right;">
        Next Chapter →
       </a>
       <a href="index.html" style="float: left;">
@@ -4188,14 +3821,6 @@ documents.
     </div>
    </footer>
   </div>
-  <p class="noindent">
-  </p>
-  <p class="noindent">
-   <a id="likesection.2">
-   </a>
-   <a id="x3-14002x1.5">
-   </a>
-  </p>
   <p class="noindent">
    <a id="tailAcademicWritingLectureBookch1.html">
    </a>

@@ -1,0 +1,4479 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+ <head>
+  <title>
+   2 Looking at the Basics
+  </title>
+    <link rel='icon' type='image/x-icon' href='figures/logo.svg'></link>
+  <meta charset="utf-8"/>
+  <meta content="ParSnip" name="generator"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <link href="AcademicWritingLectureBook.css" rel="stylesheet" type="text/css"/>
+  <meta content="AcademicWritingLectureBook.tex" name="src"/>
+  <script async="async" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js" type="text/javascript">
+  </script>
+  <link href="flatweb.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+  </script>
+  <script src="flatjs.js">
+  </script>
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js">
+  </script>
+  <script src="texlive.js">
+  </script>
+  <header>
+  </header>
+ </head>
+ <body id="top">
+  <nav class="wide">
+   <div class="contents">
+    <h3 style="font-weight:lighter; padding: 20px 0 20px 0;">
+     2
+   
+     
+   
+
+   Looking at the Basics
+    </h3>
+    <h4 style="font-weight:lighter">
+     Chapter Table of Contents
+    </h4>
+    <ul>
+     <div class="chapterTOCS">
+      <li>
+       <span class="sectionToc">
+        <small>
+         2.1
+        </small>
+        <a href="#x4-150002.1">
+         The Process of LaTeX
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         2.1.1
+        </small>
+        <a href="#x4-160002.1.1">
+         A Small Example
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         2.1.2
+        </small>
+        <a href="#x4-170002.1.2">
+         What is the Point of LaTeX
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="sectionToc">
+        <small>
+         2.2
+        </small>
+        <a href="#x4-180002.2">
+         Basics of Typesetting
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         2.2.1
+        </small>
+        <a href="#x4-190002.2.1">
+         The Use of Spaces
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         2.2.2
+        </small>
+        <a href="#x4-200002.2.2">
+         Quotations
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         2.2.3
+        </small>
+        <a href="#x4-210002.2.3">
+         Dashes
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         2.2.4
+        </small>
+        <a href="#x4-220002.2.4">
+         Accents
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         2.2.5
+        </small>
+        <a href="#x4-230002.2.5">
+         Special Symbols
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         2.2.6
+        </small>
+        <a href="#x4-240002.2.6">
+         Position of Text
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="sectionToc">
+        <small>
+         2.3
+        </small>
+        <a href="#x4-250002.3">
+         Fonts
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         2.3.1
+        </small>
+        <a href="#x4-260002.3.1">
+         Type Style
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="sectionToc">
+        <small>
+         2.4
+        </small>
+        <a href="#x4-270002.4">
+         Type Size
+        </a>
+       </span>
+      </li>
+     </div>
+    </ul>
+    <div class="prev-next" style="text-align: center">
+     <p class="noindent">
+      <a href="AcademicWritingLectureBookli2.html" style="float:right; font-size:10px">
+       NEXT →
+      </a>
+      <a href="AcademicWritingLectureBookch1.html" style="float:left; font-size:10px">
+       ← PREV
+      </a>
+      <a href="index.html">
+       TOP
+      </a>
+     </p>
+    </div>
+    <div id="author-info" style="bottom: 0; padding-bottom: 10px;">
+     <div id="author-logo">
+      <img src="figures/logo.svg" style="margin: 10px 0;"/>
+      <div>
+       <div>
+        <h4 style="color:#7aa0b8; font-weight:lighter;">
+         WebBook | D. T. McGuiness, P.hD
+        </h4>
+       </div>
+      </div>
+      <div id="author-text" style="bottom: 0; padding-top: 50px;border-top: solid 1px #3b4b5e;font-size: 12px;">
+       <p>
+        <b>
+         Authors Note
+        </b>
+        The website you are viewing is auto-generated
+    using ParSnip and therefore subject to slight errors in
+    typography and formatting. When in doubt, please consult the
+    LectureBook.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <div class="page">
+   <article class="chapter">
+    <h1 class="chapterHead">
+     <div class="number">
+      2
+     </div>
+     <a id="x4-140002">
+     </a>
+     Looking at the Basics
+    </h1>
+    <div class="section-control" style="text-align: center">
+     <a id="prev-section" onclick="goPrev()" style="float:left;">
+      ← Previous Section
+     </a>
+     <a id="next-section" onclick="goNext()" style="float:right;">
+      Next Section →
+     </a>
+    </div>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.2.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.1
+     </small>
+     <a id="x4-150002.1">
+     </a>
+     The Process of LaTeX
+    </h2>
+    <p class="noindent">
+     For those who chose to skip the introduction chapter and just want to get into the heart of the topic,
+LaTeX is a typesetting program and is an extension of the original program TeX written by Donald
+Knuth.
+    </p>
+    <p class="noindent">
+     <alert style="color: #821131;">
+      But then what is a typesetting program?
+     </alert>
+    </p>
+    <p class="noindent">
+     To answer this, let us look at the various stages in the preparation of a document using
+computers.
+    </p>
+    <dl class="enumerate-enumitem">
+     <dt class="enumerate-enumitem">
+      1.
+     </dt>
+     <dd class="enumerate-enumitem">
+      The text is
+      <alert style="color: #821131;">
+       entered
+      </alert>
+      into the computer by the user or some script.
+     </dd>
+     <dt class="enumerate-enumitem">
+      2.
+     </dt>
+     <dd class="enumerate-enumitem">
+      The input text is
+      <alert style="color: #821131;">
+       formatted
+      </alert>
+      into lines, paragraphs and pages.
+     </dd>
+     <dt class="enumerate-enumitem">
+      3.
+     </dt>
+     <dd class="enumerate-enumitem">
+      The output text is
+      <alert style="color: #821131;">
+       displayed
+      </alert>
+      on the computer screen.
+     </dd>
+     <dt class="enumerate-enumitem">
+      4.
+     </dt>
+     <dd class="enumerate-enumitem">
+      The final output is
+      <alert style="color: #821131;">
+       printed
+      </alert>
+      .
+     </dd>
+    </dl>
+    <p class="noindent">
+     For
+word
+processors
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        1
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         1
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       think
+of
+Microsoft
+Word,
+Apple
+Pages
+basically,
+we
+call
+them
+“What
+You
+See
+Is
+What
+You
+Get”
+or
+WYSIWYG.
+      </span>
+     </span>
+     all
+these
+operations
+are
+integrated
+into
+a
+single
+application
+package.
+But
+a
+typesetting
+language
+like
+LaTeX is
+concerned
+only
+with
+stage
+2
+mentioned
+above.
+So
+to
+typeset
+a
+document
+using
+LaTeX
+we
+type
+the
+text
+of
+the
+document
+and
+the
+necessary
+formatting
+commands
+in
+a
+text
+editor
+and
+then
+     <alert style="color: #821131;">
+      compile
+     </alert>
+     it.
+After,
+compilation,
+the
+document
+can
+be
+viewed
+using
+a
+     <alert style="color: #821131;">
+      previewer
+     </alert>
+     or
+printed
+using
+a
+printer.
+    </p>
+    <p class="noindent">
+     TeX is also a full
+     <alert style="color: #821131;">
+      programming language
+     </alert>
+     , so by learning the quirks and the nuances of the language, people can write code for
+additional features such as:
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
+      <p class="noindent">
+       Drawing
+scientific
+diagrams,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Doing
+mathematical
+calculations,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Automating
+document
+creation,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Embedding
+lua-script,
+and
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Generating
+slides.
+      </p>
+     </li>
+    </ul>
+    <div class="knowledge">
+     <p class="noindent">
+      In fact LaTeX itself has a significant collection of extra features, and the collective effort is continuing, with more and more
+people writing extra packages.
+     </p>
+    </div>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.2.1.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.1.1
+     </small>
+     <a id="x4-160002.1.1">
+     </a>
+     A Small Example
+    </h3>
+    <p class="noindent">
+     Let
+us
+see
+                                                                                
+                                                                                
+                                                                         
+LaTeX in
+action
+by
+typesetting
+a
+short
+document.
+We
+will
+start
+with
+our
+text
+editor
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        2
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         2
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       Make
+sure
+your
+TeXStudio
+is
+open
+and
+all
+its
+settings
+configured.
+      </span>
+     </span>
+     and
+type
+in
+the
+lines
+below
+     <span id="bold" style="font-weight:bold;">
+      exactly
+     </span>
+     as
+shown
+in
+the
+example
+below:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb2" style="padding:20px;border-radius: 3px;"><a id="x4-16002r28"></a><span style="color:#2B2BFF;">\documentclass</span><span style="color:#2B2BFF;">{</span>article<span style="color:#2B2BFF;">}</span> 
+<a id="x4-16004r29"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span> 
+<a id="x4-16006r30"></a>  This is my <span style="color:#2B2BFF;">\emph</span><span style="color:#2B2BFF;">{</span>first<span style="color:#2B2BFF;">}</span> document prepared in <span style="color:#2B2BFF;">\LaTeX</span>. 
+<a id="x4-16008r31"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <div class="warning">
+     <p class="noindent">
+      Be
+very
+careful
+with
+the
+\ character
+(called
+the
+backslash).
+We
+use
+this
+character
+to
+denote
+something
+is
+a
+      <span id="bold" style="font-weight:bold;">
+       command
+      </span>
+      and
+is
+different
+                                                                                
+                                                                                
+                                                                             
+from
+/
+(called
+slash)
+     </p>
+    </div>
+    <p class="noindent">
+     Once
+you
+have
+written
+the
+text,
+save
+the
+file
+onto
+the
+hard
+disk
+as
+myfile.tex.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        3
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         3
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       Instead
+of
+myfile
+you
+can
+use
+any
+name
+you
+wish,
+but
+be
+sure
+to
+have
+.tex
+at
+the
+end
+as
+the
+extension.
+      </span>
+     </span>
+     The
+process
+of
+compiling
+this
+and
+viewing
+the
+output
+depends
+on
+your
+operating
+system.
+We
+describe
+below
+the
+process
+of
+doing
+this
+in
+GNU/Linux.
+    </p>
+    <p class="noindent">
+     At
+the
+shell
+prompt,
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        4
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         4
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       This
+is
+for
+people
+who
+have
+Linux,
+and
+now
+thinking
+about
+it,
+it
+is
+infinitesimally
+unlikely
+someone
+will
+have
+Linux
+installed
+on
+their
+computer
+who
+just
+started
+university.
+      </span>
+     </span>
+     type
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb3" style="padding:20px;border-radius: 3px;"><a id="x4-16010r36"></a>latex myfile</div></pre>
+    </div>
+    <p class="noindent">
+     You
+will
+see
+a
+number
+of
+lines
+of
+text
+scroll
+by
+in
+the
+screen
+and
+then
+you
+get
+the
+prompt
+back.
+To
+view
+the
+output
+in
+screen,
+you
+must
+                                                                                
+                                                                                
+                                                                             
+have
+the
+X
+Window
+running.
+So,
+start
+X
+if
+you
+have
+not
+done
+so,
+and
+in
+a
+terminal
+window,
+type
+    </p>
+    <p class="noindent">
+     A
+window
+comes
+up
+showing
+the
+output
+below
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      This
+is
+my
+      <italic>
+       first
+      </italic>
+      document
+prepared
+in
+LaTeX.
+     </p>
+    </div>
+    <p class="noindent">
+     Now
+let
+us
+take
+a
+closer
+look
+at
+the
+source
+file
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        5
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         5
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       that
+is,
+the
+file
+you
+have
+typed,
+which
+is
+a <span style="color:#054C5C;"><code class="verb">.tex</code></span>
+       file
+      </span>
+     </span>
+     .
+    </p>
+    <p class="noindent">
+     The
+                                                                                
+                                                                                
+first
+line <span style="color:#054C5C;"><code class="verb">\documentclass{article}</code></span>
+     tells
+LaTeX that
+what
+we
+want
+to
+produce
+is
+an
+article.
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      If we want to write a book, this must be changed to <span style="color:#054C5C;"><code class="verb">\documentclass{book}</code></span>. We will look into these a bit later.
+     </p>
+    </div>
+    <p class="noindent">
+     The whole document we want to typeset should be included between <span style="color:#054C5C;"><code class="verb">\begin{document}</code></span>
+     and <span style="color:#054C5C;"><code class="verb">\end{document}</code></span>. Think of this as a wrapper which contains all the text we
+     <span id="bold" style="font-weight:bold;">
+      want
+     </span>
+     to print out to the user.
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      Any part which is before <span style="color:#054C5C;"><code class="verb">\begin{environment}</code></span>
+      is called the
+      <span id="bold" style="font-weight:bold;">
+       preamble
+      </span>
+      .
+     </p>
+    </div>
+    <p class="noindent">
+     Looking
+back
+to
+our
+example,
+this
+is
+just
+one
+<alert style="color: #821131;">(1)</alert> line.
+Now
+compare
+this
+line
+in
+the
+source
+and
+the
+output.
+The
+first
+three
+words
+(This
+is
+my)
+are
+produced
+as
+typed.
+Then <span style="color:#054C5C;"><code class="verb">\emph{first}</code></span>,
+becomes
+     <italic>
+      first
+     </italic>
+     in
+the
+output.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        6
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         6
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       It
+is
+a
+common
+practice
+to
+emphasise
+                                                                                
+                                                                                
+                                                                            
+words
+in
+print
+using
+italic
+letters
+      </span>
+     </span>
+     Therefore, <span style="color:#054C5C;"><code class="verb">\emph</code></span>
+     is
+a
+     <span id="bold" style="font-weight:bold;">
+      command
+     </span>
+     to
+LaTeX to
+typeset
+the
+text
+within
+the
+braces
+in
+     <alert style="color: #821131;">
+      italic
+     </alert>
+     .
+    </p>
+    <p class="noindent">
+     Following
+this,
+the
+next
+three
+words
+come
+out
+without
+any
+change
+in
+the
+output.
+Finally,
+the
+input <span style="color:#054C5C;"><code class="verb">\LaTeX</code></span>
+     comes
+out
+in
+the
+output
+as
+LaTeX.
+Therefore,
+as
+we
+see,
+our
+source
+is
+a
+mixture
+of
+text
+to
+be
+typeset
+and
+a
+couple
+of
+LaTeX commands <span style="color:#054C5C;"><code class="verb">\emph</code></span>
+     and <span style="color:#054C5C;"><code class="verb">\LaTeX</code></span>.
+The
+first
+command
+changes
+the
+input
+text
+in
+a
+certain
+way
+and
+the
+second
+one
+generates
+new
+text.
+    </p>
+    <p class="noindent">
+     Now
+call
+up
+the
+file
+again
+and
+add
+one
+more
+sentence
+given
+below.
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb4" style="padding:20px;border-radius: 3px;"><a id="x4-16012r41"></a>This is my <span style="color:#2B2BFF;">\emph</span><span style="color:#2B2BFF;">{</span>first<span style="color:#2B2BFF;">}</span> document prepared in <span style="color:#2B2BFF;">\LaTeX</span>. I typed it 
+<a id="x4-16014r42"></a>on <span style="color:#2B2BFF;">\today</span>.</div></pre>
+    </div>
+    <p class="noindent">
+     What
+do
+you
+get
+in
+the
+output?
+What
+new
+text
+does
+the
+command <span style="color:#054C5C;"><code class="verb">\today</code></span>
+     generate?
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.2.1.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.1.2
+     </small>
+     <a id="x4-170002.1.2">
+     </a>
+     What
+is
+the
+Point
+of
+LaTeX
+    </h3>
+    <p class="noindent">
+     So,
+why
+all
+this
+                                                                                
+                                                                                
+                                                                           
+trouble
+and
+why
+not
+simply
+use
+a
+word
+processor?
+    </p>
+    <p class="noindent">
+     The
+answer
+lies
+in
+the
+motivation
+behind
+LaTeXḊonald
+Knuth
+says
+that
+his
+aim
+in
+creating
+LaTeX is
+to
+     <alert style="color: #821131;">
+      beautifully
+     </alert>
+     typeset
+     <alert style="color: #821131;">
+      technical
+documents
+     </alert>
+     especially
+those
+containing
+a
+lot
+of
+Mathematics.
+It
+is
+very
+difficult
+to
+produce
+complex
+mathematical
+formulas
+using
+a
+word
+processor.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        7
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         7
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       as
+the
+author
+of
+this
+document
+who
+had
+to
+write
+many
+technical
+documents
+in
+Word
+can
+                                                                                
+                                                                                
+attest.
+      </span>
+     </span>
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      If you want your document to look really
+      <alert style="color: #821131;">
+       beautiful
+      </alert>
+      then LaTeX is the natural choice.
+     </p>
+    </div>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.2.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.2
+     </small>
+     <a id="x4-180002.2">
+     </a>
+     Basics  of  Typesetting
+    </h2>
+    <p class="noindent">
+     We
+have
+seen
+that
+to
+typeset
+something
+in
+LaTeX,
+we
+type
+in
+the
+text
+to
+be
+typeset
+together
+with
+some
+commands.
+Words
+     <span id="bold" style="font-weight:bold;">
+      must
+     </span>
+     be
+separated
+by
+spaces
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        8
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         8
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       does
+not
+matter
+how
+many.
+      </span>
+     </span>
+     and
+lines
+maybe
+broken
+arbitrarily.
+    </p>
+    <p class="noindent">
+     The
+end
+of
+a
+paragraph
+is
+specified
+by
+a
+     <alert style="color: #821131;">
+      blank
+line
+     </alert>
+     in
+the
+input.
+In
+other
+words,
+whenever
+                                                                                
+                                                                                
+                                                                             
+you
+want
+to
+start
+a
+new
+paragraph,
+just
+leave
+a
+blank
+line
+and
+proceed.
+For
+example,
+the
+first
+two
+<alert style="color: #821131;">(2)</alert> paragraphs
+above
+were
+produced
+by
+the
+input:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb5" style="padding:20px;border-radius: 3px;"><a id="x4-18002r49"></a><span style="color:#2B2BFF;">\noindent</span> We have seen that to typeset something in <span style="color:#2B2BFF;">\LaTeX</span>, we type in the 
+<a id="x4-18004r50"></a>text to be typeset together with some <span style="color:#2B2BFF;">\LaTeX\</span> commands. 
+<a id="x4-18006r51"></a>Words must be separated by spaces (does not matter how many) 
+<a id="x4-18008r52"></a>and lines maybe broken arbitrarily. 
+<a id="x4-18010r53"></a> 
+<a id="x4-18012r54"></a><span style="color:#2B2BFF;">\noindent</span> The end of a paragraph is specified by a <span style="color:#2B2BFF;">\emph</span><span style="color:#2B2BFF;">{</span>blank line<span style="color:#2B2BFF;">}</span> 
+<a id="x4-18014r55"></a>in the input. In other words, whenever you want to start a new 
+<a id="x4-18016r56"></a>paragraph, just leave a blank line and proceed.</div></pre>
+    </div>
+    <div class="warning">
+     <p class="noindent">
+      If
+you
+noticed
+the
+first
+line
+of
+each
+paragraph
+starts
+without
+an
+indentation
+from
+the
+left
+margin
+of
+the
+text.
+This
+is
+caused
+by
+the
+command <span style="color:#054C5C;"><code class="verb">\noindent</code></span>.
+To
+allow
+indentation,
+simply
+remove
+the
+command.
+     </p>
+    </div>
+    <p class="noindent">
+     There
+is
+an
+easier
+way
+to
+suppress
+paragraph
+indentation
+for
+     <span id="bold" style="font-weight:bold;">
+      all
+     </span>
+     paragraphs
+of
+the
+document
+in
+one
+go,
+but
+such
+tricks
+can
+wait.
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.2.2.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.2.1
+     </small>
+     <a id="x4-190002.2.1">
+     </a>
+     The
+Use
+of
+Spaces
+    </h3>
+    <p class="noindent">
+     You
+might
+have
+noticed
+that
+even
+though
+the
+length
+of
+the
+lines
+of
+text
+we
+type
+in
+a
+paragraph
+are
+different,
+in
+the
+output,
+all
+lines
+are
+of
+equal
+length,
+aligned
+perfectly
+on
+the
+                                                                                
+                                                                                
+                                                                            
+right
+and
+left.
+LaTeX does
+this
+by
+adjusting
+the
+space
+between
+the
+words.
+    </p>
+    <p class="noindent">
+     In
+traditional
+typesetting,
+a
+little
+extra
+space
+is
+added
+to
+periods
+which
+end
+sentences
+and
+LaTeX also
+follows
+this
+custom.
+But
+how
+does
+LaTeX know
+whether
+a
+period
+ends
+a
+sentence
+or
+not?
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      It
+assumes
+that
+every
+period
+not
+following
+an
+upper
+case
+letter
+ends
+a
+sentence.
+     </p>
+    </div>
+    <p class="noindent">
+     But
+this
+does
+not
+always
+work,
+                                                                                
+                                                                                
+                                                                              
+for
+there
+are
+instances
+where
+a
+sentence
+does
+end
+in
+an
+upper
+case
+letter.
+For
+example,
+consider
+the
+following:
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      Carrots
+are
+good
+for
+your
+eyes,
+since
+they
+contain
+Vitamin
+A.
+Have
+you
+ever
+seen
+a
+rabbit
+wearing
+glasses?
+     </p>
+    </div>
+    <p class="noindent">
+     The
+right
+input
+to
+produce
+this
+is
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb6" style="padding:20px;border-radius: 3px;"><a id="x4-19002r62"></a>Carrots are good for your eyes, since they contain Vitamin A<span style="color:#2B2BFF;">\@</span>. Have 
+<a id="x4-19004r63"></a>you ever seen a rabbit wearing glasses?</div></pre>
+    </div>
+    <div class="warning">
+     <p class="noindent">
+      We
+use
+the
+command <span style="color:#054C5C;"><code class="verb">\@</code></span>
+      before
+the
+period
+to
+produce
+                                                                                
+                                                                                
+                                                                              
+the
+extra
+space
+after
+the
+period.
+     </p>
+    </div>
+    <p class="noindent">
+     On
+the
+other
+hand,
+there
+are
+instances
+where
+a
+period
+following
+a
+lowercase
+letter
+does
+not
+end
+a
+sentence.
+For
+example <a id="x4-19005"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-boniface2005leopold">[20]</a></span>:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      The
+numbers
+1,
+2,
+3,
+etc.
+are
+called
+natural
+numbers.
+According
+to
+Kronecker,
+they
+were
+made
+by
+God;
+all
+else
+being
+the
+work
+of
+Man.
+     </p>
+    </div>
+    <p class="noindent">
+     To
+produce
+this
+(without
+extra
+space
+                                                                                
+                                                                                
+                                                                             
+after
+etc.)
+the
+input
+should
+be:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb7" style="padding:20px;border-radius: 3px;"><a id="x4-19007r80"></a>The numbers 1, 2, 3, etc.<span style="color:#2B2BFF;">\</span> are called natural numbers. According to 
+<a id="x4-19009r81"></a>Kronecker, they were made by God; all else being the works of Man.</div></pre>
+    </div>
+    <p class="noindent">
+     Here,
+we
+use
+the
+command
+\.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        9
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         9
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       that
+is,
+a
+backslash
+and
+a
+       <span id="bold" style="font-weight:bold;">
+        space
+       </span>
+       here
+and
+elsewhere,
+we
+sometimes
+use
+to
+denote
+a
+space
+in
+the
+input,
+especially
+when
+we
+draw
+attention
+to
+the
+space
+      </span>
+     </span>
+    </p>
+    <p class="noindent">
+     There
+are
+other
+situations
+where
+the
+command
+\(which
+always
+produce
+a
+space
+in
+the
+output)
+is
+useful.
+    </p>
+    <p class="noindent">
+     For
+example,
+type
+the
+following
+                                                                                
+                                                                                
+                                                                             
+line
+and
+compile
+it:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb8" style="padding:20px;border-radius: 3px;"><a id="x4-19011r86"></a><span style="color:#2B2BFF;">\documentclass</span><span style="color:#2B2BFF;">{</span>article<span style="color:#2B2BFF;">}</span> 
+<a id="x4-19013r87"></a> 
+<a id="x4-19015r88"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span> 
+<a id="x4-19017r89"></a>I think <span style="color:#2B2BFF;">\LaTeX</span> is fun. 
+<a id="x4-19019r90"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     We
+get:
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      I
+think
+LaTeXis
+fun.
+     </p>
+    </div>
+    <p class="noindent">
+     What
+happened
+to
+the
+     <span id="bold" style="font-weight:bold;">
+      space
+     </span>
+     we
+typed
+between
+LaTeX and
+is?
+    </p>
+    <p class="noindent">
+     You
+see,
+LaTeX gobbles
+up
+all
+spaces
+after
+a
+command.
+To
+get
+the
+required
+sequence
+in
+the
+output,
+change
+the
+input
+as
+I
+think
+LaTeX is
+fun.
+    </p>
+    <p class="noindent">
+     Again,
+the
+command
+(\)
+comes
+to
+the
+rescue.
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.2.2.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.2.2
+     </small>
+     <a id="x4-200002.2.2">
+     </a>
+     Quotations
+    </h3>
+    <p class="noindent">
+     Have
+you
+noticed
+that
+in
+typesetting,
+opening
+quotes
+are
+different
+from
+closing
+quotes?
+    </p>
+    <p class="noindent">
+     Look
+at
+the
+LaTeX output
+below:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb9" style="padding:20px;border-radius: 3px;"><a id="x4-20002r97"></a>Note the difference in right and left quotes in 
+<a id="x4-20004r98"></a>'single quotes' and ''double quotes''.</div></pre>
+    </div>
+    <p class="noindent">
+     This
+is
+produced
+by
+the
+input
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      Note
+the
+difference
+in
+right
+and
+left
+quotes
+in
+‘single
+quotes’
+and
+“double
+quotes”.
+     </p>
+    </div>
+    <div class="knowledge">
+     <p class="noindent">
+      If
+your
+keyboard
+does
+not
+have
+a
+left
+quote
+key,
+you
+                                                                                
+                                                                                
+                                                                             
+can
+use <span style="color:#054C5C;"><code class="verb">\lq</code></span>
+      command
+to
+produce
+it.
+The
+corresponding
+command <span style="color:#054C5C;"><code class="verb">\rq</code></span>
+      produces
+a
+right
+quote.
+     </p>
+    </div>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.2.2.3" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.2.3
+     </small>
+     <a id="x4-210002.2.3">
+     </a>
+     Dashes
+    </h3>
+    <p class="noindent">
+     In
+text,
+dashes
+are
+used
+for
+various
+purposes
+and
+they
+are
+distinguished
+in
+typesetting
+by
+their
+lengths;
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
+      <p class="noindent">
+       Short
+dashes
+are
+used
+for
+hyphens,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Longer
+dashes
+are
+used
+to
+indicate
+number
+ranges
+and
+still
+longer
+dashes
+used
+                                                                                
+                                                                                
+     
+for
+parenthetical
+comments.
+      </p>
+     </li>
+    </ul>
+    <p class="noindent">
+     Let’s
+have
+a
+look
+at
+the
+following
+TeX output:
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      X-rays
+are
+discussed
+in
+pages
+221–225
+of
+Volume
+3—the
+volume
+on
+electromagnetic
+waves.
+     </p>
+    </div>
+    <p class="noindent">
+     This
+is
+produced
+from
+the
+input:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb10" style="padding:20px;border-radius: 3px;"><a id="x4-21002r105"></a>X-rays are discussed in pages 221--225 of 
+<a id="x4-21004r106"></a>Volume 3---the volume on electromagnetic waves.</div></pre>
+    </div>
+    <p class="noindent">
+     Please
+observe
+that:
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
+      <p class="noindent">
+       one
+dash <span style="color:#054C5C;">(<code class="verb">-</code>)</span>
+produces
+a
+hyphen
+in
+the
+output
+(-),
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       two
+dashes <span style="color:#054C5C;">(<code class="verb">--</code>)</span>
+                                                                                
+                                                                                
+     
+produces
+a
+longer
+dash
+in
+the
+output
+(–),
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       three
+dashes <span style="color:#054C5C;">(<code class="verb">---</code>)</span>
+produce
+the
+longest
+dash
+(—)
+in
+the
+output.
+      </p>
+     </li>
+    </ul>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.2.2.4" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.2.4
+     </small>
+     <a id="x4-220002.2.4">
+     </a>
+     Accents
+    </h3>
+    <p class="noindent">
+     Sometimes,
+especially
+when
+typing
+foreign
+words
+in
+English,
+or
+just
+writing
+documents
+in
+non-english,
+we
+need
+to
+put
+different
+types
+of
+     <alert style="color: #821131;">
+      accents
+     </alert>
+     over
+the
+letters.
+The
+table
+below
+shows
+the
+accents
+available
+in
+LaTeX.
+    </p>
+    <p class="noindent">
+     Each
+column
+shows
+                                                                                
+                                                                                
+                                                                            
+some
+of
+the
+accents
+and
+the
+inputs
+to
+generate
+them.
+    </p>
+    <table class="tabularray tblr" id="tbl-2">
+     <tr id="row-2-1-">
+      <th id="cell2-1-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       ó
+      </th>
+      <th id="cell2-1-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\'o</code></span>
+      </th>
+
+      <th id="cell2-1-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       ó
+      </th>
+      <th id="cell2-1-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\'o</code></span>
+      </th>
+
+      <th id="cell2-1-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       ô
+      </th>
+      <th id="cell2-1-6" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\^o</code></span>
+      </th>
+
+      <th id="cell2-1-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       õ
+      </th>
+      <th id="cell2-1-8" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\~o</code></span>
+      </th>
+     </tr>
+     <tr id="row-2-2-">
+
+      <td id="cell2-2-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       ō
+      </td>
+      <td id="cell2-2-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\=o</code></span>
+      </td>
+
+      <td id="cell2-2-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       ȯ
+      </td>
+      <td id="cell2-2-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\.o</code></span>
+      </td>
+
+      <td id="cell2-2-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       ö
+      </td>
+      <td id="cell2-2-6" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\"o</code></span>
+      </td>
+
+      <td id="cell2-2-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         c
+        </mi>
+       </math>
+       c
+      </td>
+      <td id="cell2-2-8" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\c c</code></span>
+      </td>
+     </tr>
+     <tr id="row-2-3-">
+
+      <td id="cell2-3-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         u
+        </mi>
+       </math>
+       o
+      </td>
+      <td id="cell2-3-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\u o</code></span>
+      </td>
+
+      <td id="cell2-3-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         v
+        </mi>
+       </math>
+       o
+      </td>
+      <td id="cell2-3-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\v o</code></span>
+      </td>
+
+      <td id="cell2-3-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         H
+        </mi>
+       </math>
+       o
+      </td>
+      <td id="cell2-3-6" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\H o</code></span>
+      </td>
+
+      <td id="cell2-3-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         d
+        </mi>
+       </math>
+       o
+      </td>
+      <td id="cell2-3-8" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\d o</code></span>
+      </td>
+     </tr>
+     <tr id="row-2-4-">
+
+      <td id="cell2-4-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       o¯
+      </td>
+      <td id="cell2-4-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\b o</code></span>
+      </td>
+
+      <td id="cell2-4-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         t
+        </mi>
+       </math>
+       oo
+      </td>
+      <td id="cell2-4-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\t oo</code></span>
+      </td>
+
+      <td id="cell2-4-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+      </td>
+      <td id="cell2-4-6" style="text-align:justify;vertical-align:top;">
+      </td>
+
+      <td id="cell2-4-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+      </td>
+      <td id="cell2-4-8" style="text-align:justify;vertical-align:top;">
+      </td>
+     </tr>
+    </table>
+    <a id="x4-22001r1">
+    </a>
+    <figcaption class="caption">
+     <span class="id">
+      Table 2.1:
+     </span>
+     <span class="content">
+      Some accent modifier commands.
+     </span>
+    </figcaption>
+    <div class="warning">
+     <p class="noindent">
+      The
+letters
+i
+and
+j
+need
+special
+treatment
+with
+regard
+to
+accents,
+since
+they
+should
+not
+have
+their
+customary
+dots
+when
+accented.
+     </p>
+     
+    </div>
+    The
+commands
+    <span style="color:#054C5C;">
+     <code class="verb">
+      \i
+     </code>
+    </span>
+    and
+    <span style="color:#054C5C;">
+     <code class="verb">
+      \j
+     </code>
+    </span>
+    produce
+dot-less
+i
+and
+j
+as
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mi>
+      i
+     </mi>
+    </math>
+    and
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mi>
+      j
+     </mi>
+    </math>
+    .
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      Él
+está
+aquí
+     </p>
+    </div>
+    <p class="noindent">
+     we
+need
+to
+type:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb11" style="padding:20px;border-radius: 3px;"><a id="x4-22003r113"></a><span style="color:#2B2BFF;">\'</span><span style="color:#2B2BFF;">{</span>E<span style="color:#2B2BFF;">}</span>l est<span style="color:#2B2BFF;">\'</span><span style="color:#2B2BFF;">{</span>a<span style="color:#2B2BFF;">}</span> aqu<span style="color:#2B2BFF;">\'</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\i</span><span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     Some
+symbols
+from
+non-English
+languages
+are
+also
+available
+in
+LaTeX,
+as
+shown
+in
+the
+table
+below:
+    </p>
+    <p class="noindent">
+    </p>
+    <figure class="float">
+     <table class="tabularray tblr" id="tbl-3">
+      <tr id="row-3-1-">
+       <th id="cell3-1-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        œ
+       </th>
+       <th id="cell3-1-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\oe</code></span>
+       </th>
+
+       <th id="cell3-1-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        Œ
+       </th>
+       <th id="cell3-1-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\oe</code></span>
+       </th>
+
+       <th id="cell3-1-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        æ
+       </th>
+       <th id="cell3-1-6" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\ae</code></span>
+       </th>
+
+       <th id="cell3-1-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        Æ
+       </th>
+       <th id="cell3-1-8" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\AE</code></span>
+       </th>
+      </tr>
+      <tr id="row-3-2-">
+
+       <td id="cell3-2-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          r
+         </mi>
+        </math>
+        a
+       </td>
+       <td id="cell3-2-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\aa</code></span>
+       </td>
+
+       <td id="cell3-2-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          r
+         </mi>
+        </math>
+        A
+       </td>
+       <td id="cell3-2-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\AA</code></span>
+       </td>
+
+       <td id="cell3-2-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell3-2-6" style="text-align:justify;vertical-align:top;">
+       </td>
+
+       <td id="cell3-2-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell3-2-8" style="text-align:justify;vertical-align:top;">
+       </td>
+      </tr>
+      <tr id="row-3-3-">
+
+       <td id="cell3-3-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          o
+         </mi>
+        </math>
+       </td>
+       <td id="cell3-3-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\o</code></span>
+       </td>
+
+       <td id="cell3-3-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          o
+         </mi>
+        </math>
+       </td>
+       <td id="cell3-3-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\o</code></span>
+       </td>
+
+       <td id="cell3-3-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          l
+         </mi>
+        </math>
+       </td>
+       <td id="cell3-3-6" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\l</code></span>
+       </td>
+
+       <td id="cell3-3-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          L
+         </mi>
+        </math>
+       </td>
+       <td id="cell3-3-8" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\L</code></span>
+       </td>
+      </tr>
+      <tr id="row-3-4-">
+
+       <td id="cell3-4-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        ß
+       </td>
+       <td id="cell3-4-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\ss</code></span>
+       </td>
+
+       <td id="cell3-4-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell3-4-4" style="text-align:justify;vertical-align:top;">
+       </td>
+
+       <td id="cell3-4-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell3-4-6" style="text-align:justify;vertical-align:top;">
+       </td>
+
+       <td id="cell3-4-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell3-4-8" style="text-align:justify;vertical-align:top;">
+       </td>
+      </tr>
+      <tr id="row-3-5-">
+
+       <td id="cell3-5-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        ¡
+       </td>
+       <td id="cell3-5-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">!`</code></span>
+       </td>
+
+       <td id="cell3-5-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        ¿
+       </td>
+       <td id="cell3-5-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">?`</code></span>
+       </td>
+
+       <td id="cell3-5-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell3-5-6" style="text-align:justify;vertical-align:top;">
+       </td>
+
+       <td id="cell3-5-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell3-5-8" style="text-align:justify;vertical-align:top;">
+       </td>
+      </tr>
+     </table>
+     <a id="x4-22004r2">
+     </a>
+     <figcaption class="caption">
+      <span class="id">
+       Table 2.2:
+      </span>
+      <span class="content">
+       Commands to print out control symbols
+      </span>
+     </figcaption>
+    </figure>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.2.2.5" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.2.5
+     </small>
+     <a id="x4-230002.2.5">
+     </a>
+     Special
+Symbols
+    </h3>
+    <p class="noindent">
+     We
+have
+seen
+that
+input <span style="color:#054C5C;"><code class="verb">\LaTeX</code></span>
+     produces
+LaTeX in
+the
+output
+and <span style="color:#054C5C;"><code class="verb">\</code></span>
+     produces
+a
+space.
+Therefore,
+TeX uses
+the
+symbol
+\ for
+a
+     <alert style="color: #821131;">
+      special
+     </alert>
+     purpose,
+as
+briefly
+mentioned
+previously:
+    </p>
+    
+    <div class="warning">
+     <p class="noindent">
+      To
+indicate
+the
+program
+that
+what
+follows
+is
+      <span id="bold" style="font-weight:bold;">
+       NOT
+      </span>
+      text
+to
+be
+typeset
+but
+an
+instruction
+to
+be
+carried
+out.
+     </p>
+    </div>
+    <p class="noindent">
+     So
+what
+if
+you
+want
+to
+get
+\ in
+                                                                                
+                                                                                
+your
+output?
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        10
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         10
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       improbable
+as
+it
+may
+be
+      </span>
+     </span>
+     Well,
+the
+command
+\ produces
+\ in
+the
+output.
+    </p>
+    <p class="noindent">
+     As
+you
+have
+notices
+\ is
+a
+symbol
+which
+has
+a
+     <alert style="color: #821131;">
+      special
+meaning
+     </alert>
+     for
+TeX and
+cannot
+be
+produced
+by
+direct
+input.
+As
+another
+example
+of
+such
+a
+special
+symbol,
+see
+what
+is
+obtained
+from
+the
+input
+below:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb12" style="padding:20px;border-radius: 3px;"><a id="x4-23002r120"></a>Maybe I have now learnt about 1<span style="color:#008700;"><italic>% of \LaTeX.</italic></span></div></pre>
+    </div>
+    <p class="noindent">
+     You  only  get:
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      Maybe
+I
+have
+now
+learnt
+                                                                                
+                                                                                
+     
+about
+1
+     </p>
+    </div>
+    <p class="noindent">
+     What happened to the rest of the line? You see, TeX uses the per cent symbol (%) as the
+     <alert style="color: #821131;">
+      comment
+     </alert>
+     character; that is a symbol
+which tells TeX to consider the text following as comments and
+     <span id="bold" style="font-weight:bold;">
+      NOT
+     </span>
+     as text to be typeset. This is especially
+useful for a LaTeX programmer to explain a particularly sticky bit of code to others. But then, how do you get
+    </p>
+    <p class="noindent">
+     a  percent  sign  in  the  output?  Just  type <span style="color:#054C5C;"><code class="verb">\%</code></span>
+     as  in
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb13" style="padding:20px;border-radius: 3px;"><a id="x4-23004r125"></a>Maybe I have now learnt about 1<span style="color:#2B2BFF;">\%</span> of <span style="color:#2B2BFF;">\LaTeX</span>.</div></pre>
+    </div>
+    <p class="noindent">
+     which  would  give  us:
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      Maybe
+I
+have
+now
+learnt
+about
+1%
+of
+LaTeX.
+     </p>
+    </div>
+    <p class="noindent">
+     The symbols \ and % are just two <alert style="color: #821131;">(2)</alert> of the ten <alert style="color: #821131;">(10)</alert> charcaters TeX reserves for its internal use. The complete list is:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      text
+     </div>
+     <pre><div class="language-text" id="fancyvrb14" style="padding:20px;border-radius: 3px;"><a id="x4-23006r130"></a>~ # $ % ^ &amp; _ \ { }</div></pre>
+    </div>
+    <p class="noindent">
+     We have seen how LaTeX uses two of these symbols and others we will see as we proceed. Also,
+we have noted that \ is produced in the output by the command <span style="color:#054C5C;"><code class="verb">\textbackslash</code></span>
+     and % is produced
+by <span style="color:#054C5C;"><code class="verb">\%</code></span>. What about the other symbols? The table below gives the inputs to produce these symbols.
+    </p>
+    <p class="noindent">
+    </p>
+    <figure class="float">
+     <table class="tabularray tblr" id="tbl-4">
+      <tr id="row-4-1-">
+       <th id="cell4-1-1" style="text-align:center;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Output
+        </span>
+       </th>
+
+       <th id="cell4-1-2" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Command
+        </span>
+       </th>
+
+       <th id="cell4-1-3" style="text-align:center;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Output
+        </span>
+       </th>
+
+       <th id="cell4-1-4" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Command
+        </span>
+       </th>
+      </tr>
+      <tr id="row-4-2-">
+
+       <td id="cell4-2-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        ~
+       </td>
+       <td id="cell4-2-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textasciitilde</code></span>
+       </td>
+
+       <td id="cell4-2-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        &amp;
+       </td>
+       <td id="cell4-2-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\&amp;</code></span>
+       </td>
+      </tr>
+      <tr id="row-4-3-">
+
+       <td id="cell4-3-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        #
+       </td>
+       <td id="cell4-3-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\#</code></span>
+       </td>
+
+       <td id="cell4-3-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        _
+       </td>
+       <td id="cell4-3-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\_</code></span>
+       </td>
+      </tr>
+      <tr id="row-4-4-">
+
+       <td id="cell4-4-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        $
+       </td>
+       <td id="cell4-4-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\$</code></span>
+       </td>
+
+       <td id="cell4-4-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        \
+       </td>
+       <td id="cell4-4-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textbackslash</code></span>
+       </td>
+      </tr>
+      <tr id="row-4-5-">
+
+       <td id="cell4-5-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        %
+       </td>
+       <td id="cell4-5-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\%</code></span>
+       </td>
+
+       <td id="cell4-5-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        {
+       </td>
+       <td id="cell4-5-4" style="text-align:justify;vertical-align:top;">
+        <span style="color:#054C5C;">
+         \{
+        </span>
+       </td>
+      </tr>
+      <tr id="row-4-6-">
+
+       <td id="cell4-6-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        ^
+       </td>
+       <td id="cell4-6-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textasciicircum</code></span>
+       </td>
+
+       <td id="cell4-6-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        }
+       </td>
+       <td id="cell4-6-4" style="text-align:justify;vertical-align:top;">
+        <span style="color:#054C5C;">
+         \}
+        </span>
+       </td>
+      </tr>
+      <tr id="row-4-7-">
+
+       <td id="cell4-7-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <msubsup>
+          <mrow>
+           <mo>
+            ∫
+           </mo>
+          </mrow>
+          <mrow>
+           <mi>
+            a
+           </mi>
+           <mi>
+            b
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            v
+           </mi>
+           <mi>
+            v
+           </mi>
+          </mrow>
+         </msubsup>
+         <mi>
+          m
+         </mi>
+         <msup>
+          <mrow>
+           <mi>
+            c
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </math>
+       </td>
+       <td id="cell4-7-2" style="text-align:justify;vertical-align:top;">
+       </td>
+
+       <td id="cell4-7-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell4-7-4" style="text-align:justify;vertical-align:top;">
+       </td>
+      </tr>
+     </table>
+     <a id="x4-23007r3">
+     </a>
+     <figcaption class="caption">
+      <span class="id">
+       Table 2.3:
+      </span>
+      <span class="content">
+       Commands to print out additional control symbols.
+      </span>
+     </figcaption>
+    </figure>
+    <p class="noindent">
+     As we can see from the aforementioned table that except for three <alert style="color: #821131;">(3)</alert>, all special symbols are produced by preceding them
+with a \. Of the exceptional three, we have seen that änd äre used for producing accents. So what does <span style="color:#054C5C;"><code class="verb">\\</code></span>
+     do?
+    </p>
+    
+    <div class="knowledge">
+     <p class="noindent">
+      It  is  used  to  break  lines.
+     </p>
+    </div>
+    <p class="noindent">
+     For  example,
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb15" style="padding:20px;border-radius: 3px;"><a id="x4-23009r69"></a>This is the first line. <span style="color:#2B2BFF;">\\</span> This is the second line.</div></pre>
+    </div>
+    <p class="noindent">
+     produces
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      This
+is
+the
+first
+line.
+      This
+is
+the
+second
+line
+     </p>
+    </div>
+    <p class="noindent">
+     We can also give an
+     <alert style="color: #821131;">
+      optional argument
+     </alert>
+     to <span style="color:#054C5C;"><code class="verb">\\</code></span>
+     to i
+     <span id="bold" style="font-weight:bold;">
+      ncrease the vertical distance
+     </span>
+     between the lines. For example,
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb16" style="padding:20px;border-radius: 3px;"><a id="x4-23011r74"></a>This is the first line. <span style="color:#2B2BFF;">\\</span>[10pt] 
+<a id="x4-23013r75"></a>This is the second line.</div></pre>
+    </div>
+    <p class="noindent">
+     gives
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      This
+is
+the
+first
+line.
+      This
+is
+the
+second
+line
+     </p>
+    </div>
+    <p class="noindent">
+     Now
+there
+is
+an
+extra
+10
+points
+of
+space
+between
+the
+lines.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        11
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         11
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       1
+point <span style="color:#054C5C;">(<code class="verb">1pt</code>)</span>
+                                                                                
+                                                                                
+is
+about
+       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text">
+         <mtext>
+         </mtext>
+         <mstyle class="math">
+          <mn>
+           1
+          </mn>
+         </mstyle>
+         <mtext>
+         </mtext>
+         <mstyle class="math">
+         </mstyle>
+         <mtext>
+         </mtext>
+         <mstyle class="math">
+          <mo class="MathClass-bin" stretchy="false">
+           ∕
+          </mo>
+         </mstyle>
+         <mtext>
+         </mtext>
+         <mstyle class="math">
+         </mstyle>
+         <mtext>
+         </mtext>
+         <mstyle class="math">
+          <mn>
+           7
+          </mn>
+          <mn>
+           2
+          </mn>
+         </mstyle>
+         <mtext>
+         </mtext>
+        </mstyle>
+       </math>
+       th
+of
+an
+inch.
+      </span>
+     </span>
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.2.2.6" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.2.6
+     </small>
+     <a id="x4-240002.2.6">
+     </a>
+     Position  of  Text
+    </h3>
+    <p class="noindent">
+     We
+have
+seen
+up
+to
+now,
+that
+LaTeX aligns
+text
+in
+     <alert style="color: #821131;">
+      its
+own
+way
+     </alert>
+     ,
+regardless
+of
+the
+way
+text
+is
+formatted
+in
+the
+input
+file.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        12
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         12
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       To
+a
+certain
+extent
+LaTeX does
+       <span id="bold" style="font-weight:bold;">
+        NOT
+       </span>
+       care
+about
+how
+many
+spaces
+there
+are
+between
+words
+or
+whether
+there
+are
+numerous
+spaces
+between
+paragrahs.
+      </span>
+     </span>
+     Now
+suppose
+you
+want
+to
+typeset
+                                                                                
+                                                                                
+                                                                         
+something
+like
+this
+    </p>
+    <div class="quoteblock">
+     <div class="center">
+      <p class="noindent">
+      </p>
+      <p class="noindent">
+       Management Centre Innsbruck Mechatronics
+       Welcomes You!
+      </p>
+     </div>
+     <p class="noindent">
+      This is to certify that you have chosen to become great engineers by the time your degree is finished!!
+     </p>
+     <div class="flushright">
+      <p class="noindent">
+       The Lecturer
+       D. T. McGuiness
+      </p>
+     </div>
+    </div>
+    <p class="noindent">
+     Which
+is
+produced
+by
+the
+following
+command:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb17" style="padding:20px;border-radius: 3px;"><a id="x4-24002r137"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{center}</span> 
+<a id="x4-24004r138"></a><span style="color:#2B2BFF;"> Management Centre Innsbruck Mechatronics</span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\\</span></span>[<span style="color:#2B2BFF;">.</span><span style="color:#2B8554;"><span id="bold" style="font-weight:bold;">75</span></span><span style="color:#2B2BFF;">cm</span>] 
+<a id="x4-24006r139"></a><span style="color:#2B2BFF;"> Welcomes You</span>! 
+<a id="x4-24008r140"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{center}</span> 
+<a id="x4-24010r141"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\noindent</span></span><span style="color:#2B2BFF;"> This is to certify that you have chosen to</span> 
+<a id="x4-24012r142"></a><span style="color:#2B2BFF;">become great engineers by the time your degree is finished</span>!! 
+<a id="x4-24014r143"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{flushright}</span> 
+<a id="x4-24016r144"></a><span style="color:#2B2BFF;"> The Lecturer</span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\\</span></span> 
+<a id="x4-24018r145"></a><span style="color:#2B2BFF;"> D. T. McGuiness</span> 
+<a id="x4-24020r146"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{flushright}</span></div></pre>
+    </div>
+    <p class="noindent">
+     Let’s
+have
+a
+look
+at
+the
+comments.
+Here,
+the
+commands:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb18" style="padding:20px;border-radius: 3px;"><a id="x4-24022r152"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{center} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{center}</span></div></pre>
+    </div>
+    <p class="noindent">
+     typesets
+the
+text
+between
+them
+exactly
+at
+the
+center
+of
+the
+page
+and
+the
+commands
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb19" style="padding:20px;border-radius: 3px;"><a id="x4-24024r157"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{flushright} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{flushright}</span></div></pre>
+    </div>
+    <p class="noindent">
+     typesets
+text
+flush
+with
+the
+right
+margin.
+The
+corresponding
+commands
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb20" style="padding:20px;border-radius: 3px;"><a id="x4-24026r162"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{flushleft} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{flushleft}</span></div></pre>
+    </div>
+    <p class="noindent">
+     places
+the
+enclosed
+text
+flush
+with
+the
+     <alert style="color: #821131;">
+      left
+     </alert>
+     margin.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        13
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         13
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       Change
+the <span style="color:#054C5C;"><code class="verb">flushright</code></span>
+       to <span style="color:#054C5C;"><code class="verb">flushleft</code></span>
+       and
+see
+what
+happens
+to
+the
+output.
+      </span>
+     </span>
+    </p>
+    <p class="noindent">
+     These
+examples
+are
+an
+illustration
+of
+a
+LaTeX construct
+called
+an
+     <alert style="color: #821131;">
+      environment
+     </alert>
+     ,
+which
+is
+of
+the
+form
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb21" style="padding:20px;border-radius: 3px;"><a id="x4-24028r167"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{name} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{name}</span></div></pre>
+    </div>
+    <p class="noindent">
+     where
+     <alert style="color: #821131;">
+      name
+     </alert>
+     is
+the
+name
+of
+the
+                                                                                
+                                                                                
+                                                                       
+environment.
+We
+have
+seen
+an
+example
+of
+an
+environment
+at
+the
+very
+beginning
+of
+this
+chapter,
+namely
+the <span style="color:#054C5C;"><code class="verb">document</code></span>
+     environment.
+    </p>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.2.3" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.3
+     </small>
+     <a id="x4-250002.3">
+     </a>
+     Fonts
+    </h2>
+    <p class="noindent">
+     The
+actual
+letters
+and
+symbols
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        14
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         14
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       collectively
+called
+type.
+      </span>
+     </span>
+     which
+LaTeX produces
+are
+characterized
+by
+their
+     <alert style="color: #821131;">
+      style
+     </alert>
+     and
+     <alert style="color: #821131;">
+      size
+     </alert>
+     .
+For
+example,
+in
+this
+lecturebook
+     <italic>
+      emphasized
+     </italic>
+     text
+is
+                                                                                
+                                                                                
+given
+in
+     <italic>
+      italic
+     </italic>
+     style
+and
+the
+example
+inputs
+are
+given
+in <span style="color:#054C5C;"><code class="verb">typewriter</code></span>
+     style.
+We
+can
+also
+produce
+smaller and
+bigger type.
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      A set of types of a particular style and size is called a font.
+     </p>
+    </div>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.2.3.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.3.1
+     </small>
+     <a id="x4-260002.3.1">
+     </a>
+     Type  Style
+    </h3>
+    <p class="noindent">
+     In LaTeX, a type style is specified by family, series and shape. They are shown in the
+     <span id="bold" style="font-weight:bold;">
+      Table
+     </span>
+     ??
+    </p>
+    <p class="noindent">
+    </p>
+    <figure class="float">
+     <table class="tabularray tblr" id="tbl-5">
+      <tr id="row-5-1-">
+       <th id="cell5-1-1" style="text-align:right;vertical-align:top;background-color:#F2F2F2;">
+       </th>
+
+       <th id="cell5-1-2" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Style
+        </span>
+       </th>
+
+       <th id="cell5-1-3" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Command
+        </span>
+       </th>
+      </tr>
+      <tr id="row-5-2-">
+
+       <td id="cell5-2-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Family
+        </span>
+       </td>
+       <td id="cell5-2-2" style="text-align:justify;vertical-align:top;">
+        roman
+       </td>
+       <td id="cell5-2-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textrm{roman}</code></span>
+       </td>
+      </tr>
+      <tr id="row-5-3-">
+
+       <td id="cell5-3-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell5-3-2" style="text-align:justify;vertical-align:top;">
+        sanf serif
+       </td>
+       <td id="cell5-3-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textsf{sans serif}</code></span>
+       </td>
+      </tr>
+      <tr id="row-5-4-">
+
+       <td id="cell5-4-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell5-4-2" style="text-align:justify;vertical-align:top;">
+        typewriter
+       </td>
+       <td id="cell5-4-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\texttt{typewriter}</code></span>
+       </td>
+      </tr>
+      <tr id="row-5-5-">
+
+       <td id="cell5-5-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Series
+        </span>
+       </td>
+       <td id="cell5-5-2" style="text-align:justify;vertical-align:top;">
+        medium
+       </td>
+       <td id="cell5-5-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textmd{medium}</code></span>
+       </td>
+      </tr>
+      <tr id="row-5-6-">
+
+       <td id="cell5-6-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell5-6-2" style="text-align:justify;vertical-align:top;">
+        <span id="bold" style="font-weight:bold;">
+         boldface
+        </span>
+       </td>
+       <td id="cell5-6-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textbf{boldface}</code></span>
+       </td>
+      </tr>
+      <tr id="row-5-7-">
+
+       <td id="cell5-7-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Shape
+        </span>
+       </td>
+       <td id="cell5-7-2" style="text-align:justify;vertical-align:top;">
+        upright
+       </td>
+       <td id="cell5-7-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textup{upright}</code></span>
+       </td>
+      </tr>
+      <tr id="row-5-8-">
+
+       <td id="cell5-8-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell5-8-2" style="text-align:justify;vertical-align:top;">
+        <italic>
+         italic
+        </italic>
+       </td>
+       <td id="cell5-8-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textit{italic}</code></span>
+       </td>
+      </tr>
+      <tr id="row-5-9-">
+
+       <td id="cell5-9-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell5-9-2" style="text-align:justify;vertical-align:top;">
+        slanted
+       </td>
+       <td id="cell5-9-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textsl{slanted}</code></span>
+       </td>
+      </tr>
+      <tr id="row-5-10-">
+
+       <td id="cell5-10-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell5-10-2" style="text-align:justify;vertical-align:top;">
+        <alert style="color: #821131;">
+         small cap
+        </alert>
+       </td>
+       <td id="cell5-10-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textsc{small cap}</code></span>
+       </td>
+      </tr>
+     </table>
+     <a id="x4-26001r4">
+     </a>
+     <figcaption class="caption">
+      <span class="id">
+       Table 2.4:
+      </span>
+      <span class="content">
+       Different type-styles supported by LaTeX.
+      </span>
+     </figcaption>
+    </figure>
+    <p class="noindent">
+     Any type style in the output is a combination of these three <alert style="color: #821131;">(3)</alert> characteristics. For example, by
+default we get roman family, medium series, upright shape type style in a LaTeX output.
+The <span style="color:#054C5C;"><code class="verb">\textit</code></span>
+     command produces roman family, medium series, italic shape type. Again,
+the command <span style="color:#054C5C;"><code class="verb">\textbf</code></span>
+     produces roman family, boldface series, upright shape type.
+    </p>
+    
+    <p class="noindent">
+     We can combine these commands to produce a wide variety of type styles. For example, the input:
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb22" style="padding:20px;border-radius: 3px;"><a id="x4-26003r177"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textsf</span></span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textbf</span></span><span style="color:#2B2BFF;">{sans serif family, boldface series, upright shape}}</span> 
+<a id="x4-26005r178"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textrm</span></span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textsl</span></span><span style="color:#2B2BFF;">{roman family, medium series, slanted shape}}</span></div></pre>
+    </div>
+    <p class="noindent">
+     which  produces  the  following  output:
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      <span id="bold" style="font-weight:bold;">
+       sans
+serif
+family,
+boldface
+series,
+upright
+shape
+      </span>
+      roman
+family,
+medium
+series,
+slanted
+shape
+     </p>
+    </div>
+    <div class="warning">
+     <p class="noindent">
+      It may be possible that some of these type styles may
+      <span id="bold" style="font-weight:bold;">
+       NOT
+      </span>
+      be available in your computer. In
+that case, LATEX gives a warning message on compilation and substitutes another
+available type style which it thinks is a close approximation to what you had requested.
+     </p>
+    </div>
+    <p class="noindent">
+     We can now tell the whole story of the <span style="color:#054C5C;"><code class="verb">\emph</code></span>
+     command. We have seen that it usually, that is when we are
+in the middle of normal (upright) text, it produces italic shape. But if the current type shape is slanted
+or italic, then it switches to upright shape. Also, it uses the family and series of the current font. Thus
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb23" style="padding:20px;border-radius: 3px;"><a id="x4-26007r184"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textit</span></span><span style="color:#2B2BFF;">{A polygon of three sides is called a </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\emph</span></span><span style="color:#2B2BFF;">{triangle} and a</span> 
+<a id="x4-26009r185"></a><span style="color:#2B2BFF;">    polygon of four sides is called a </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\emph</span></span><span style="color:#2B2BFF;">{quadrilateral}}</span></div></pre>
+    </div>
+    <div class="quoteblock">
+     <p class="noindent">
+      <italic>
+       A
+polygon
+                                                                                
+                                                                                
+     
+of
+three
+sides
+is
+called
+a
+triangle
+and
+a
+polygon
+of
+four
+sides
+is
+called
+a
+quadrilateral
+      </italic>
+     </p>
+    </div>
+    <p class="noindent">
+     whereas  the  following  input:
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb24" style="padding:20px;border-radius: 3px;"><a id="x4-26011r190"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textbf</span></span><span style="color:#2B2BFF;">{A polygon of three sides is called a</span> 
+<a id="x4-26013r191"></a><span style="color:#2B2BFF;">  </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\emph</span></span><span style="color:#2B2BFF;">{triangle} and a polygon of four sides is called a</span> 
+<a id="x4-26015r192"></a><span style="color:#2B2BFF;">  </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\emph</span></span><span style="color:#2B2BFF;">{quadrilateral}}</span></div></pre>
+    </div>
+    <p class="noindent">
+     produces:
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      <span id="bold" style="font-weight:bold;">
+       A
+polygon
+of
+three
+sides
+is
+called
+a
+triangle
+and
+a
+polygon
+of
+four
+sides
+is
+called
+                                                                                
+                                                                                
+     
+a
+quadrilateral
+      </span>
+     </p>
+    </div>
+    <p class="noindent">
+     Each of these type style changing commands has an alternate form as a
+     <alert style="color: #821131;">
+      declaration
+     </alert>
+     . For example,
+instead of <span style="color:#054C5C;"><code class="verb">\textbf{boldface}</code></span>
+     you can also type <span style="color:#054C5C;"><code class="verb">{\bfseries boldface}</code></span>
+     to get boldface.
+    </p>
+    <div class="warning">
+     <p class="noindent">
+      Note that that not only the name of the command, but its usage also is different.
+     </p>
+    </div>
+    <p class="noindent">
+     For  example,  to  typeset:
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      By
+a
+      <span id="bold" style="font-weight:bold;">
+       triangle
+      </span>
+      ,
+we
+mean
+a
+polygon
+of
+three
+sides.
+     </p>
+    </div>
+    <p class="noindent">
+     if  we  were  to  write:
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb25" style="padding:20px;border-radius: 3px;"><a id="x4-26017r197"></a><span style="color:#2B2BFF;">By a </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\bfseries</span></span><span style="color:#2B2BFF;">{triangle}, we mean a polygon of three sides.</span></div></pre>
+    </div>
+    <p class="noindent">
+     we  would  get:
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      By
+a
+triangle,
+we
+mean
+a
+polygon
+of
+three
+sides.
+     </p>
+    </div>
+    <p class="noindent">
+     Therefore
+to
+make
+the
+declaration
+act
+upon
+a
+specific
+piece
+of
+text,
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        15
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         15
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       and
+no
+more
+      </span>
+     </span>
+     the
+declaration
+and
+the
+text
+     <span id="bold" style="font-weight:bold;">
+      should
+be
+enclosed
+in
+braces
+     </span>
+     .
+     <span id="bold" style="font-weight:bold;">
+      Table
+     </span>
+     <a href="#x4-26018r5">
+      2.5
+     </a>
+     completes
+the
+one
+given
+earlier,
+by
+giving
+also
+the
+declarations
+to
+produce
+type
+style
+changes.
+    </p>
+    <p class="noindent">
+    </p>
+    <figure class="float">
+     <table class="tabularray tblr" id="tbl-6">
+      <tr id="row-6-1-">
+       <th id="cell6-1-1" style="text-align:right;vertical-align:top;background-color:#F2F2F2;">
+       </th>
+
+       <th id="cell6-1-2" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Style
+        </span>
+       </th>
+
+       <th id="cell6-1-3" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Command
+        </span>
+       </th>
+
+       <th id="cell6-1-4" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Declaration
+        </span>
+       </th>
+      </tr>
+      <tr id="row-6-2-">
+
+       <td id="cell6-2-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Family
+        </span>
+       </td>
+       <td id="cell6-2-2" style="text-align:justify;vertical-align:top;">
+        roman
+       </td>
+       <td id="cell6-2-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textrm{roman}</code></span>
+       </td>
+       <td id="cell6-2-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">{\rmfamily roman}</code></span>
+       </td>
+      </tr>
+      <tr id="row-6-3-">
+
+       <td id="cell6-3-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell6-3-2" style="text-align:justify;vertical-align:top;">
+        sanf serif
+       </td>
+       <td id="cell6-3-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textsf{sans serif}</code></span>
+       </td>
+       <td id="cell6-3-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">{\sffamily sans serif}</code></span>
+       </td>
+      </tr>
+      <tr id="row-6-4-">
+
+       <td id="cell6-4-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell6-4-2" style="text-align:justify;vertical-align:top;">
+        typewriter
+       </td>
+       <td id="cell6-4-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\texttt{typewriter}</code></span>
+       </td>
+       <td id="cell6-4-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">{\ttfamily typewriter}</code></span>
+       </td>
+      </tr>
+      <tr id="row-6-5-">
+
+       <td id="cell6-5-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Series
+        </span>
+       </td>
+       <td id="cell6-5-2" style="text-align:justify;vertical-align:top;">
+        medium
+       </td>
+       <td id="cell6-5-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textmd{medium}</code></span>
+       </td>
+       <td id="cell6-5-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">{\mdseries medium}</code></span>
+       </td>
+      </tr>
+      <tr id="row-6-6-">
+
+       <td id="cell6-6-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell6-6-2" style="text-align:justify;vertical-align:top;">
+        <span id="bold" style="font-weight:bold;">
+         boldface
+        </span>
+       </td>
+       <td id="cell6-6-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textbf{boldface}</code></span>
+       </td>
+       <td id="cell6-6-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">{\bfseries boldface}</code></span>
+       </td>
+      </tr>
+      <tr id="row-6-7-">
+
+       <td id="cell6-7-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        <span id="bold" style="font-weight:bold;">
+         Shape
+        </span>
+       </td>
+       <td id="cell6-7-2" style="text-align:justify;vertical-align:top;">
+        upright
+       </td>
+       <td id="cell6-7-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textup{upright}</code></span>
+       </td>
+       <td id="cell6-7-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">{\upshape upright}</code></span>
+       </td>
+      </tr>
+      <tr id="row-6-8-">
+
+       <td id="cell6-8-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell6-8-2" style="text-align:justify;vertical-align:top;">
+        <italic>
+         italic
+        </italic>
+       </td>
+       <td id="cell6-8-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textit{italic}</code></span>
+       </td>
+       <td id="cell6-8-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">{\itshape italic}</code></span>
+       </td>
+      </tr>
+      <tr id="row-6-9-">
+
+       <td id="cell6-9-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell6-9-2" style="text-align:justify;vertical-align:top;">
+        slanted
+       </td>
+       <td id="cell6-9-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textsl{slanted}</code></span>
+       </td>
+       <td id="cell6-9-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">{\slshape slanted}</code></span>
+       </td>
+      </tr>
+      <tr id="row-6-10-">
+
+       <td id="cell6-10-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+       </td>
+       <td id="cell6-10-2" style="text-align:justify;vertical-align:top;">
+        <alert style="color: #821131;">
+         small cap
+        </alert>
+       </td>
+       <td id="cell6-10-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\textsc{small cap}</code></span>
+       </td>
+       <td id="cell6-10-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">{\scshape small cap}</code></span>
+       </td>
+      </tr>
+     </table>
+     <a id="x4-26018r5">
+     </a>
+     <figcaption class="caption">
+      <span class="id">
+       Table 2.5:
+      </span>
+      <span class="content">
+       Different type-styles supported by LaTeX along with their declaration versions.
+      </span>
+     </figcaption>
+    </figure>
+    <p class="noindent">
+     These
+declaration
+names
+can
+also
+be
+used
+as
+environment
+names.
+Therefore
+to
+typeset
+a
+long
+passage
+in,
+say,
+sans
+serif,
+just
+enclose
+the
+passage
+within
+the
+commands:
+    </p>
+    
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb26" style="padding:20px;border-radius: 3px;"><a id="x4-26020r202"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{sffmily} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{sffamily}</span></div></pre>
+    </div>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.2.4" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      2.4
+     </small>
+     <a id="x4-270002.4">
+     </a>
+     Type
+Size
+    </h2>
+    <p class="noindent">
+     Traditionally,
+type
+size
+is
+measured
+in
+(printer)
+points.
+The
+default
+type
+that
+TeX produces
+is
+of
+     <alert style="color: #821131;">
+      10
+pt
+     </alert>
+     size.
+There
+are
+some
+declarations
+(ten,
+to
+be
+precise)
+provided
+in
+                                                                                
+                                                                                
+                                                                         
+LaTeX for
+changing
+the
+type
+size.
+They
+are
+given
+in
+     <span id="bold" style="font-weight:bold;">
+      Table
+     </span>
+     <a href="#x4-27001r6">
+      2.6
+     </a>
+     :
+    </p>
+    <p class="noindent">
+    </p>
+    <figure class="float">
+     <table class="tabularray tblr" id="tbl-7">
+      <tr id="row-7-1-">
+       <th id="cell7-1-1" style="text-align:right;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Size
+        </span>
+       </th>
+
+       <th id="cell7-1-2" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Command
+        </span>
+       </th>
+
+       <th id="cell7-1-3" style="text-align:right;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Size
+        </span>
+       </th>
+
+       <th id="cell7-1-4" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+        <span id="bold" style="font-weight:bold;">
+         Command
+        </span>
+       </th>
+      </tr>
+      <tr id="row-7-2-">
+
+       <td id="cell7-2-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-2-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\tiny size</code></span>
+       </td>
+
+       <td id="cell7-2-3" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-2-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\large size</code></span>
+       </td>
+      </tr>
+      <tr id="row-7-3-">
+
+       <td id="cell7-3-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-3-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\scriptsize size</code></span>
+       </td>
+
+       <td id="cell7-3-3" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-3-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\Large size</code></span>
+       </td>
+      </tr>
+      <tr id="row-7-4-">
+
+       <td id="cell7-4-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-4-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\footnote size</code></span>
+       </td>
+
+       <td id="cell7-4-3" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-4-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\LARGE size</code></span>
+       </td>
+      </tr>
+      <tr id="row-7-5-">
+
+       <td id="cell7-5-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-5-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\small size</code></span>
+       </td>
+
+       <td id="cell7-5-3" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-5-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\huge size</code></span>
+       </td>
+      </tr>
+      <tr id="row-7-6-">
+
+       <td id="cell7-6-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-6-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\normalsize size</code></span>
+       </td>
+
+       <td id="cell7-6-3" style="text-align:right;vertical-align:top;background-color:#FAFAFA;">
+        size
+       </td>
+       <td id="cell7-6-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\Huge size</code></span>
+       </td>
+      </tr>
+     </table>
+     <a id="x4-27001r6">
+     </a>
+     <figcaption class="caption">
+      <span class="id">
+       Table 2.6:
+      </span>
+      <span class="content">
+       Different type-styles supported by LaTeX along with their declaration versions.
+      </span>
+     </figcaption>
+    </figure>
+    <p class="noindent">
+     Note
+that
+the <span style="color:#054C5C;"><code class="verb">\normalsize</code></span>
+     corresponds
+to
+the
+size
+we
+get
+by
+default
+and
+the
+sizes
+form
+an
+ordered
+sequence
+with <span style="color:#054C5C;"><code class="verb">\tiny</code></span>
+     producing
+the
+smallest
+and <span style="color:#054C5C;"><code class="verb">\Huge</code></span>
+     producing
+the
+largest.
+Unlike
+the
+style
+changing
+commands,
+there
+are
+no
+command-with-one-argument
+forms
+for
+these
+declarations.
+    </p>
+    
+   </article>
+   <footer>
+    <div class="next">
+     <p class="noindent">
+      <a href="AcademicWritingLectureBookli2.html" style="float: right;">
+       Next Chapter →
+      </a>
+      <a href="AcademicWritingLectureBookch1.html" style="float: left;">
+       ← Previous Chapter
+      </a>
+      <a href="index.html">
+       TOP
+      </a>
+     </p>
+    </div>
+   </footer>
+  </div>
+  <p class="noindent">
+   <a id="likesection.2">
+   </a>
+   <a id="x4-27002x2.4">
+   </a>
+  </p>
+  <p class="noindent">
+   <a id="tailAcademicWritingLectureBookch2.html">
+   </a>
+  </p>
+ </body>
+</html>
