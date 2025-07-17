@@ -18,6 +18,19 @@
   <script src="flatjs.js">
   </script>
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+  <script type="module">
+   import pdfjsDist from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.93/+esm'
+  </script>
+  <script>
+   function moveTOC() { 
+var htmlShow = document.getElementsByClassName("wide"); 
+if (htmlShow[0].style.display === "none") { 
+htmlShow[0].style.display = "block"; 
+} else { 
+htmlShow[0].style.display = "none"; 
+} 
+}
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js">
   </script>
   <script src="texlive.js">
@@ -175,7 +188,7 @@
     </ul>
     <div class="prev-next" style="text-align: center">
      <p class="noindent">
-      <a href="AcademicWritingLectureBookli2.html" style="float:right; font-size:10px">
+      <a href="AcademicWritingLectureBookch3.html" style="float:right; font-size:10px">
        NEXT →
       </a>
       <a href="AcademicWritingLectureBookch1.html" style="float:left; font-size:10px">
@@ -196,7 +209,7 @@
         </h4>
        </div>
       </div>
-      <div id="author-text" style="bottom: 0; padding-top: 50px;border-top: solid 1px #3b4b5e;font-size: 12px;">
+      <div id="author-text" style="bottom: 0; padding-top: 50px;border-top: solid 1px #3b4b5e;font-size: 12px;text-align: right;">
        <p>
         <b>
          Authors Note
@@ -220,7 +233,7 @@
      <a id="x4-140002">
      </a>
      Looking at the Basics
-    </h1>
+    </h1><button id='toc-button' onclick='moveTOC()'>TOC</button>
     <div class="section-control" style="text-align: center">
      <a id="prev-section" onclick="goPrev()" style="float:left;">
       ← Previous Section
@@ -247,17 +260,22 @@
     </h2>
     <p class="noindent">
      For those who chose to skip the introduction chapter and just want to get into the heart of the topic,
-LaTeX is a typesetting program and is an extension of the original program TeX written by Donald
+Here is a short rundown:
+    </p>
+    <p class="noindent">
+     LaTeX is a typesetting program and is an extension of the original program TeX written by Donald
 Knuth.
     </p>
-    <p class="noindent">
-     <alert style="color: #821131;">
+    <div class="center">
+     <p class="noindent">
+     </p>
+     <p class="noindent">
       But then what is a typesetting program?
-     </alert>
-    </p>
+     </p>
+    </div>
     <p class="noindent">
      To answer this, let us look at the various stages in the preparation of a document using
-computers.
+computers:
     </p>
     <dl class="enumerate-enumitem">
      <dt class="enumerate-enumitem">
@@ -268,33 +286,33 @@ computers.
       <alert style="color: #821131;">
        entered
       </alert>
-      into the computer by the user or some script.
+      into the computer by the user or some script,
      </dd>
      <dt class="enumerate-enumitem">
       2.
      </dt>
      <dd class="enumerate-enumitem">
-      The input text is
+      the input text is
       <alert style="color: #821131;">
        formatted
       </alert>
-      into lines, paragraphs and pages.
+      into lines, paragraphs and pages,
      </dd>
      <dt class="enumerate-enumitem">
       3.
      </dt>
      <dd class="enumerate-enumitem">
-      The output text is
+      the output text is
       <alert style="color: #821131;">
        displayed
       </alert>
-      on the computer screen.
+      on the computer screen,
      </dd>
      <dt class="enumerate-enumitem">
       4.
      </dt>
      <dd class="enumerate-enumitem">
-      The final output is
+      the final output is
       <alert style="color: #821131;">
        printed
       </alert>
@@ -359,12 +377,13 @@ language
 like
 LaTeX is
 concerned
-only
-with
-stage
-2
-mentioned
-above.
+     <span id="bold" style="font-weight:bold;">
+      only
+     </span>
+     with
+the
+second
+page.
 So
 to
 typeset
@@ -380,6 +399,9 @@ of
 the
 document
 and
+                                                                                
+                                                                                
+                                                                              
 the
 necessary
 formatting
@@ -413,53 +435,97 @@ a
 printer.
     </p>
     <p class="noindent">
-     TeX is also a full
+     TeX is
+also
+a
+full
      <alert style="color: #821131;">
-      programming language
+      programming
+language
      </alert>
-     , so by learning the quirks and the nuances of the language, people can write code for
-additional features such as:
+     ,
+so
+by
+learning
+the
+quirks
+and
+the
+nuances
+of
+the
+language,
+people
+can
+write
+code
+for
+additional
+features
+such
+as:
     </p>
     <ul class="itemize1">
      <li class="itemize">
       <p class="noindent">
-       Drawing
-scientific
-diagrams,
+       Drawing scientific diagrams,
       </p>
      </li>
      <li class="itemize">
       <p class="noindent">
-       Doing
-mathematical
-calculations,
+       Doing mathematical calculations,
       </p>
      </li>
      <li class="itemize">
       <p class="noindent">
-       Automating
-document
-creation,
+       Automating document creation,
       </p>
      </li>
      <li class="itemize">
       <p class="noindent">
-       Embedding
-lua-script,
-and
+       Embedding lua-script, and
       </p>
      </li>
      <li class="itemize">
       <p class="noindent">
-       Generating
-slides.
+       Generating slides.
       </p>
      </li>
     </ul>
     <div class="knowledge">
      <p class="noindent">
-      In fact LaTeX itself has a significant collection of extra features, and the collective effort is continuing, with more and more
-people writing extra packages.
+      In
+fact
+LaTeX itself
+has
+a
+significant
+collection
+of
+additional
+features,
+and
+the
+collective
+effort
+is
+continuing,
+with
+more
+and
+more
+people
+writing
+extra
+packages
+which
+are
+all
+house
+in
+      <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:ctan">
+       CTAN
+      </a>.
      </p>
     </div>
     <h3 class="subsectionHead">
@@ -476,15 +542,14 @@ people writing extra packages.
      </small>
      <a id="x4-160002.1.1">
      </a>
-     A Small Example
+     A
+Small
+Example
     </h3>
     <p class="noindent">
      Let
 us
 see
-                                                                                
-                                                                                
-                                                                         
 LaTeX in
 action
 by
@@ -525,7 +590,14 @@ and
 all
 its
 settings
-configured.
+configured
+which
+was
+covered
+in
+the
+previous
+chapter.
       </span>
      </span>
      and
@@ -581,31 +653,14 @@ a
       and
 is
 different
-                                                                                
-                                                                                
-                                                                             
 from
-/
-(called
-slash)
+/,
+called
+slash.
      </p>
     </div>
     <p class="noindent">
-     Once
-you
-have
-written
-the
-text,
-save
-the
-file
-onto
-the
-hard
-disk
-as
-myfile.tex.
+     Once you have written the text, save the file as <span style="color:#054C5C;"><code class="verb">myfile.tex</code></span>.
      <alert style="color: #821131;">
       <span id="bold" style="font-weight:bold;">
        <sup class="textsuperscript">
@@ -622,179 +677,16 @@ myfile.tex.
        </span>
       </alert>
       <span style="color:#313244;">
-       Instead
-of
-myfile
-you
-can
-use
-any
-name
-you
-wish,
-but
-be
-sure
-to
-have
-.tex
-at
-the
-end
-as
-the
-extension.
+       Instead of <span style="color:#054C5C;"><code class="verb">myfile</code></span>
+       you can use any name you wish, but be sure to have <span style="color:#054C5C;"><code class="verb">.tex</code></span>
+       at the end as the extension.
       </span>
      </span>
-     The
-process
-of
-compiling
-this
-and
-viewing
-the
-output
-depends
-on
-your
-operating
-system.
-We
-describe
-below
-the
-process
-of
-doing
-this
-in
-GNU/Linux.
-    </p>
-    <p class="noindent">
-     At
-the
-shell
-prompt,
-     <alert style="color: #821131;">
-      <span id="bold" style="font-weight:bold;">
-       <sup class="textsuperscript">
-        4
-       </sup>
-      </span>
-     </alert>
-     <span class="marginnote">
-      <alert style="color: #821131;">
-       <span id="bold" style="font-weight:bold;">
-        <sup class="textsuperscript">
-         4
-        </sup>
-       </span>
-      </alert>
-      <span style="color:#313244;">
-       This
-is
-for
-people
-who
-have
-Linux,
-and
-now
-thinking
-about
-it,
-it
-is
-infinitesimally
-unlikely
-someone
-will
-have
-Linux
-installed
-on
-their
-computer
-who
-just
-started
-university.
-      </span>
-     </span>
-     type
-    </p>
-    <p class="noindent">
-    </p>
-    <div class="code-block">
-     <div class="code-lang">
-      latex
-     </div>
-     <pre><div class="language-latex" id="fancyvrb3" style="padding:20px;border-radius: 3px;"><a id="x4-16010r36"></a>latex myfile</div></pre>
-    </div>
-    <p class="noindent">
-     You
-will
-see
-a
-number
-of
-lines
-of
-text
-scroll
-by
-in
-the
-screen
-and
-then
-you
-get
-the
-prompt
-back.
-To
-view
-the
-output
-in
-screen,
-you
-must
-                                                                                
-                                                                                
-                                                                             
-have
-the
-X
-Window
-running.
-So,
-start
-X
-if
-you
-have
-not
-done
-so,
-and
-in
-a
-terminal
-window,
-type
-    </p>
-    <p class="noindent">
-     A
-window
-comes
-up
-showing
-the
-output
-below
+     Once you press the run button in your TeXStudio, you will see a
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:pdf">
+      PDF
+     </a>
+     output with the following text.
     </p>
     <div class="quoteblock">
      <p class="noindent">
@@ -825,7 +717,7 @@ file
      <alert style="color: #821131;">
       <span id="bold" style="font-weight:bold;">
        <sup class="textsuperscript">
-        5
+        4
        </sup>
       </span>
      </alert>
@@ -833,7 +725,7 @@ file
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         5
+         4
         </sup>
        </span>
       </alert>
@@ -851,12 +743,15 @@ a <span style="color:#054C5C;"><code class="verb">.tex</code></span>
        file
       </span>
      </span>
-     .
+     and
+see
+what
+is
+going
+on.
     </p>
     <p class="noindent">
      The
-                                                                                
-                                                                                
 first
 line <span style="color:#054C5C;"><code class="verb">\documentclass{article}</code></span>
      tells
@@ -872,21 +767,78 @@ article.
     </p>
     <div class="knowledge">
      <p class="noindent">
-      If we want to write a book, this must be changed to <span style="color:#054C5C;"><code class="verb">\documentclass{book}</code></span>. We will look into these a bit later.
+      If
+we
+want
+to
+write
+a
+book,
+                                                                                
+                                                                                
+                                                                             
+this
+must
+be
+changed
+to <span style="color:#054C5C;"><code class="verb">\documentclass{book}</code></span>.
+We
+will
+look
+into
+these
+a
+bit
+later.
      </p>
     </div>
     <p class="noindent">
-     The whole document we want to typeset should be included between <span style="color:#054C5C;"><code class="verb">\begin{document}</code></span>
-     and <span style="color:#054C5C;"><code class="verb">\end{document}</code></span>. Think of this as a wrapper which contains all the text we
+     The
+whole
+document
+we
+want
+to
+typeset
+should
+be
+included
+     <alert style="color: #821131;">
+      between
+     </alert> <span style="color:#054C5C;"><code class="verb">\begin{document}</code></span>
+     and <span style="color:#054C5C;"><code class="verb">\end{document}</code></span>.
+Think
+of
+this
+as
+a
+wrapper
+which
+contains
+all
+the
+text
+we
      <span id="bold" style="font-weight:bold;">
       want
      </span>
-     to print out to the user.
+     to
+print
+out
+to
+the
+user.
     </p>
     <div class="knowledge">
      <p class="noindent">
-      Any part which is before <span style="color:#054C5C;"><code class="verb">\begin{environment}</code></span>
-      is called the
+      Any
+part
+which
+is
+before <span style="color:#054C5C;"><code class="verb">\begin{environment}</code></span>
+      is
+called
+the
       <span id="bold" style="font-weight:bold;">
        preamble
       </span>
@@ -899,6 +851,9 @@ back
 to
 our
 example,
+                                                                                
+                                                                                
+                                                                             
 this
 is
 just
@@ -917,10 +872,7 @@ output.
 The
 first
 three
-words
-(This
-is
-my)
+words <span style="color:#054C5C;">(<code class="verb">This is my</code>)</span>
 are
 produced
 as
@@ -936,7 +888,7 @@ output.
      <alert style="color: #821131;">
       <span id="bold" style="font-weight:bold;">
        <sup class="textsuperscript">
-        6
+        5
        </sup>
       </span>
      </alert>
@@ -944,7 +896,7 @@ output.
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         6
+         5
         </sup>
        </span>
       </alert>
@@ -956,9 +908,6 @@ common
 practice
 to
 emphasise
-                                                                                
-                                                                                
-                                                                            
 words
 in
 print
@@ -995,6 +944,9 @@ next
 three
 words
 come
+                                                                                
+                                                                                
+                                                                             
 out
 without
 any
@@ -1053,13 +1005,17 @@ text.
     </p>
     <p class="noindent">
      Now
-call
-up
+let’s
+look
+at
 the
 file
 again
 and
 add
+                                                                                
+                                                                                
+                                                                             
 one
 more
 sentence
@@ -1072,8 +1028,8 @@ below.
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb4" style="padding:20px;border-radius: 3px;"><a id="x4-16012r41"></a>This is my <span style="color:#2B2BFF;">\emph</span><span style="color:#2B2BFF;">{</span>first<span style="color:#2B2BFF;">}</span> document prepared in <span style="color:#2B2BFF;">\LaTeX</span>. I typed it 
-<a id="x4-16014r42"></a>on <span style="color:#2B2BFF;">\today</span>.</div></pre>
+     <pre><div class="language-latex" id="fancyvrb3" style="padding:20px;border-radius: 3px;"><a id="x4-16010r41"></a>This is my <span style="color:#2B2BFF;">\emph</span><span style="color:#2B2BFF;">{</span>first<span style="color:#2B2BFF;">}</span> document prepared in <span style="color:#2B2BFF;">\LaTeX</span>. I typed it 
+<a id="x4-16012r42"></a>on <span style="color:#2B2BFF;">\today</span>.</div></pre>
     </div>
     <p class="noindent">
      What
@@ -1117,9 +1073,6 @@ LaTeX
 why
 all
 this
-                                                                                
-                                                                                
-                                                                           
 trouble
 and
 why
@@ -1138,7 +1091,8 @@ in
 the
 motivation
 behind
-LaTeXḊonald
+LaTeX.
+Donald
 Knuth
 says
 that
@@ -1179,7 +1133,7 @@ processor.
      <alert style="color: #821131;">
       <span id="bold" style="font-weight:bold;">
        <sup class="textsuperscript">
-        7
+        6
        </sup>
       </span>
      </alert>
@@ -1187,7 +1141,7 @@ processor.
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         7
+         6
         </sup>
        </span>
       </alert>
@@ -1208,8 +1162,6 @@ documents
 in
 Word
 can
-                                                                                
-                                                                                
 attest.
       </span>
      </span>
@@ -1243,7 +1195,7 @@ attest.
      We
 have
 seen
-that
+that,
 to
 typeset
 something
@@ -1255,6 +1207,9 @@ in
 the
 text
 to
+                                                                                
+                                                                                
+                                                                              
 be
 typeset
 together
@@ -1272,7 +1227,7 @@ spaces
      <alert style="color: #821131;">
       <span id="bold" style="font-weight:bold;">
        <sup class="textsuperscript">
-        8
+        7
        </sup>
       </span>
      </alert>
@@ -1280,7 +1235,7 @@ spaces
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         8
+         7
         </sup>
        </span>
       </alert>
@@ -1296,7 +1251,10 @@ many.
 lines
 maybe
 broken
-arbitrarily.
+arbitrarily
+by
+the
+language.
     </p>
     <p class="noindent">
      The
@@ -1319,9 +1277,6 @@ In
 other
 words,
 whenever
-                                                                                
-                                                                                
-                                                                             
 you
 want
 to
@@ -1345,6 +1300,9 @@ two
 above
 were
 produced
+                                                                                
+                                                                                
+                                                                              
 by
 the
 input:
@@ -1355,7 +1313,7 @@ input:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb5" style="padding:20px;border-radius: 3px;"><a id="x4-18002r49"></a><span style="color:#2B2BFF;">\noindent</span> We have seen that to typeset something in <span style="color:#2B2BFF;">\LaTeX</span>, we type in the 
+     <pre><div class="language-latex" id="fancyvrb4" style="padding:20px;border-radius: 3px;"><a id="x4-18002r49"></a><span style="color:#2B2BFF;">\noindent</span> We have seen that to typeset something in <span style="color:#2B2BFF;">\LaTeX</span>, we type in the 
 <a id="x4-18004r50"></a>text to be typeset together with some <span style="color:#2B2BFF;">\LaTeX\</span> commands. 
 <a id="x4-18006r51"></a>Words must be separated by spaces (does not matter how many) 
 <a id="x4-18008r52"></a>and lines maybe broken arbitrarily. 
@@ -1482,9 +1440,6 @@ aligned
 perfectly
 on
 the
-                                                                                
-                                                                                
-                                                                            
 right
 and
 left.
@@ -1496,7 +1451,11 @@ the
 space
 between
 the
-words.
+words
+     <alert style="color: #821131;">
+      automatically
+     </alert>
+     .
     </p>
     <p class="noindent">
      In
@@ -1509,6 +1468,9 @@ space
 is
 added
 to
+                                                                                
+                                                                                
+                                                                           
 periods
 which
 end
@@ -1538,8 +1500,10 @@ assumes
 that
 every
 period
-not
-following
+      <span id="bold" style="font-weight:bold;">
+       NOT
+      </span>
+      following
 an
 upper
 case
@@ -1556,9 +1520,6 @@ does
 not
 always
 work,
-                                                                                
-                                                                                
-                                                                              
 for
 there
 are
@@ -1617,7 +1578,7 @@ is
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb6" style="padding:20px;border-radius: 3px;"><a id="x4-19002r62"></a>Carrots are good for your eyes, since they contain Vitamin A<span style="color:#2B2BFF;">\@</span>. Have 
+     <pre><div class="language-latex" id="fancyvrb5" style="padding:20px;border-radius: 3px;"><a id="x4-19002r62"></a>Carrots are good for your eyes, since they contain Vitamin A<span style="color:#2B2BFF;">\@</span>. Have 
 <a id="x4-19004r63"></a>you ever seen a rabbit wearing glasses?</div></pre>
     </div>
     <div class="warning">
@@ -1631,9 +1592,6 @@ the
 period
 to
 produce
-                                                                                
-                                                                                
-                                                                              
 the
 extra
 space
@@ -1657,13 +1615,18 @@ following
 a
 lowercase
 letter
+                                                                                
+                                                                                
+                                                                             
 does
-not
-end
+     <span id="bold" style="font-weight:bold;">
+      NOT
+     </span>
+     end
 a
 sentence.
 For
-example <a id="x4-19005"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-boniface2005leopold">[20]</a></span>:
+example <a id="x4-19005"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-boniface2005leopold">[25]</a></span>:
     </p>
     <p class="noindent">
     </p>
@@ -1703,9 +1666,6 @@ this
 (without
 extra
 space
-                                                                                
-                                                                                
-                                                                             
 after
 etc.)
 the
@@ -1719,7 +1679,7 @@ be:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb7" style="padding:20px;border-radius: 3px;"><a id="x4-19007r80"></a>The numbers 1, 2, 3, etc.<span style="color:#2B2BFF;">\</span> are called natural numbers. According to 
+     <pre><div class="language-latex" id="fancyvrb6" style="padding:20px;border-radius: 3px;"><a id="x4-19007r80"></a>The numbers 1, 2, 3, etc.<span style="color:#2B2BFF;">\</span> are called natural numbers. According to 
 <a id="x4-19009r81"></a>Kronecker, they were made by God; all else being the works of Man.</div></pre>
     </div>
     <p class="noindent">
@@ -1732,7 +1692,7 @@ command
      <alert style="color: #821131;">
       <span id="bold" style="font-weight:bold;">
        <sup class="textsuperscript">
-        9
+        8
        </sup>
       </span>
      </alert>
@@ -1740,7 +1700,7 @@ command
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
-         9
+         8
         </sup>
        </span>
       </alert>
@@ -1749,6 +1709,8 @@ command
 is,
 a
 backslash
+                                                                                
+                                                                                
 and
 a
        <span id="bold" style="font-weight:bold;">
@@ -1803,9 +1765,6 @@ example,
 type
 the
 following
-                                                                                
-                                                                                
-                                                                             
 line
 and
 compile
@@ -1817,15 +1776,14 @@ it:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb8" style="padding:20px;border-radius: 3px;"><a id="x4-19011r86"></a><span style="color:#2B2BFF;">\documentclass</span><span style="color:#2B2BFF;">{</span>article<span style="color:#2B2BFF;">}</span> 
+     <pre><div class="language-latex" id="fancyvrb7" style="padding:20px;border-radius: 3px;"><a id="x4-19011r86"></a><span style="color:#2B2BFF;">\documentclass</span><span style="color:#2B2BFF;">{</span>article<span style="color:#2B2BFF;">}</span> 
 <a id="x4-19013r87"></a> 
 <a id="x4-19015r88"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span> 
 <a id="x4-19017r89"></a>I think <span style="color:#2B2BFF;">\LaTeX</span> is fun. 
 <a id="x4-19019r90"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span></div></pre>
     </div>
     <p class="noindent">
-     We
-get:
+     We  get:
     </p>
     <div class="quoteblock">
      <p class="noindent">
@@ -1836,24 +1794,46 @@ fun.
      </p>
     </div>
     <p class="noindent">
-     What
-happened
-to
-the
+     What happened to the
      <span id="bold" style="font-weight:bold;">
       space
      </span>
-     we
-typed
-between
-LaTeX and
-is?
+     we typed between LaTeX and is?
     </p>
     <p class="noindent">
      You
 see,
 LaTeX gobbles
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        9
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         9
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       In
+this
+context,
+gobble
+means
+it
+eats
 up
+all
+the
+white-space.
+      </span>
+     </span>
+     up
 all
 spaces
 after
@@ -1871,10 +1851,10 @@ change
 the
 input
 as
-I
+“I
 think
 LaTeX is
-fun.
+fun”.
     </p>
     <p class="noindent">
      Again,
@@ -1903,26 +1883,10 @@ rescue.
      Quotations
     </h3>
     <p class="noindent">
-     Have
-you
-noticed
-that
-in
-typesetting,
-opening
-quotes
-are
-different
-from
-closing
-quotes?
+     Have you noticed that in typesetting, opening quotes are different from closing quotes?
     </p>
     <p class="noindent">
-     Look
-at
-the
-LaTeX output
-below:
+     Look  at  the  LaTeX output  below:
     </p>
     <p class="noindent">
     </p>
@@ -1930,16 +1894,11 @@ below:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb9" style="padding:20px;border-radius: 3px;"><a id="x4-20002r97"></a>Note the difference in right and left quotes in 
+     <pre><div class="language-latex" id="fancyvrb8" style="padding:20px;border-radius: 3px;"><a id="x4-20002r97"></a>Note the difference in right and left quotes in 
 <a id="x4-20004r98"></a>'single quotes' and ''double quotes''.</div></pre>
     </div>
     <p class="noindent">
-     This
-is
-produced
-by
-the
-input
+     This  is  produced  by  the  input
     </p>
     <p class="noindent">
     </p>
@@ -1947,6 +1906,9 @@ input
      <p class="noindent">
       Note
 the
+                                                                                
+                                                                                
+     
 difference
 in
 right
@@ -1963,33 +1925,9 @@ quotes”.
     </div>
     <div class="knowledge">
      <p class="noindent">
-      If
-your
-keyboard
-does
-not
-have
-a
-left
-quote
-key,
-you
-                                                                                
-                                                                                
-                                                                             
-can
-use <span style="color:#054C5C;"><code class="verb">\lq</code></span>
-      command
-to
-produce
-it.
-The
-corresponding
-command <span style="color:#054C5C;"><code class="verb">\rq</code></span>
-      produces
-a
-right
-quote.
+      If your keyboard does not have a left quote key, you can use <span style="color:#054C5C;"><code class="verb">\lq</code></span>
+      command to produce it. The corresponding command <span style="color:#054C5C;"><code class="verb">\rq</code></span>
+      produces a right quote.
      </p>
     </div>
     <h3 class="subsectionHead">
@@ -2009,23 +1947,7 @@ quote.
      Dashes
     </h3>
     <p class="noindent">
-     In
-text,
-dashes
-are
-used
-for
-various
-purposes
-and
-they
-are
-distinguished
-in
-typesetting
-by
-their
-lengths;
+     In text, dashes are used for various purposes and they are distinguished in typesetting by their lengths;
     </p>
     <ul class="itemize1">
      <li class="itemize">
@@ -2053,9 +1975,6 @@ still
 longer
 dashes
 used
-                                                                                
-                                                                                
-     
 for
 parenthetical
 comments.
@@ -2063,14 +1982,7 @@ comments.
      </li>
     </ul>
     <p class="noindent">
-     Let’s
-have
-a
-look
-at
-the
-following
-TeX output:
+     Let’s  have  a  look  at  the  following  TeX output:
     </p>
     <div class="quoteblock">
      <p class="noindent">
@@ -2083,6 +1995,9 @@ pages
 of
 Volume
 3—the
+                                                                                
+                                                                                
+     
 volume
 on
 electromagnetic
@@ -2090,12 +2005,7 @@ waves.
      </p>
     </div>
     <p class="noindent">
-     This
-is
-produced
-from
-the
-input:
+     This  is  produced  from  the  input:
     </p>
     <p class="noindent">
     </p>
@@ -2103,13 +2013,11 @@ input:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb10" style="padding:20px;border-radius: 3px;"><a id="x4-21002r105"></a>X-rays are discussed in pages 221--225 of 
+     <pre><div class="language-latex" id="fancyvrb9" style="padding:20px;border-radius: 3px;"><a id="x4-21002r105"></a>X-rays are discussed in pages 221--225 of 
 <a id="x4-21004r106"></a>Volume 3---the volume on electromagnetic waves.</div></pre>
     </div>
     <p class="noindent">
-     Please
-observe
-that:
+     Please  observe  that:
     </p>
     <ul class="itemize1">
      <li class="itemize">
@@ -2129,9 +2037,6 @@ output
       <p class="noindent">
        two
 dashes <span style="color:#054C5C;">(<code class="verb">--</code>)</span>
-                                                                                
-                                                                                
-     
 produces
 a
 longer
@@ -2174,60 +2079,15 @@ output.
      Accents
     </h3>
     <p class="noindent">
-     Sometimes,
-especially
-when
-typing
-foreign
-words
-in
-English,
-or
-just
-writing
-documents
-in
-non-english,
-we
-need
-to
-put
-different
-types
-of
+     Sometimes, especially when typing foreign words in English, or just writing documents in non-english, we need
+to put different types of
      <alert style="color: #821131;">
       accents
      </alert>
-     over
-the
-letters.
-The
-table
-below
-shows
-the
-accents
-available
-in
-LaTeX.
+     over the letters. The table below shows the accents available in LaTeX.
     </p>
     <p class="noindent">
-     Each
-column
-shows
-                                                                                
-                                                                                
-                                                                            
-some
-of
-the
-accents
-and
-the
-inputs
-to
-generate
-them.
+     Each column shows some of the accents and the inputs to generate them.
     </p>
     <table class="tabularray tblr" id="tbl-2">
      <tr id="row-2-1-">
@@ -2276,12 +2136,7 @@ them.
       </td>
 
       <td id="cell2-2-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         c
-        </mi>
-       </math>
-       c
+       ç
       </td>
       <td id="cell2-2-8" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\c c</code></span>
       </td>
@@ -2289,45 +2144,25 @@ them.
      <tr id="row-2-3-">
 
       <td id="cell2-3-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         u
-        </mi>
-       </math>
-       o
+       ŏ
       </td>
       <td id="cell2-3-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\u o</code></span>
       </td>
 
       <td id="cell2-3-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         v
-        </mi>
-       </math>
-       o
+       ǒ
       </td>
       <td id="cell2-3-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\v o</code></span>
       </td>
 
       <td id="cell2-3-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         H
-        </mi>
-       </math>
-       o
+       ő
       </td>
       <td id="cell2-3-6" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\H o</code></span>
       </td>
 
       <td id="cell2-3-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         d
-        </mi>
-       </math>
-       o
+       ọ
       </td>
       <td id="cell2-3-8" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\d o</code></span>
       </td>
@@ -2341,12 +2176,7 @@ them.
       </td>
 
       <td id="cell2-4-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <mi>
-         t
-        </mi>
-       </math>
-       oo
+       o͡o
       </td>
       <td id="cell2-4-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\t oo</code></span>
       </td>
@@ -2374,33 +2204,11 @@ them.
     </figcaption>
     <div class="warning">
      <p class="noindent">
-      The
-letters
-i
-and
-j
-need
-special
-treatment
-with
-regard
-to
-accents,
-since
-they
-should
-not
-have
-their
-customary
-dots
-when
-accented.
+      The letters i and j need special treatment with regard to accents, since they should not have their customary dots when accented.
      </p>
      
     </div>
-    The
-commands
+    The commands
     <span style="color:#054C5C;">
      <code class="verb">
       \i
@@ -2412,24 +2220,7 @@ commands
       \j
      </code>
     </span>
-    produce
-dot-less
-i
-and
-j
-as
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-     <mi>
-      i
-     </mi>
-    </math>
-    and
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-     <mi>
-      j
-     </mi>
-    </math>
-    .
+    produce dot-less i and j as ı and ȷ.
     <p class="noindent">
     </p>
     <div class="quoteblock">
@@ -2440,10 +2231,7 @@ aquí
      </p>
     </div>
     <p class="noindent">
-     we
-need
-to
-type:
+     we  need  to  type:
     </p>
     <p class="noindent">
     </p>
@@ -2451,25 +2239,10 @@ type:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb11" style="padding:20px;border-radius: 3px;"><a id="x4-22003r113"></a><span style="color:#2B2BFF;">\'</span><span style="color:#2B2BFF;">{</span>E<span style="color:#2B2BFF;">}</span>l est<span style="color:#2B2BFF;">\'</span><span style="color:#2B2BFF;">{</span>a<span style="color:#2B2BFF;">}</span> aqu<span style="color:#2B2BFF;">\'</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\i</span><span style="color:#2B2BFF;">}</span></div></pre>
+     <pre><div class="language-latex" id="fancyvrb10" style="padding:20px;border-radius: 3px;"><a id="x4-22003r113"></a><span style="color:#2B2BFF;">\'</span><span style="color:#2B2BFF;">{</span>E<span style="color:#2B2BFF;">}</span>l est<span style="color:#2B2BFF;">\'</span><span style="color:#2B2BFF;">{</span>a<span style="color:#2B2BFF;">}</span> aqu<span style="color:#2B2BFF;">\'</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\i</span><span style="color:#2B2BFF;">}</span></div></pre>
     </div>
     <p class="noindent">
-     Some
-symbols
-from
-non-English
-languages
-are
-also
-available
-in
-LaTeX,
-as
-shown
-in
-the
-table
-below:
+     Some symbols from non-English languages are also available in LaTeX, as shown in the table below:
     </p>
     <p class="noindent">
     </p>
@@ -2503,23 +2276,13 @@ below:
       <tr id="row-3-2-">
 
        <td id="cell3-2-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-         <mi>
-          r
-         </mi>
-        </math>
-        a
+        å
        </td>
        <td id="cell3-2-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\aa</code></span>
        </td>
 
        <td id="cell3-2-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-         <mi>
-          r
-         </mi>
-        </math>
-        A
+        Å
        </td>
        <td id="cell3-2-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\AA</code></span>
        </td>
@@ -2537,41 +2300,25 @@ below:
       <tr id="row-3-3-">
 
        <td id="cell3-3-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-         <mi>
-          o
-         </mi>
-        </math>
+        ø
        </td>
        <td id="cell3-3-2" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\o</code></span>
        </td>
 
        <td id="cell3-3-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-         <mi>
-          o
-         </mi>
-        </math>
+        ø
        </td>
        <td id="cell3-3-4" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\o</code></span>
        </td>
 
        <td id="cell3-3-5" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-         <mi>
-          l
-         </mi>
-        </math>
+        ł
        </td>
        <td id="cell3-3-6" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\l</code></span>
        </td>
 
        <td id="cell3-3-7" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-         <mi>
-          L
-         </mi>
-        </math>
+        Ł
        </td>
        <td id="cell3-3-8" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">\L</code></span>
        </td>
@@ -2649,63 +2396,26 @@ below:
      </small>
      <a id="x4-230002.2.5">
      </a>
-     Special
-Symbols
+     Special  Symbols
     </h3>
     <p class="noindent">
-     We
-have
-seen
-that
-input <span style="color:#054C5C;"><code class="verb">\LaTeX</code></span>
-     produces
-LaTeX in
-the
-output
-and <span style="color:#054C5C;"><code class="verb">\</code></span>
-     produces
-a
-space.
-Therefore,
-TeX uses
-the
-symbol
-\ for
-a
+     We have seen that input <span style="color:#054C5C;"><code class="verb">\LaTeX</code></span>
+     produces LaTeX in the output and <span style="color:#054C5C;"><code class="verb">\</code></span>
+     produces a space.
+Therefore, TeX uses the symbol \ for a
      <alert style="color: #821131;">
       special
      </alert>
-     purpose,
-as
-briefly
-mentioned
-previously:
+     purpose, as briefly mentioned previously:
     </p>
     
     <div class="warning">
      <p class="noindent">
-      To
-indicate
-the
-program
-that
-what
-follows
-is
+      To indicate the program that what follows is
       <span id="bold" style="font-weight:bold;">
        NOT
       </span>
-      text
-to
-be
-typeset
-but
-an
-instruction
-to
-be
-carried
-out.
+      text to be typeset but an instruction to be carried out.
      </p>
     </div>
     <p class="noindent">
@@ -2717,8 +2427,6 @@ want
 to
 get
 \ in
-                                                                                
-                                                                                
 your
 output?
      <alert style="color: #821131;">
@@ -2788,6 +2496,8 @@ what
 is
 obtained
 from
+                                                                                
+                                                                                
 the
 input
 below:
@@ -2798,7 +2508,7 @@ below:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb12" style="padding:20px;border-radius: 3px;"><a id="x4-23002r120"></a>Maybe I have now learnt about 1<span style="color:#008700;"><italic>% of \LaTeX.</italic></span></div></pre>
+     <pre><div class="language-latex" id="fancyvrb11" style="padding:20px;border-radius: 3px;"><a id="x4-23002r120"></a>Maybe I have now learnt about 1<span style="color:#008700;"><italic>% of \LaTeX.</italic></span></div></pre>
     </div>
     <p class="noindent">
      You  only  get:
@@ -2810,9 +2520,6 @@ I
 have
 now
 learnt
-                                                                                
-                                                                                
-     
 about
 1
      </p>
@@ -2840,7 +2547,7 @@ useful for a LaTeX programmer to explain a particularly sticky bit of code to o
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb13" style="padding:20px;border-radius: 3px;"><a id="x4-23004r125"></a>Maybe I have now learnt about 1<span style="color:#2B2BFF;">\%</span> of <span style="color:#2B2BFF;">\LaTeX</span>.</div></pre>
+     <pre><div class="language-latex" id="fancyvrb12" style="padding:20px;border-radius: 3px;"><a id="x4-23004r125"></a>Maybe I have now learnt about 1<span style="color:#2B2BFF;">\%</span> of <span style="color:#2B2BFF;">\LaTeX</span>.</div></pre>
     </div>
     <p class="noindent">
      which  would  give  us:
@@ -2859,7 +2566,7 @@ LaTeX.
      </p>
     </div>
     <p class="noindent">
-     The symbols \ and % are just two <alert style="color: #821131;">(2)</alert> of the ten <alert style="color: #821131;">(10)</alert> charcaters TeX reserves for its internal use. The complete list is:
+     The symbols \ and % are just two <alert style="color: #821131;">(2)</alert> of the ten <alert style="color: #821131;">(10)</alert> characters TeX reserves for its internal use. The complete list is:
     </p>
     <p class="noindent">
     </p>
@@ -2867,7 +2574,7 @@ LaTeX.
      <div class="code-lang">
       text
      </div>
-     <pre><div class="language-text" id="fancyvrb14" style="padding:20px;border-radius: 3px;"><a id="x4-23006r130"></a>~ # $ % ^ &amp; _ \ { }</div></pre>
+     <pre><div class="language-text" id="fancyvrb13" style="padding:20px;border-radius: 3px;"><a id="x4-23006r130"></a>~ # $ % ^ &amp; _ \ { }</div></pre>
     </div>
     <p class="noindent">
      We have seen how LaTeX uses two of these symbols and others we will see as we proceed. Also,
@@ -2980,58 +2687,6 @@ by <span style="color:#054C5C;"><code class="verb">\%</code></span>. What about 
         </span>
        </td>
       </tr>
-      <tr id="row-4-7-">
-
-       <td id="cell4-7-1" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-         <msubsup>
-          <mrow>
-           <mo>
-            ∫
-           </mo>
-          </mrow>
-          <mrow>
-           <mi>
-            a
-           </mi>
-           <mi>
-            b
-           </mi>
-          </mrow>
-          <mrow>
-           <mi>
-            v
-           </mi>
-           <mi>
-            v
-           </mi>
-          </mrow>
-         </msubsup>
-         <mi>
-          m
-         </mi>
-         <msup>
-          <mrow>
-           <mi>
-            c
-           </mi>
-          </mrow>
-          <mrow>
-           <mn>
-            2
-           </mn>
-          </mrow>
-         </msup>
-        </math>
-       </td>
-       <td id="cell4-7-2" style="text-align:justify;vertical-align:top;">
-       </td>
-
-       <td id="cell4-7-3" style="text-align:center;vertical-align:top;background-color:#FAFAFA;">
-       </td>
-       <td id="cell4-7-4" style="text-align:justify;vertical-align:top;">
-       </td>
-      </tr>
      </table>
      <a id="x4-23007r3">
      </a>
@@ -3062,7 +2717,7 @@ with a \. Of the exceptional three, we have seen that änd äre used for produci
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb15" style="padding:20px;border-radius: 3px;"><a id="x4-23009r69"></a>This is the first line. <span style="color:#2B2BFF;">\\</span> This is the second line.</div></pre>
+     <pre><div class="language-latex" id="fancyvrb14" style="padding:20px;border-radius: 3px;"><a id="x4-23009r69"></a>This is the first line. <span style="color:#2B2BFF;">\\</span> This is the second line.</div></pre>
     </div>
     <p class="noindent">
      produces
@@ -3089,7 +2744,7 @@ line
      to <span style="color:#054C5C;"><code class="verb">\\</code></span>
      to i
      <span id="bold" style="font-weight:bold;">
-      ncrease the vertical distance
+      increase the vertical distance
      </span>
      between the lines. For example,
     </p>
@@ -3097,7 +2752,7 @@ line
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb16" style="padding:20px;border-radius: 3px;"><a id="x4-23011r74"></a>This is the first line. <span style="color:#2B2BFF;">\\</span>[10pt] 
+     <pre><div class="language-latex" id="fancyvrb15" style="padding:20px;border-radius: 3px;"><a id="x4-23011r74"></a>This is the first line. <span style="color:#2B2BFF;">\\</span>[10pt] 
 <a id="x4-23013r75"></a>This is the second line.</div></pre>
     </div>
     <p class="noindent">
@@ -3150,47 +2805,10 @@ lines.
 point <span style="color:#054C5C;">(<code class="verb">1pt</code>)</span>
                                                                                 
                                                                                 
+                                                                               
 is
 about
-       <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <mstyle class="text">
-         <mtext>
-         </mtext>
-         <mstyle class="math">
-          <mn>
-           1
-          </mn>
-         </mstyle>
-         <mtext>
-         </mtext>
-         <mstyle class="math">
-         </mstyle>
-         <mtext>
-         </mtext>
-         <mstyle class="math">
-          <mo class="MathClass-bin" stretchy="false">
-           ∕
-          </mo>
-         </mstyle>
-         <mtext>
-         </mtext>
-         <mstyle class="math">
-         </mstyle>
-         <mtext>
-         </mtext>
-         <mstyle class="math">
-          <mn>
-           7
-          </mn>
-          <mn>
-           2
-          </mn>
-         </mstyle>
-         <mtext>
-         </mtext>
-        </mstyle>
-       </math>
-       th
+0.013
 of
 an
 inch.
@@ -3211,36 +2829,17 @@ inch.
      </small>
      <a id="x4-240002.2.6">
      </a>
-     Position  of  Text
+     Position
+of
+Text
     </h3>
     <p class="noindent">
-     We
-have
-seen
-up
-to
-now,
-that
-LaTeX aligns
-text
-in
+     We have seen up to now, that LaTeX aligns text in
      <alert style="color: #821131;">
-      its
-own
-way
+      its own way
      </alert>
-     ,
-regardless
-of
-the
-way
-text
-is
-formatted
-in
-the
-input
-file.
+     , regardless of the way text is formatted in the
+input file.
      <alert style="color: #821131;">
       <span id="bold" style="font-weight:bold;">
        <sup class="textsuperscript">
@@ -3257,52 +2856,22 @@ file.
        </span>
       </alert>
       <span style="color:#313244;">
-       To
-a
-certain
-extent
-LaTeX does
+       To a certain extent LaTeX does
        <span id="bold" style="font-weight:bold;">
         NOT
        </span>
-       care
-about
-how
-many
-spaces
-there
-are
-between
-words
-or
-whether
-there
-are
-numerous
-spaces
-between
-paragrahs.
+       care about how many spaces there are between words or
+whether there are numerous spaces between paragraphs.
       </span>
      </span>
-     Now
-suppose
-you
-want
-to
-typeset
-                                                                                
-                                                                                
-                                                                         
-something
-like
-this
+     Now suppose you want to typeset something like this
     </p>
     <div class="quoteblock">
      <div class="center">
       <p class="noindent">
       </p>
       <p class="noindent">
-       Management Centre Innsbruck Mechatronics
+       MCI Mechatronics
        Welcomes You!
       </p>
      </div>
@@ -3317,13 +2886,7 @@ this
      </div>
     </div>
     <p class="noindent">
-     Which
-is
-produced
-by
-the
-following
-command:
+     Which  is  produced  by  the  following  command:
     </p>
     <p class="noindent">
     </p>
@@ -3331,8 +2894,8 @@ command:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb17" style="padding:20px;border-radius: 3px;"><a id="x4-24002r137"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{center}</span> 
-<a id="x4-24004r138"></a><span style="color:#2B2BFF;"> Management Centre Innsbruck Mechatronics</span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\\</span></span>[<span style="color:#2B2BFF;">.</span><span style="color:#2B8554;"><span id="bold" style="font-weight:bold;">75</span></span><span style="color:#2B2BFF;">cm</span>] 
+     <pre><div class="language-latex" id="fancyvrb16" style="padding:20px;border-radius: 3px;"><a id="x4-24002r137"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{center}</span> 
+<a id="x4-24004r138"></a><span style="color:#2B2BFF;"> MCI Mechatronics</span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\\</span></span>[<span style="color:#2B2BFF;">.</span><span style="color:#2B8554;"><span id="bold" style="font-weight:bold;">75</span></span><span style="color:#2B2BFF;">cm</span>] 
 <a id="x4-24006r139"></a><span style="color:#2B2BFF;"> Welcomes You</span>! 
 <a id="x4-24008r140"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{center}</span> 
 <a id="x4-24010r141"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\noindent</span></span><span style="color:#2B2BFF;"> This is to certify that you have chosen to</span> 
@@ -3343,16 +2906,7 @@ command:
 <a id="x4-24020r146"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{flushright}</span></div></pre>
     </div>
     <p class="noindent">
-     Let’s
-have
-a
-look
-at
-the
-comments.
-Here,
-the
-commands:
+     Let’s have a look at the comments. Here, the commands:
     </p>
     <p class="noindent">
     </p>
@@ -3360,24 +2914,10 @@ commands:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb18" style="padding:20px;border-radius: 3px;"><a id="x4-24022r152"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{center} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{center}</span></div></pre>
+     <pre><div class="language-latex" id="fancyvrb17" style="padding:20px;border-radius: 3px;"><a id="x4-24022r152"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{center} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{center}</span></div></pre>
     </div>
     <p class="noindent">
-     typesets
-the
-text
-between
-them
-exactly
-at
-the
-center
-of
-the
-page
-and
-the
-commands
+     typesets the text between them exactly at the center of the page and the commands
     </p>
     <p class="noindent">
     </p>
@@ -3385,19 +2925,10 @@ commands
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb19" style="padding:20px;border-radius: 3px;"><a id="x4-24024r157"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{flushright} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{flushright}</span></div></pre>
+     <pre><div class="language-latex" id="fancyvrb18" style="padding:20px;border-radius: 3px;"><a id="x4-24024r157"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{flushright} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{flushright}</span></div></pre>
     </div>
     <p class="noindent">
-     typesets
-text
-flush
-with
-the
-right
-margin.
-The
-corresponding
-commands
+     typesets text flush with the right margin. The corresponding commands
     </p>
     <p class="noindent">
     </p>
@@ -3405,13 +2936,16 @@ commands
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb20" style="padding:20px;border-radius: 3px;"><a id="x4-24026r162"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{flushleft} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{flushleft}</span></div></pre>
+     <pre><div class="language-latex" id="fancyvrb19" style="padding:20px;border-radius: 3px;"><a id="x4-24026r162"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{flushleft} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{flushleft}</span></div></pre>
     </div>
     <p class="noindent">
      places
 the
 enclosed
 text
+                                                                                
+                                                                                
+                                                                             
 flush
 with
 the
@@ -3475,7 +3009,7 @@ form
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb21" style="padding:20px;border-radius: 3px;"><a id="x4-24028r167"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{name} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{name}</span></div></pre>
+     <pre><div class="language-latex" id="fancyvrb20" style="padding:20px;border-radius: 3px;"><a id="x4-24028r167"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{name} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{name}</span></div></pre>
     </div>
     <p class="noindent">
      where
@@ -3487,9 +3021,6 @@ the
 name
 of
 the
-                                                                                
-                                                                                
-                                                                       
 environment.
 We
 have
@@ -3556,7 +3087,7 @@ type.
      which
 LaTeX produces
 are
-characterized
+characterised
 by
 their
      <alert style="color: #821131;">
@@ -3577,8 +3108,6 @@ lecturebook
      </italic>
      text
 is
-                                                                                
-                                                                                
 given
 in
      <italic>
@@ -3595,6 +3124,8 @@ in <span style="color:#054C5C;"><code class="verb">typewriter</code></span>
      style.
 We
 can
+                                                                                
+                                                                                
 also
 produce
 smaller and
@@ -3781,7 +3312,7 @@ the command <span style="color:#054C5C;"><code class="verb">\textbf</code></span
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb22" style="padding:20px;border-radius: 3px;"><a id="x4-26003r177"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textsf</span></span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textbf</span></span><span style="color:#2B2BFF;">{sans serif family, boldface series, upright shape}}</span> 
+     <pre><div class="language-latex" id="fancyvrb21" style="padding:20px;border-radius: 3px;"><a id="x4-26003r177"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textsf</span></span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textbf</span></span><span style="color:#2B2BFF;">{sans serif family, boldface series, upright shape}}</span> 
 <a id="x4-26005r178"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textrm</span></span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textsl</span></span><span style="color:#2B2BFF;">{roman family, medium series, slanted shape}}</span></div></pre>
     </div>
     <p class="noindent">
@@ -3827,7 +3358,7 @@ or italic, then it switches to upright shape. Also, it uses the family and serie
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb23" style="padding:20px;border-radius: 3px;"><a id="x4-26007r184"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textit</span></span><span style="color:#2B2BFF;">{A polygon of three sides is called a </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\emph</span></span><span style="color:#2B2BFF;">{triangle} and a</span> 
+     <pre><div class="language-latex" id="fancyvrb22" style="padding:20px;border-radius: 3px;"><a id="x4-26007r184"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textit</span></span><span style="color:#2B2BFF;">{A polygon of three sides is called a </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\emph</span></span><span style="color:#2B2BFF;">{triangle} and a</span> 
 <a id="x4-26009r185"></a><span style="color:#2B2BFF;">    polygon of four sides is called a </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\emph</span></span><span style="color:#2B2BFF;">{quadrilateral}}</span></div></pre>
     </div>
     <div class="quoteblock">
@@ -3865,7 +3396,7 @@ quadrilateral
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb24" style="padding:20px;border-radius: 3px;"><a id="x4-26011r190"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textbf</span></span><span style="color:#2B2BFF;">{A polygon of three sides is called a</span> 
+     <pre><div class="language-latex" id="fancyvrb23" style="padding:20px;border-radius: 3px;"><a id="x4-26011r190"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\textbf</span></span><span style="color:#2B2BFF;">{A polygon of three sides is called a</span> 
 <a id="x4-26013r191"></a><span style="color:#2B2BFF;">  </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\emph</span></span><span style="color:#2B2BFF;">{triangle} and a polygon of four sides is called a</span> 
 <a id="x4-26015r192"></a><span style="color:#2B2BFF;">  </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\emph</span></span><span style="color:#2B2BFF;">{quadrilateral}}</span></div></pre>
     </div>
@@ -3942,7 +3473,7 @@ sides.
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb25" style="padding:20px;border-radius: 3px;"><a id="x4-26017r197"></a><span style="color:#2B2BFF;">By a </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\bfseries</span></span><span style="color:#2B2BFF;">{triangle}, we mean a polygon of three sides.</span></div></pre>
+     <pre><div class="language-latex" id="fancyvrb24" style="padding:20px;border-radius: 3px;"><a id="x4-26017r197"></a><span style="color:#2B2BFF;">By a </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\bfseries</span></span><span style="color:#2B2BFF;">{triangle}, we mean a polygon of three sides.</span></div></pre>
     </div>
     <p class="noindent">
      we  would  get:
@@ -4225,7 +3756,7 @@ commands:
      <div class="code-lang">
       latex
      </div>
-     <pre><div class="language-latex" id="fancyvrb26" style="padding:20px;border-radius: 3px;"><a id="x4-26020r202"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{sffmily} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{sffamily}</span></div></pre>
+     <pre><div class="language-latex" id="fancyvrb25" style="padding:20px;border-radius: 3px;"><a id="x4-26020r202"></a><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\begin</span></span><span style="color:#2B2BFF;">{sffmily} ... </span><span style="color:#2B2BFF;"><span id="bold" style="font-weight:bold;">\end</span></span><span style="color:#2B2BFF;">{sffamily}</span></div></pre>
     </div>
     <h2 class="sectionHead">
      <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.2.4" style="color: red;  position: absolute;  left: -30px;" target="_blank">
@@ -4452,7 +3983,7 @@ declarations.
    <footer>
     <div class="next">
      <p class="noindent">
-      <a href="AcademicWritingLectureBookli2.html" style="float: right;">
+      <a href="AcademicWritingLectureBookch3.html" style="float: right;">
        Next Chapter →
       </a>
       <a href="AcademicWritingLectureBookch1.html" style="float: left;">
@@ -4465,12 +3996,6 @@ declarations.
     </div>
    </footer>
   </div>
-  <p class="noindent">
-   <a id="likesection.2">
-   </a>
-   <a id="x4-27002x2.4">
-   </a>
-  </p>
   <p class="noindent">
    <a id="tailAcademicWritingLectureBookch2.html">
    </a>

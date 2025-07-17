@@ -18,6 +18,19 @@
   <script src="flatjs.js">
   </script>
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+  <script type="module">
+   import pdfjsDist from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.93/+esm'
+  </script>
+  <script>
+   function moveTOC() { 
+var htmlShow = document.getElementsByClassName("wide"); 
+if (htmlShow[0].style.display === "none") { 
+htmlShow[0].style.display = "block"; 
+} else { 
+htmlShow[0].style.display = "none"; 
+} 
+}
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js">
   </script>
   <script src="texlive.js">
@@ -176,7 +189,7 @@
         </h4>
        </div>
       </div>
-      <div id="author-text" style="bottom: 0; padding-top: 50px;border-top: solid 1px #3b4b5e;font-size: 12px;">
+      <div id="author-text" style="bottom: 0; padding-top: 50px;border-top: solid 1px #3b4b5e;font-size: 12px;text-align: right;">
        <p>
         <b>
          Authors Note
@@ -200,7 +213,7 @@
      <a id="x3-20001">
      </a>
      Introduction
-    </h1>
+    </h1><button id='toc-button' onclick='moveTOC()'>TOC</button>
     <div class="section-control" style="text-align: center">
      <a id="prev-section" onclick="goPrev()" style="float:left;">
       ← Previous Section
@@ -335,7 +348,13 @@ Knuth
        recipient
        of
        the
-       ACM
+       <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:acm">
+        Association
+        for
+        Computing
+        Machinery
+        (ACM)
+       </a>
        Turing
        Award.
        Knuth
@@ -372,19 +391,9 @@ algorithms
      TeXand
      <span class="logo-8">
       METAFONT
-     </span>
-     [
-     <a id="x3-5002">
-     </a>
-     <a href="AcademicWritingLectureBookad1.html#X0-knuth1984literate">
-      4
-     </a>,
+     </span> <a id="x3-5002"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-knuth1984literate">[4]</a></span>,
      <a id="x3-5003">
-     </a>
-     <a href="AcademicWritingLectureBookad1.html#X0-knuth1989metafont">
-      5
-     </a>
-     ].
+     </a> <span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-knuth1989metafont">[5]</a></span>.
      In
      the
      framework
@@ -1342,11 +1351,13 @@ structure
      font
      resources,
      the
-     New
-     Front
-     Selection
-     Scheme
-     (NFS).
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:nfss">
+      New
+      Font
+      Selection
+      Scheme
+      (NFSS)
+     </a>.
      They
      were
      also
@@ -1357,7 +1368,10 @@ structure
      production
      of
      the
-     AMS-LaTeX
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:ams">
+      AMS
+     </a>
+     -LaTeX
      system
      that
      is
@@ -1663,33 +1677,19 @@ allowed
      extensions
      of
      <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:nfss">
-      New
-      Font
-      Selection
-      Scheme
-      (NFSS)
+      NFSS
      </a>
      to
      better
      support
      variable
      font
-     encodings
+     encoding
      and
      scalable
-     fonts
-     [
-     <a id="x3-7004">
-     </a>
-     <a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">
-      2
-     </a>,
+     fonts <a id="x3-7004"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>,
      <a id="x3-7005">
-     </a>
-     <a href="AcademicWritingLectureBookad1.html#X0-carlisle1996alatex">
-      14
-     </a>
-     ].
+     </a> <span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-carlisle1996alatex">[14]</a></span>.
     </p>
     <p class="noindent">
      Although
@@ -1946,7 +1946,7 @@ allowed
        file extension
       </alert>
       is used to denote
-      the the file type.
+      the file type.
       <alert style="color: #821131;">
        <span id="bold" style="font-weight:bold;">
         <sup class="textsuperscript">
@@ -2109,7 +2109,7 @@ files
     </p>
     <div class="knowledge">
      <p class="noindent">
-      Often, several graphical images are included in the typeset document utilizing the <span style="color:#054C5C;"><code class="verb">graphicx</code></span>
+      Often, several graphical images are included in the typeset document utilising the <span style="color:#054C5C;"><code class="verb">graphicx</code></span>
       which we will talk later.
      </p>
     </div>
@@ -2957,7 +2957,7 @@ Transcript
     <p class="noindent">
      Once the document has been successfully processed by TeX, we will probably want to take a look at the format. This is commonly done
      on screen, but detailed inspection of printed output should always be performed via printing on paper at the highest available resolution.
-     A current favorite approach is to use a <span style="color:#054C5C;"><code class="verb">.pdf</code></span>
+     A current favourite approach is to use a <span style="color:#054C5C;"><code class="verb">.pdf</code></span>
      file, especially when electronic distribution of the formatted document is required <a id="x3-9006"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach2004latex">[2]</a></span>.
     </p>
     <p class="noindent">
@@ -3269,8 +3269,6 @@ practice
 to
 use
 notepad
-or
-textedit
 to
 do
 the
@@ -3300,9 +3298,6 @@ can
 be
 used
 to
-                                                                                
-                                                                                
-                                                                            
 create <span style="color:#054C5C;"><code class="verb">.tex</code></span>
      file
 used
@@ -3382,6 +3377,9 @@ configuration.
      Often
 these
 front
+                                                                                
+                                                                                
+                                                                             
 end
 programs
 include
@@ -3390,8 +3388,7 @@ menus,
 wizards
 for
 creating
-LaTeX
-objects,
+LaTeX objects,
 drop
 down
 menus
@@ -3412,23 +3409,7 @@ both
 new
 and
 experienced
-LaTeX
-users.
-You
-will
-find
-more
-information
-about
-these
-frontend
-programs
-in
-the
-"LaTeX
-Interfaces"
-box
-below.
+LaTeX users.
     </p>
     <div class="informationblock" id="tcolobox-2">
      <div class="title">
@@ -3462,9 +3443,6 @@ with a specific editor they are welcome to use their own editors.
 this
 course,
 we
-                                                                                
-                                                                                
-                                                                             
 will
 look
 at
@@ -3499,8 +3477,8 @@ editor.
      <span id="bold" style="font-weight:bold;">
       strongly recommend
      </span>
-     to use the common MiKTeX distribution. The MiKTeX/about page contains
-several links including how to install, deploy, and update MiKTeX.
+     to use the common MiKTeX distribution. The MiKTeX/about page
+contains several links including how to install, deploy, and update MiKTeX.
      <alert style="color: #821131;">
       <span id="bold" style="font-weight:bold;">
        <sup class="textsuperscript">
@@ -3518,11 +3496,11 @@ several links including how to install, deploy, and update MiKTeX.
        </span>
       </alert>
       <span style="color:#313244;">
-       The logo for miktex
+       The logo for MiKTeX
       </span>
      </span>
-     A basic set of installation
-instruction can be found below, but if you are having trouble be sure to check the MiKTeX page (click the previous install hyperlink):
+     A basic set of
+installation instruction can be found below, but if you are having trouble be sure to check the MiKTeX page:
     </p>
     <ul class="itemize1">
      <li class="itemize">
@@ -3581,9 +3559,6 @@ it
 is
 recommended
 to
-                                                                                
-                                                                                
-     
 choose
        <kbd>
         Yes
@@ -3605,6 +3580,9 @@ installation
 is
 complete
 it
+                                                                                
+                                                                                
+     
 is
 recommend
 that
@@ -3661,9 +3639,6 @@ It
 may
 take
 a
-                                                                                
-                                                                                
-     
 few
 seconds
 but
@@ -3692,6 +3667,9 @@ now
       <p class="noindent">
        Download
 TeXStudio
+                                                                                
+                                                                                
+     
 by
 clicking
        <kbd>
@@ -3795,7 +3773,7 @@ menu <span style="color:#054C5C;"><code class="verb">File/New From Template</cod
         (b)
        </span>
        <span class="content">
-        Template entered to the editor, ready to be compiled.
+        Template entered to the editor.
        </span>
       </div>
      </div>
@@ -3804,6 +3782,113 @@ menu <span style="color:#054C5C;"><code class="verb">File/New From Template</cod
      As a final part of this chapter, to see if everything is working, please click on the green triangle button
 to run the LaTeX compiler and then click on the document with the magnifier to see your output.
     </p>
+    <div class="informationblock" id="tcolobox-3">
+     <div class="title">
+      <p class="noindent">
+       <span id="bold" style="font-weight:bold;">
+        Information
+       </span>
+       : Typesetting before TeX
+      </p>
+     </div>
+     <div class="box-content">
+      <aside class="wrapfig-r">
+       <img alt="PIC" height="" src="figures/Introduction/raster/monotype-machine.jpg" width="100%"/>
+       <a id="x3-13003r5">
+       </a>
+       <figcaption class="caption">
+        <span class="id">
+         Figure 1.5:
+        </span>
+        <span class="content">
+         A  Mono-type
+caster <span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-Manske2008">[20]</a></span>.
+        </span>
+       </figcaption>
+       <img alt="PIC" height="" src="figures/Introduction/raster/monotype-tester.jpg" width="100%"/>
+       <a id="x3-13005r6">
+       </a>
+       <figcaption class="caption">
+        <span class="id">
+         Figure 1.6:
+        </span>
+        <span class="content">
+         Monotype-Taster,
+Modell   “Taster   D”   1965 <span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-Panoramafotos2007">[21]</a></span>.
+        </span>
+       </figcaption>
+      </aside>
+      <p class="noindent">
+       While, of course, they existed but were highly specialised, and usually quite expensive. Here is a non-exhaustive list of
+some several phases in the history of maths composition <a id="x3-13007"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-beeton2015">[22]</a></span>:
+      </p>
+      <dl class="description">
+       <dt class="description">
+        <a id="x3-13008x1.4.2">
+        </a>
+        Hand Set
+       </dt>
+       <dd class="description">
+        <p class="noindent">
+         Anything before the late 1800s.
+        </p>
+       </dd>
+       <dt class="description">
+        <a id="x3-13009x1.4.2">
+        </a>
+        MonoType
+       </dt>
+       <dd class="description">
+        <p class="noindent">
+         A system for printing by hot-metal typesetting from a keyboard. For maths typesetting you would need a “4-line 
+system” <a id="x3-13010"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-rhatigan2007monotype">[23]</a></span>, which can be seen below:
+        </p>
+        <div class="center">
+         <p class="noindent">
+         </p>
+         <p class="noindent">
+          <img alt="PIC" height="233" src="figures/Introduction/raster/four-line-type.png" width="233"/>
+         </p>
+        </div>
+       </dd>
+       <dt class="description">
+        <a id="x3-13011x1.4.2">
+        </a>
+        Typewriter
+       </dt>
+       <dd class="description">
+        <p class="noindent">
+         The “direct type” methods were of two <alert style="color: #821131;">(2)</alert> distinct kinds.
+        </p>
+        <ul class="itemize1">
+         <li class="itemize">
+          <p class="noindent">
+           Traditional one-symbol-per-key typewriters,
+          </p>
+         </li>
+         <li class="itemize">
+          <p class="noindent">
+           A machine with interchangeable “fonts”.
+          </p>
+         </li>
+        </ul>
+       </dd>
+       <dt class="description">
+        <a id="x3-13012x1.4.2">
+        </a>
+        Phototypesetting
+       </dt>
+       <dd class="description">
+        <p class="noindent">
+         Uses photography to make columns of type on a scroll of photographic paper <a id="x3-13013"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-boag2000monotype">[24]</a></span>. The job had to be carefully 
+edited beforehand to make sure that no additional symbols would be needed, as changing the symbol set in the 
+middle of a job could run the risk of exposing the output medium, which would mean starting 
+over.
+        </p>
+       </dd>
+      </dl>
+     </div>
+    </div>
    </article>
    <footer>
     <div class="next">

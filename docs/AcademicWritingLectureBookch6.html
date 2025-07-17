@@ -1,0 +1,2692 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+ <head>
+  <title>
+   6 Float Environments
+  </title>
+    <link rel='icon' type='image/x-icon' href='figures/logo.svg'></link>
+  <meta charset="utf-8"/>
+  <meta content="ParSnip" name="generator"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <link href="AcademicWritingLectureBook.css" rel="stylesheet" type="text/css"/>
+  <meta content="AcademicWritingLectureBook.tex" name="src"/>
+  <script async="async" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js" type="text/javascript">
+  </script>
+  <link href="flatweb.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+  </script>
+  <script src="flatjs.js">
+  </script>
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+  <script type="module">
+   import pdfjsDist from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.93/+esm'
+  </script>
+  <script>
+   function moveTOC() { 
+var htmlShow = document.getElementsByClassName("wide"); 
+if (htmlShow[0].style.display === "none") { 
+htmlShow[0].style.display = "block"; 
+} else { 
+htmlShow[0].style.display = "none"; 
+} 
+}
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js">
+  </script>
+  <script src="texlive.js">
+  </script>
+  <header>
+  </header>
+ </head>
+ <body id="top">
+  <nav class="wide">
+   <div class="contents">
+    <h3 style="font-weight:lighter; padding: 20px 0 20px 0;">
+     6
+   
+     
+   
+
+   Float Environments
+    </h3>
+    <h4 style="font-weight:lighter">
+     Chapter Table of Contents
+    </h4>
+    <ul>
+     <div class="chapterTOCS">
+      <li>
+       <span class="sectionToc">
+        <small>
+         6.1
+        </small>
+        <a href="#x8-720006.1">
+         The figure Environment
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         6.1.1
+        </small>
+        <a href="#x8-730006.1.1">
+         Creating floating figures
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         6.1.2
+        </small>
+        <a href="#x8-740006.1.2">
+         Figure Placement
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         6.1.3
+        </small>
+        <a href="#x8-750006.1.3">
+         Customising the float placement
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         6.1.4
+        </small>
+        <a href="#x8-770006.1.4">
+         Using Graphics in LaTeX
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="sectionToc">
+        <small>
+         6.2
+        </small>
+        <a href="#x8-810006.2">
+         The Table Environment
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         6.2.1
+        </small>
+        <a href="#x8-820006.2.1">
+         tabularray Package
+        </a>
+       </span>
+      </li>
+     </div>
+    </ul>
+    <div class="prev-next" style="text-align: center">
+     <p class="noindent">
+      <a href="AcademicWritingLectureBookch7.html" style="float:right; font-size:10px">
+       NEXT →
+      </a>
+      <a href="AcademicWritingLectureBookch5.html" style="float:left; font-size:10px">
+       ← PREV
+      </a>
+      <a href="index.html">
+       TOP
+      </a>
+     </p>
+    </div>
+    <div id="author-info" style="bottom: 0; padding-bottom: 10px;">
+     <div id="author-logo">
+      <img src="figures/logo.svg" style="margin: 10px 0;"/>
+      <div>
+       <div>
+        <h4 style="color:#7aa0b8; font-weight:lighter;">
+         WebBook | D. T. McGuiness, P.hD
+        </h4>
+       </div>
+      </div>
+      <div id="author-text" style="bottom: 0; padding-top: 50px;border-top: solid 1px #3b4b5e;font-size: 12px;text-align: right;">
+       <p>
+        <b>
+         Authors Note
+        </b>
+        The website you are viewing is auto-generated
+    using ParSnip and therefore subject to slight errors in
+    typography and formatting. When in doubt, please consult the
+    LectureBook.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <div class="page">
+   <article class="chapter">
+    <h1 class="chapterHead">
+     <div class="number">
+      6
+     </div>
+     <a id="x8-710006">
+     </a>
+     Float Environments
+    </h1><button id='toc-button' onclick='moveTOC()'>TOC</button>
+    <div class="section-control" style="text-align: center">
+     <a id="prev-section" onclick="goPrev()" style="float:left;">
+      ← Previous Section
+     </a>
+     <a id="next-section" onclick="goNext()" style="float:right;">
+      Next Section →
+     </a>
+    </div>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.6.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      6.1
+     </small>
+     <a id="x8-720006.1">
+     </a>
+     The figure Environment
+    </h2>
+    <p class="noindent">
+     Figures
+are
+really
+problematical
+to
+present
+in
+a
+document
+as
+they
+never
+split
+between
+pages.
+This
+leads
+to
+bad
+page
+breaks
+which
+in
+turn
+leave
+blank
+space
+at
+the
+bottom
+of
+pages.
+For
+fine-tuning
+that
+document,
+the
+                                                                                
+                                                                                
+                                                                       
+typesetter
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        1
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         1
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       That
+is
+us.
+      </span>
+     </span>
+     has
+to
+adjust
+the
+page
+breaks
+manually.
+Fortunately
+for
+us,
+LaTeX provides
+floating
+figures
+which
+automatically
+move
+to
+suitable
+locations.
+So
+the
+positioning
+of
+figures
+is
+the
+duty
+of
+LaTeX.
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.6.1.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      6.1.1
+     </small>
+     <a id="x8-730006.1.1">
+     </a>
+     Creating
+floating
+figures
+    </h3>
+    <p class="noindent">
+     Floating
+figures
+are
+created
+by
+putting
+commands
+in
+a <span style="color:#054C5C;"><code class="verb">figure</code></span>
+     environment.
+The
+contents
+of
+the <span style="color:#054C5C;"><code class="verb">figure</code></span>
+     environment
+always
+remains
+in
+one
+chunk,
+floating
+to
+                                                                                
+                                                                                
+                                                                          
+produce
+good
+page
+breaks.
+The
+following
+commands
+put
+the
+graphic
+from
+figure.eps
+inside
+a
+floating
+figure:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb130" style="padding:20px;border-radius: 3px;"><a id="x8-73002r22"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>figure<span style="color:#2B2BFF;">}</span> 
+<a id="x8-73004r23"></a> <span style="color:#2B2BFF;">\centering</span> 
+<a id="x8-73006r24"></a> <span style="color:#2B2BFF;">\includegraphics</span><span style="color:#2B2BFF;">{</span>figure.eps<span style="color:#2B2BFF;">}</span> 
+<a id="x8-73008r25"></a> <span style="color:#2B2BFF;">\caption</span><span style="color:#2B2BFF;">{</span>This is an inserted EPS graphic<span style="color:#2B2BFF;">}</span> 
+<a id="x8-73010r26"></a> <span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>fig1<span style="color:#2B2BFF;">}</span> 
+<a id="x8-73012r27"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>figure<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     Let’s
+look
+at
+what
+is
+going
+on
+here:
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
+      <p class="noindent">
+       The optional <span style="color:#054C5C;"><code class="verb">label</code></span>
+       command can be used with the <span style="color:#054C5C;"><code class="verb">ref,</code></span>
+       and <span style="color:#054C5C;"><code class="verb">pageref</code></span>
+       commands to reference the caption. The <span style="color:#054C5C;"><code class="verb">label</code></span>
+       command must be placed immediately after the <span style="color:#054C5C;"><code class="verb">\caption</code></span>.
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       If the figure environment contains no <span style="color:#054C5C;"><code class="verb">caption</code></span>
+       commands, it produces an unnumbered floating figure.
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       If the figure environment contains multiple <span style="color:#054C5C;"><code class="verb">caption</code></span>
+       commands, it produces multiple figures which float together.
+This is useful in constructing side-by-side graphics or complex arrangements.
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       A list of figures is generated by the <span style="color:#054C5C;"><code class="verb">listoffigures</code></span>
+       command.
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       By default, the caption text is used as the caption and also in the list of figures. The caption has an optional
+argument which specifies the list-of-figure entry. For example,
+      </p>
+      <p class="noindent">
+      </p>
+      <div class="code-block">
+       <div class="code-lang">
+        latex
+       </div>
+       <pre><div class="language-latex" id="fancyvrb131" style="padding:20px;border-radius: 3px;"><a id="x8-73014r32"></a><span style="color:#2B2BFF;">\caption</span>[List Text]<span style="color:#2B2BFF;">{</span>Caption Text<span style="color:#2B2BFF;">}</span></div></pre>
+      </div>
+      <p class="noindent">
+       causes “Caption Text” to appear in the caption, but “List Text” to appear in the list of figures. This is useful
+when using long, descriptive captions.
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       The figure environment can only be used in outer paragraph mode, preventing it from being used inside any box.
+      </p>
+     </li>
+    </ul>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.6.1.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      6.1.2
+     </small>
+     <a id="x8-740006.1.2">
+     </a>
+     Figure
+Placement
+    </h3>
+    <p class="noindent">
+     The
+figure
+environment
+has
+an
+     <alert style="color: #821131;">
+      optional
+     </alert>
+     argument
+which
+allows
+users
+to
+specify
+possible
+figure
+locations.
+The
+optional
+argument
+can
+contain
+any
+combination
+of
+the
+letters: <span style="color:#054C5C;"><code class="verb">h</code></span>, <span style="color:#054C5C;"><code class="verb">t</code></span>, <span style="color:#054C5C;"><code class="verb">b</code></span>, <span style="color:#054C5C;"><code class="verb">p</code></span>.
+    </p>
+    <dl class="description">
+     <dt class="description">
+      <a id="x8-74001x6.1.2">
+      </a> <span style="color:#054C5C;"><code class="verb">h</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       Place the figure in the text where the figure command is located. This option cannot be executed if there is not
+enough room remaining on the page.
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-74002x6.1.2">
+      </a> <span style="color:#054C5C;"><code class="verb">t</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       Place the figure at the top of the page.
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-74003x6.1.2">
+      </a> <span style="color:#054C5C;"><code class="verb">b</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       Place the figure at the bottom of a page.
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-74004x6.1.2">
+      </a> <span style="color:#054C5C;"><code class="verb">p</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       Place the figure on a page containing only floats.
+      </p>
+     </dd>
+    </dl>
+    <div class="warning">
+     <p class="noindent">
+      If
+no
+optional
+arguments
+are
+given,
+the
+placement
+options
+default
+to <span style="color:#054C5C;"><code class="verb">[tbp]</code></span>.
+     </p>
+    </div>
+    <p class="noindent">
+     When
+we
+input
+a
+float,
+LaTeX will
+read
+that
+float
+and
+hold
+it
+until
+it
+can
+be
+placed
+at
+a
+better
+location.
+Unprocessed
+floats
+are
+those
+which
+are
+read
+by
+LaTeX but
+have
+not
+yet
+been
+placed
+on
+the
+page.
+Though
+the
+float-placing
+is
+done
+by
+LaTeX,
+sometimes
+the
+user
+has
+to
+invoke
+commands
+to
+process
+unprocessed
+floats.
+    </p>
+    <p class="noindent">
+     Following
+commands
+will
+do
+that
+job:
+    </p>
+    <dl class="description">
+     <dt class="description">
+      <a id="x8-74005x6.1.2">
+      </a> <span style="color:#054C5C;"><code class="verb">\clearpage</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       This command places unprocessed floats and starts a new page.
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-74006x6.1.2">
+      </a> <span style="color:#054C5C;"><code class="verb">\FloatBarrier</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       This command causes all unprocessed floats to be processed. This is provided by the
+       <span id="bold" style="font-weight:bold;">
+        placeins
+       </span>
+       package. It does
+not start a new page, unlike <span style="color:#054C5C;"><code class="verb">\clearpage</code></span>.
+      </p>
+     </dd>
+    </dl>
+    <p class="noindent">
+     Since
+it
+is
+often
+desirable
+to
+keep
+floats
+in
+the
+section
+in
+which
+they
+were
+issued,
+the
+section
+option
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb132" style="padding:20px;border-radius: 3px;"><a id="x8-74008r48"></a><span style="color:#2B2BFF;">\usepackage</span>[section]<span style="color:#2B2BFF;">{</span>placeins<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     redefines
+the <span style="color:#054C5C;"><code class="verb">\section</code></span>
+     command,
+inserting
+a <span style="color:#054C5C;"><code class="verb">\FloatBarrier</code></span>
+     command
+before
+each
+section.
+    </p>
+    <div class="warning">
+     <p class="noindent">
+      This
+option
+is
+very
+strict
+and
+does
+not
+allow
+a
+float
+from
+the
+previous
+section
+to
+appear
+at
+the
+bottom
+of
+the
+page,
+since
+                                                                                
+                                                                                
+                                                                             
+that
+is
+after
+the
+start
+of
+a
+new
+section.
+     </p>
+    </div>
+    <p class="noindent">
+     The
+below
+option
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb133" style="padding:20px;border-radius: 3px;"><a id="x8-74010r54"></a><span style="color:#2B2BFF;">\usepackage</span>[below]<span style="color:#2B2BFF;">{</span>placeins<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     is
+a
+less-restrictive
+version
+of
+the
+section
+option.
+It
+allows
+floats
+to
+be
+placed
+after
+the
+beginning
+of
+a
+new
+section,
+provided
+that
+some
+of
+the
+previous
+section
+appears
+on
+the
+page.
+    </p>
+    <dl class="description">
+     <dt class="description">
+      <a id="x8-74011x6.1.2">
+      </a> <span style="color:#054C5C;"><code class="verb">\afterpage/\clearpage</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The
+       <span id="bold" style="font-weight:bold;">
+        afterpage
+       </span>
+       package  provides  the <span style="color:#054C5C;"><code class="verb">\afterpage</code></span>
+       command  which  executes  a  command  at  the  next
+naturally-ocurring page break.
+      </p>
+     </dd>
+    </dl>
+    <p class="noindent">
+     Therefore,
+using <span style="color:#054C5C;"><code class="verb">\afterpage{\clearpage}</code></span>
+     causes
+all
+unprocessed
+floats
+to
+be
+cleared
+at
+                                                                                
+                                                                                
+                                                                              
+the
+next
+page
+break.
+    </p>
+    <div class="knowledge">
+     <p class="noindent"> <span style="color:#054C5C;"><code class="verb">\afterpage{\clearpage}</code></span>
+      is
+especially
+useful
+when
+producing
+small
+floatpage
+figures.
+     </p>
+    </div>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.6.1.3" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      6.1.3
+     </small>
+     <a id="x8-750006.1.3">
+     </a>
+     Customising
+the
+float
+placement
+    </h3>
+    <p class="noindent">
+     The
+following
+style
+parameters
+are
+used
+by
+LATEX
+to
+prevent
+awkward-looking
+pages
+which
+contain
+too
+many
+floats
+or
+badly-placed
+floats.
+    </p>
+    <dl class="description">
+     <dt class="description">
+      <a id="x8-75001x6.1.3">
+      </a> <span style="color:#054C5C;"><code class="verb">\topnumber</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The maximum number of floats allowed at the top of a text page (the default is 2).
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-75002x6.1.3">
+      </a> <span style="color:#054C5C;"><code class="verb">\bottomnumber</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The maximum number of floats allowed at the bottom of a text page (the default is 1).
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-75003x6.1.3">
+      </a> <span style="color:#054C5C;"><code class="verb">\totalnumber</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The maximum number of floats allowed on any one text page (the default is 3).
+      </p>
+     </dd>
+    </dl>
+    <p class="noindent">
+     These
+counters
+prevent
+LaTeX from
+placing
+too
+many
+                                                                                
+                                                                                
+                                                                            
+floats
+on
+a
+text
+page.
+These
+counters
+do
+     <span id="bold" style="font-weight:bold;">
+      NOT
+     </span>
+     affect
+float
+pages.
+Specifying
+a <span style="color:#054C5C;"><code class="verb">!</code></span>
+     in
+the
+float
+placement
+options
+causes
+LaTeX to
+ignore
+these
+parameters.
+The
+values
+of
+these
+counters
+are
+set
+with
+the <span style="color:#054C5C;"><code class="verb">\setcounter</code></span>
+     command.
+For
+example,
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb134" style="padding:20px;border-radius: 3px;"><a id="x8-75005r59"></a><span style="color:#2B2BFF;">\setcounter</span><span style="color:#2B2BFF;">{</span>totalnumber<span style="color:#2B2BFF;">}{</span>2<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     prevents
+more
+than
+two
+floats
+from
+being
+placed
+on
+any
+text
+page.
+     <a id="subsubsection*.5">
+     </a>
+    </p>
+    <h5 class="subsubsectionHead">
+     <a id="x8-76000">
+     </a>
+     Figure
+Fractions
+    </h5>
+    <p class="noindent">
+     The
+commands
+given
+below
+control
+                                                                                
+                                                                                
+                                                                            
+what
+fraction
+of
+a
+page
+can
+be
+covered
+by
+floats
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      In
+this
+context,
+“fraction”
+refers
+to
+the
+height
+of
+the
+floats
+divided
+by <span style="color:#054C5C;"><code class="verb">\textheight</code></span>.
+     </p>
+    </div>
+    <p class="noindent">
+     The
+first
+three
+<alert style="color: #821131;">(3)</alert> commands
+pertain
+only
+to
+text
+pages,
+while
+the
+last
+command
+pertains
+only
+to
+float
+pages.
+Specifying
+a <span style="color:#054C5C;"><code class="verb">!</code></span>
+     in
+the
+float
+placement
+options
+causes
+LaTeX to
+ignore
+the
+first
+three
+parameters,
+but <span style="color:#054C5C;"><code class="verb">\floatpagefraction</code></span>
+     is
+always
+used.
+The
+                                                                                
+                                                                                
+                                                                            
+value
+of
+these
+fractions
+are
+set
+by <span style="color:#054C5C;"><code class="verb">\renewcommand</code></span>.
+For
+example,
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb135" style="padding:20px;border-radius: 3px;"><a id="x8-76002r64"></a><span style="color:#2B2BFF;">\renewcommand</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\textfraction</span><span style="color:#2B2BFF;">}{</span>0.3<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     Looking
+at
+this
+in
+more
+detail:
+    </p>
+    <dl class="description">
+     <dt class="description">
+      <a id="x8-76003x">
+      </a> <span style="color:#054C5C;"><code class="verb">\textfraction</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The minimum fraction of a text page which must be occupied by text. The default is 0.2, which prevents floats
+from covering more than 80% of a text page.
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-76004x">
+      </a> <span style="color:#054C5C;"><code class="verb">\topfraction</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The maximum fraction of a text page which can be occupied by floats at the top of the page. The default is 0.7,
+which prevents any float whose height is greater than 70% of <span style="color:#054C5C;"><code class="verb">\textheight</code></span>
+       from being placed at the top of a page.
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-76005x">
+      </a> <span style="color:#054C5C;"><code class="verb">\bottomfraction</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The maximum fraction of a text page which can be occupied by floats at the bottom of the page. The default is
+0.3, which prevents any float whose height is greater than 40% of <span style="color:#054C5C;"><code class="verb">\textheight</code></span>
+       from being placed at the bottom
+of a text page.
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-76006x">
+      </a> <span style="color:#054C5C;"><code class="verb">\floatpagefraction</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The minimum fraction of a float page that must be occupied by floats. Thus the fraction of blank space on a
+float page cannot be more than <span style="color:#054C5C;"><code class="verb">1-\floatpagefraction</code></span>. The default is 0.5.
+      </p>
+     </dd>
+    </dl>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.6.1.4" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      6.1.4
+     </small>
+     <a id="x8-770006.1.4">
+     </a>
+     Using
+Graphics
+in
+LaTeX
+    </h3>
+    <p class="noindent">
+     Now
+we
+got
+the
+formalities
+out
+of
+the
+way
+let’s
+look
+at
+how
+graphics
+                                                                                
+                                                                                
+                                                                             
+can
+be
+handled
+in
+LaTeX documents.
+While
+LaTeX can
+import
+virtually
+any
+graphics
+format,
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:eps">
+      Encapsulated
+PostScript
+(EPS)
+     </a>
+     is
+the
+easiest
+graphics
+format
+to
+import
+into
+LaTeX.
+The
+“eps”
+files
+are
+inserted
+into
+the
+file
+using
+command <span style="color:#054C5C;"><code class="verb">\includegraphics[]{file.eps}</code></span>.
+     <a id="subsubsection*.6">
+     </a>
+    </p>
+    <h5 class="subsubsectionHead">
+     <a id="x8-78000">
+     </a>
+     The
+includegraphics
+command
+    </h5>
+    <p class="noindent">
+     The
+syntax
+of
+it
+is
+as
+follows:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb136" style="padding:20px;border-radius: 3px;"><a id="x8-78002r70"></a><span style="color:#2B2BFF;">\includegraphics</span>[options]<span style="color:#2B2BFF;">{</span>filename<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     The
+following
+options
+are
+available
+in <span style="color:#054C5C;"><code class="verb">\includegraphics</code></span>
+     command:
+    </p>
+    <dl class="description">
+     <dt class="description">
+      <a id="x8-78003x">
+      </a> <span style="color:#054C5C;"><code class="verb">width</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The width of the graphics,
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-78004x">
+      </a> <span style="color:#054C5C;"><code class="verb">height</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The height of the graphics,
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-78005x">
+      </a> <span style="color:#054C5C;"><code class="verb">totalheight</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The totalheight of the graphics,
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-78006x">
+      </a> <span style="color:#054C5C;"><code class="verb">scale</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       Scale factor for the graphic (i.e., specifying <span style="color:#054C5C;"><code class="verb">scale=2</code></span>
+       makes the graphic twice as large as its natural size.)
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-78007x">
+      </a> <span style="color:#054C5C;"><code class="verb">angle</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       Specifies the angle of rotation, in degrees, with a counter-clockwise (i.e., anti-clockwise) rotation being positive.
+      </p>
+     </dd>
+    </dl>
+    <a id="subsubsection*.7">
+    </a>
+    <h5 class="subsubsectionHead">
+     <a id="x8-79000">
+     </a>
+     Graphics
+Search
+Path
+    </h5>
+    <p class="noindent">
+     By
+default,
+LaTeX looks
+for
+graphics
+files
+in
+any
+directory
+on
+the
+TEX
+search
+path.
+In
+addi-
+tion
+to
+these
+directories,
+LaTeX also
+looks
+in
+any
+directories
+specified
+in
+the <span style="color:#054C5C;"><code class="verb">\graphicspath</code></span>
+     command.
+For
+example,
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb137" style="padding:20px;border-radius: 3px;"><a id="x8-79002r75"></a>graphicspath<span style="color:#2B2BFF;">{{</span>dir1/<span style="color:#2B2BFF;">}{</span>dir2/<span style="color:#2B2BFF;">}}</span></div></pre>
+    </div>
+    <p class="noindent">
+     tells
+LaTeX to
+look
+for
+graphics
+files
+                                                                                
+                                                                                
+                                                                             
+also
+in <span style="color:#054C5C;"><code class="verb">dir1/</code></span>
+     and <span style="color:#054C5C;"><code class="verb">dir2/</code></span>.
+     <a id="subsubsection*.8">
+     </a>
+    </p>
+    <h5 class="subsubsectionHead">
+     <a id="x8-80000">
+     </a>
+     Graphics
+Extensions
+    </h5>
+    <p class="noindent">
+     The <span style="color:#054C5C;"><code class="verb">\DeclareGraphicsExtensions</code></span>
+     command
+tells
+LaTeX which
+extensions
+to
+try
+if
+a
+file
+with
+no
+extension
+is
+specified
+in
+the <span style="color:#054C5C;"><code class="verb">\includegraphics</code></span>
+     command.
+For
+convenience,
+a
+default
+set
+of
+extensions
+is
+pre-defined
+depending
+on
+which
+graphics
+driver
+is
+selected.
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb138" style="padding:20px;border-radius: 3px;"><a id="x8-80002r80"></a><span style="color:#2B2BFF;">\DeclareGraphicsExtensions</span><span style="color:#2B2BFF;">{</span>.eps,.ps,.eps.gz,.ps.gz,.eps.Z<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     With
+the
+above
+graphics
+extensions
+specified, <span style="color:#054C5C;"><code class="verb">\includegraphicsfile</code></span>
+     first
+looks
+for <span style="color:#054C5C;"><code class="verb">file.eps</code></span>,
+then <span style="color:#054C5C;"><code class="verb">file.ps</code></span>,
+then <span style="color:#054C5C;"><code class="verb">file.eps.gz</code></span>,
+etc. until
+a
+file
+is
+found.
+This
+allows
+the
+graphics
+to
+be
+specified
+with
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb139" style="padding:20px;border-radius: 3px;"><a id="x8-80004r85"></a><span style="color:#2B2BFF;">\includegraphics</span><span style="color:#2B2BFF;">{</span>file<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     instead
+of
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb140" style="padding:20px;border-radius: 3px;"><a id="x8-80006r90"></a><span style="color:#2B2BFF;">\includegraphics</span><span style="color:#2B2BFF;">{</span>file.eps<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.6.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      6.2
+     </small>
+     <a id="x8-810006.2">
+     </a>
+     The
+Table
+Environment
+    </h2>
+    <p class="noindent">
+     The
+environments <span style="color:#054C5C;"><code class="verb">tabular</code></span>
+     and <span style="color:#054C5C;"><code class="verb">tabular*</code></span>
+     are
+the
+basic
+tools
+with
+which
+tables
+can
+be
+constructed.
+The
+syntax
+for
+these
+environments
+is <a id="x8-81001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-latextables2025">[26]</a></span>:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb141" style="padding:20px;border-radius: 3px;"><a id="x8-81003r113"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tabular<span style="color:#2B2BFF;">}</span>[pos]<span style="color:#2B2BFF;">{</span>cols<span style="color:#2B2BFF;">}</span> rows <span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tabular<span style="color:#2B2BFF;">}</span> 
+<a id="x8-81005r114"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tabular*<span style="color:#2B2BFF;">}{</span>width<span style="color:#2B2BFF;">}</span>[pos]<span style="color:#2B2BFF;">{</span>cols<span style="color:#2B2BFF;">}</span> rows <span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tabular*<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     Both
+the
+above
+environments
+actually
+create
+a
+                                                                                
+                                                                                
+                                                                         
+minipage.
+The
+meaning
+of
+the
+above
+arguments
+is
+as
+follows:
+    </p>
+    <dl class="description">
+     <dt class="description">
+      <a id="x8-81006x6.2">
+      </a> <span style="color:#054C5C;"><code class="verb">pos</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       Vertical positioning arguments (see also the explanation of this argument for parboxes). It can take on the values:
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-81007x6.2">
+      </a> <span style="color:#054C5C;"><code class="verb">t</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The top line of the table is aligned with the baseline of the current external line of text.
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-81008x6.2">
+      </a> <span style="color:#054C5C;"><code class="verb">b</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The bottom line of the table is aligned with the external baseline.
+      </p>
+     </dd>
+    </dl>
+    <p class="noindent">
+     With
+no
+positioning
+argument
+given,
+the
+table
+is
+centered
+on
+the
+external
+baseline.
+    </p>
+    <dl class="description">
+     <dt class="description">
+      <a id="x8-81009x6.2">
+      </a> <span style="color:#054C5C;"><code class="verb">width</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       This argument applies only to the <span style="color:#054C5C;"><code class="verb">tabular*</code></span>
+       environment and determines its overall width. In this case, the <span style="color:#054C5C;"><code class="verb">cols</code></span>
+       argument must contain the <span style="color:#054C5C;"><code class="verb">@</code></span>
+       -expression <span style="color:#054C5C;"><code class="verb">@{\extracolsep{\fill}}</code></span>
+       somewhere after the first entry. For the other
+two <alert style="color: #821131;">(2)</alert> environments, the total width is fixed by the textual content.
+      </p>
+     </dd>
+     <dt class="description">
+      <a id="x8-81010x6.2">
+      </a> <span style="color:#054C5C;"><code class="verb">cols</code></span>
+     </dt>
+     <dd class="description">
+      <p class="noindent">
+       The column formatting argument. There must be an entry for every column, as well as possible extra entries for
+the left and right borders of the table or for the inter-column spacings. The possible column formatting symbols
+are:
+      </p>
+     </dd>
+    </dl>
+    <p class="noindent">
+     Without
+going
+into
+more
+unnecessary
+information
+let’s
+have
+a
+look
+at
+an
+example:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <div class="center">
+      <p class="noindent">
+      </p>
+      <div class="tabular">
+       <table class="tabular" id="TBL-22" rules="groups">
+        <colgroup id="TBL-22-1g">
+         <col id="TBL-22-1"/>
+        </colgroup>
+        <colgroup id="TBL-22-2g">
+         <col id="TBL-22-2"/>
+        </colgroup>
+        <colgroup id="TBL-22-3g">
+         <col id="TBL-22-3"/>
+        </colgroup>
+        <tr class="hline">
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+        </tr>
+        <tr id="TBL-22-1-" style="vertical-align:baseline;">
+         <td class="td11" colspan="3" id="TBL-22-1-1" style="text-align:center; white-space:nowrap;">
+          <div class="multicolumn" style="text-align:center; white-space:nowrap;">
+           Sample Tabular
+          </div>
+         </td>
+        </tr>
+        <tr class="hline">
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+        </tr>
+        <tr id="TBL-22-2-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-22-2-1" style="text-align:left; white-space:nowrap;">
+          col head
+         </td>
+         <td class="td11" id="TBL-22-2-2" style="text-align:center; white-space:nowrap;">
+          col head
+         </td>
+         <td class="td11" id="TBL-22-2-3" style="text-align:right; white-space:nowrap;">
+          col head
+         </td>
+        </tr>
+        <tr class="hline">
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+        </tr>
+        <tr id="TBL-22-3-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-22-3-1" style="text-align:left; white-space:nowrap;">
+          Left
+         </td>
+         <td class="td11" id="TBL-22-3-2" style="text-align:center; white-space:nowrap;">
+          centered
+         </td>
+         <td class="td11" id="TBL-22-3-3" style="text-align:right; white-space:nowrap;">
+          right
+         </td>
+        </tr>
+        <tr id="TBL-22-4-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-22-4-1" style="text-align:left; white-space:nowrap;">
+         </td>
+        </tr>
+        <tr class="cline">
+         <td style="border-top:1px solid #000;">
+         </td>
+         <td style="border-top:1px solid #000;">
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr id="TBL-22-5-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-22-5-1" style="text-align:left; white-space:nowrap;">
+          aligned
+         </td>
+         <td class="td11" id="TBL-22-5-2" style="text-align:center; white-space:nowrap;">
+          items
+         </td>
+         <td class="td11" id="TBL-22-5-3" style="text-align:right; white-space:nowrap;">
+          aligned
+         </td>
+        </tr>
+        <tr id="TBL-22-6-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-22-6-1" style="text-align:left; white-space:nowrap;">
+         </td>
+        </tr>
+        <tr class="cline">
+         <td>
+         </td>
+         <td style="border-top:1px solid #000;">
+         </td>
+         <td style="border-top:1px solid #000;">
+         </td>
+        </tr>
+        <tr id="TBL-22-7-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-22-7-1" style="text-align:left; white-space:nowrap;">
+          items
+         </td>
+         <td class="td11" id="TBL-22-7-2" style="text-align:center; white-space:nowrap;">
+          items
+         </td>
+         <td class="td11" id="TBL-22-7-3" style="text-align:right; white-space:nowrap;">
+          items
+         </td>
+        </tr>
+        <tr id="TBL-22-8-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-22-8-1" style="text-align:left; white-space:nowrap;">
+         </td>
+        </tr>
+        <tr class="cline">
+         <td style="border-top:1px solid #000;">
+         </td>
+         <td style="border-top:1px solid #000;">
+         </td>
+         <td>
+         </td>
+        </tr>
+        <tr id="TBL-22-9-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-22-9-1" style="text-align:left; white-space:nowrap;">
+          Left items
+         </td>
+         <td class="td11" id="TBL-22-9-2" style="text-align:center; white-space:nowrap;">
+          centered
+         </td>
+         <td class="td11" id="TBL-22-9-3" style="text-align:right; white-space:nowrap;">
+          right aligned
+         </td>
+        </tr>
+        <tr class="hline">
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+        </tr>
+        <tr id="TBL-22-10-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-22-10-1" style="text-align:left; white-space:nowrap;">
+         </td>
+        </tr>
+       </table>
+      </div>
+     </div>
+    </div>
+    <p class="noindent">
+     typed
+as
+following:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb142" style="padding:20px;border-radius: 3px;"><a id="x8-81012r131"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>center<span style="color:#2B2BFF;">}</span> 
+<a id="x8-81014r132"></a> <span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tabular<span style="color:#2B2BFF;">}{</span>|l|c|r|<span style="color:#2B2BFF;">}</span> 
+<a id="x8-81016r133"></a>   <span style="color:#2B2BFF;">\hline</span> 
+<a id="x8-81018r134"></a>   <span style="color:#2B2BFF;">\multicolumn</span><span style="color:#2B2BFF;">{</span>3<span style="color:#2B2BFF;">}{</span>|c|<span style="color:#2B2BFF;">}{</span>Sample Tabular<span style="color:#2B2BFF;">}</span>  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-81020r135"></a>   <span style="color:#2B2BFF;">\hline</span> 
+<a id="x8-81022r136"></a>   col head   <span style="color:#2B2BFF;">&amp;</span> col head <span style="color:#2B2BFF;">&amp;</span> col head      <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-81024r137"></a>   <span style="color:#2B2BFF;">\hline</span> 
+<a id="x8-81026r138"></a>   Left       <span style="color:#2B2BFF;">&amp;</span> centered <span style="color:#2B2BFF;">&amp;</span> right         <span style="color:#2B2BFF;">\\\cline</span><span style="color:#2B2BFF;">{</span>1-2<span style="color:#2B2BFF;">}</span> 
+<a id="x8-81028r139"></a>   aligned    <span style="color:#2B2BFF;">&amp;</span> items    <span style="color:#2B2BFF;">&amp;</span> aligned       <span style="color:#2B2BFF;">\\\cline</span><span style="color:#2B2BFF;">{</span>2-3<span style="color:#2B2BFF;">}</span> 
+<a id="x8-81030r140"></a>   items      <span style="color:#2B2BFF;">&amp;</span> items    <span style="color:#2B2BFF;">&amp;</span> items         <span style="color:#2B2BFF;">\\\cline</span><span style="color:#2B2BFF;">{</span>1-2<span style="color:#2B2BFF;">}</span> 
+<a id="x8-81032r141"></a>   Left items <span style="color:#2B2BFF;">&amp;</span> centered <span style="color:#2B2BFF;">&amp;</span> right aligned <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-81034r142"></a>   <span style="color:#2B2BFF;">\hline</span> 
+<a id="x8-81036r143"></a> <span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tabular<span style="color:#2B2BFF;">}</span> 
+<a id="x8-81038r144"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>center<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.6.2.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      6.2.1
+     </small>
+     <a id="x8-820006.2.1">
+     </a>
+     tabularray
+Package
+    </h3>
+    <p class="noindent">
+     For
+a
+long
+time,
+the
+tabular
+environment
+was
+used
+to
+build
+tables.
+However,
+writing
+tables
+with
+tabular
+can
+be
+troublesome
+for
+beginners
+and
+really
+complex
+tables
+can
+be
+near
+impossible
+to
+write
+as
+we
+have
+seen
+from
+                                                                                
+                                                                                
+                                                                              
+the
+previous
+example.
+Also,
+tables
+built
+with
+the
+tabular
+environment
+have
+some
+typographical
+issues
+and,
+when
+color
+is
+used,
+can
+be
+misread
+by
+     <a class="glossary" href="AcademicWritingLectureBookli2.html#glo:pdf">
+      PDF
+     </a>
+     ‘
+readers.
+Therefore,
+more
+and
+more
+LaTeX
+users
+are
+calling
+to
+use
+the
+tblr
+environment
+from
+the
+tabularray
+package
+instead.
+     <a id="subsubsection*.9">
+     </a>
+    </p>
+    <h5 class="subsubsectionHead">
+     <a id="x8-83000">
+     </a>
+     The
+tblr
+environment
+    </h5>
+    <p class="noindent">
+     The <span style="color:#054C5C;"><code class="verb">tblr</code></span>
+     environment,
+like
+HTML
+and
+CSS,
+separates
+the
+content
+and
+the
+style
+of
+table
+                                                                                
+                                                                                
+                                                                            
+cells.
+To
+do
+so,
+it
+uses
+keyval
+arguments
+to
+define
+options
+for
+columns,
+rows
+or
+cells.
+A
+keyval
+argument
+is
+an
+argument
+that
+takes
+the
+form
+of:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb143" style="padding:20px;border-radius: 3px;"><a id="x8-83002r151"></a>option1=value, option2=value</div></pre>
+    </div>
+    <p class="noindent">
+     If
+a
+value
+contains
+commas,
+it
+must
+be
+surrounded
+by
+brackets
+in
+this
+way:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb144" style="padding:20px;border-radius: 3px;"><a id="x8-83004r156"></a>mylist = <span style="color:#2B2BFF;">{</span>element1, element2, and element 3<span style="color:#2B2BFF;">}</span>, option2=value</div></pre>
+    </div>
+    <p class="noindent">
+     The <span style="color:#054C5C;"><code class="verb">tblr</code></span>
+     environment
+takes
+a
+single
+mandatory
+argument,
+a
+keyval
+argument
+containing
+a
+list
+of
+options
+for
+                                                                                
+                                                                                
+                                                                           
+styling
+the
+table.
+Inside
+the
+environnment,
+each
+column
+is
+separated
+by <span style="color:#054C5C;"><code class="verb">&amp;</code></span>.
+Finally,
+each
+row
+is
+separated
+by
+the
+command <span style="color:#054C5C;"><code class="verb">\\</code></span>.
+A
+really
+basic
+table
+would
+be
+this:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <table class="tabularray tblr" id="tbl-23">
+      <tr id="row-23-1-">
+       <td id="cell23-1-1" style="text-align:justify;vertical-align:top;">
+        A1
+       </td>
+       <td id="cell23-1-2" style="text-align:justify;vertical-align:top;">
+        B1
+       </td>
+       <td id="cell23-1-3" style="text-align:justify;vertical-align:top;">
+        C1
+       </td>
+      </tr>
+      <tr id="row-23-2-">
+       <td id="cell23-2-1" style="text-align:justify;vertical-align:top;">
+        A2
+       </td>
+       <td id="cell23-2-2" style="text-align:justify;vertical-align:top;">
+        B2
+       </td>
+       <td id="cell23-2-3" style="text-align:justify;vertical-align:top;">
+        C2
+       </td>
+      </tr>
+      <tr id="row-23-3-">
+       <td id="cell23-3-1" style="text-align:justify;vertical-align:top;">
+        A3
+       </td>
+       <td id="cell23-3-2" style="text-align:justify;vertical-align:top;">
+        B3
+       </td>
+       <td id="cell23-3-3" style="text-align:justify;vertical-align:top;">
+        C3
+       </td>
+      </tr>
+     </table>
+    </div>
+    <p class="noindent">
+     which
+is
+typed
+as
+follows:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb145" style="padding:20px;border-radius: 3px;"><a id="x8-83006r161"></a><span style="color:#008700;"><italic>% \usepackage{tabularray}</italic></span> 
+<a id="x8-83008r162"></a> 
+<a id="x8-83010r163"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}{}</span> 
+<a id="x8-83012r164"></a>A1 <span style="color:#2B2BFF;">&amp;</span> B1 <span style="color:#2B2BFF;">&amp;</span> C1  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-83014r165"></a>A2 <span style="color:#2B2BFF;">&amp;</span> B2 <span style="color:#2B2BFF;">&amp;</span> C2  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-83016r166"></a>A3 <span style="color:#2B2BFF;">&amp;</span> B3 <span style="color:#2B2BFF;">&amp;</span> C3 
+<a id="x8-83018r167"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     In
+the
+mandatory
+argument,
+you
+can
+define
+options
+for
+columns,
+rows
+and
+cells
+using
+those
+keys:
+    </p>
+    <table class="tabularray tblr" id="tbl-24">
+     <tr id="row-24-1-">
+      <th id="cell24-1-1" style="text-align:right;vertical-align:top;background-color:#F2F2F2;">
+       <span id="bold" style="font-weight:bold;">
+        Key
+       </span>
+      </th>
+
+      <th id="cell24-1-2" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+       <span id="bold" style="font-weight:bold;">
+        Descriptions
+       </span>
+      </th>
+     </tr>
+     <tr id="row-24-2-">
+
+      <td id="cell24-2-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">cells</code></span>
+      </td>
+      <td id="cell24-2-2" style="text-align:justify;vertical-align:top;">
+       Options for all cells
+      </td>
+     </tr>
+     <tr id="row-24-3-">
+
+      <td id="cell24-3-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">cell{&lt;Row- Number&gt;}{&lt;Column- Number&gt;}</code></span>
+      </td>
+      <td id="cell24-3-2" style="text-align:justify;vertical-align:top;">
+       Options for specific cells
+      </td>
+     </tr>
+     <tr id="row-24-4-">
+
+      <td id="cell24-4-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">columns</code></span>
+      </td>
+      <td id="cell24-4-2" style="text-align:justify;vertical-align:top;">
+       Options for all columns
+      </td>
+     </tr>
+     <tr id="row-24-5-">
+
+      <td id="cell24-5-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">column{&lt;Column- Number&gt;}</code></span>
+      </td>
+      <td id="cell24-5-2" style="text-align:justify;vertical-align:top;">
+       Option for specific columns
+      </td>
+     </tr>
+     <tr id="row-24-6-">
+
+      <td id="cell24-6-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">rows</code></span>
+      </td>
+      <td id="cell24-6-2" style="text-align:justify;vertical-align:top;">
+       Options for all rows
+      </td>
+     </tr>
+     <tr id="row-24-7-">
+
+      <td id="cell24-7-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">row{&lt;Row- Number&gt;}</code></span>
+      </td>
+      <td id="cell24-7-2" style="text-align:justify;vertical-align:top;">
+       Options for specific rows
+      </td>
+     </tr>
+    </table>
+    <p class="noindent">
+     The
+values <span style="color:#054C5C;"><code class="verb">&lt;Row-Number&gt;</code></span>
+     and <span style="color:#054C5C;"><code class="verb">&lt;Column-Number&gt;</code></span>
+     can
+be
+a
+single
+number,
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        2
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         2
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       1,
+for
+the
+first
+column
+or
+row.
+      </span>
+     </span>
+     a
+range
+(1-3)
+or
+a
+special
+value
+(like
+odd
+or
+even).
+    </p>
+    
+    <div class="knowledge">
+     <p class="noindent">
+      The characters X, Y and Z are converted to the indexes of the last three child, respectively.
+     </p>
+    </div>
+    <p class="noindent">
+     The following example use the key <span style="color:#054C5C;"><code class="verb">bg</code></span>
+     to set the color of the background of each cell and <span style="color:#054C5C;"><code class="verb">fg</code></span>
+     to set the color of the text:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb146" style="padding:20px;border-radius: 3px;"><a id="x8-83020r172"></a><span style="color:#008700;"><italic>% \usepackage{xcolor}</italic></span> 
+<a id="x8-83022r173"></a><span style="color:#008700;"><italic>% \usepackage{tabularray}</italic></span> 
+<a id="x8-83024r174"></a> 
+<a id="x8-83026r175"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}{</span> 
+<a id="x8-83028r176"></a>      row<span style="color:#2B2BFF;">{</span>odd<span style="color:#2B2BFF;">}</span>     = <span style="color:#2B2BFF;">{</span>bg = red<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-83030r177"></a>      cell<span style="color:#2B2BFF;">{</span>2<span style="color:#2B2BFF;">}{</span>2-3<span style="color:#2B2BFF;">}</span> = <span style="color:#2B2BFF;">{</span>bg = green<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-83032r178"></a>      column<span style="color:#2B2BFF;">{</span>1<span style="color:#2B2BFF;">}</span>    = <span style="color:#2B2BFF;">{</span>bg = blue, fg = white<span style="color:#2B2BFF;">}</span> 
+<a id="x8-83034r179"></a><span style="color:#2B2BFF;">}</span> 
+<a id="x8-83036r180"></a>A1 <span style="color:#2B2BFF;">&amp;</span> B1 <span style="color:#2B2BFF;">&amp;</span> C1  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-83038r181"></a>A2 <span style="color:#2B2BFF;">&amp;</span> B2 <span style="color:#2B2BFF;">&amp;</span> C2  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-83040r182"></a>A3 <span style="color:#2B2BFF;">&amp;</span> B3 <span style="color:#2B2BFF;">&amp;</span> C3 
+<a id="x8-83042r183"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     This  would  result  in  the  following  colorful  table:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <table class="tabularray tblr" id="tbl-25">
+      <tr id="row-25-1-">
+       <td id="cell25-1-1" style="text-align:justify;vertical-align:top;background-color:#0000FF;color:#FFFFFF;">
+        A1
+       </td>
+
+       <td id="cell25-1-2" style="text-align:justify;vertical-align:top;background-color:#FF0000;">
+        B1
+       </td>
+
+       <td id="cell25-1-3" style="text-align:justify;vertical-align:top;background-color:#FF0000;">
+        C1
+       </td>
+      </tr>
+      <tr id="row-25-2-">
+
+       <td id="cell25-2-1" style="text-align:justify;vertical-align:top;background-color:#0000FF;color:#FFFFFF;">
+        A2
+       </td>
+
+       <td id="cell25-2-2" style="text-align:justify;vertical-align:top;background-color:#00FF00;">
+        B2
+       </td>
+
+       <td id="cell25-2-3" style="text-align:justify;vertical-align:top;background-color:#00FF00;">
+        C2
+       </td>
+      </tr>
+      <tr id="row-25-3-">
+
+       <td id="cell25-3-1" style="text-align:justify;vertical-align:top;background-color:#0000FF;color:#FFFFFF;">
+        A3
+       </td>
+
+       <td id="cell25-3-2" style="text-align:justify;vertical-align:top;background-color:#FF0000;">
+        B3
+       </td>
+
+       <td id="cell25-3-3" style="text-align:justify;vertical-align:top;background-color:#FF0000;">
+        C3
+       </td>
+      </tr>
+     </table>
+    </div>
+    <a id="subsubsection*.10">
+    </a>
+    <h5 class="subsubsectionHead">
+     <a id="x8-84000">
+     </a>
+     Some  Basic  Options
+    </h5>
+    <p class="noindent">
+     We already saw two options which can be used to style table cells. However, there are much more. Here are some of them:
+    </p>
+    
+    <table class="tabularray tblr" id="tbl-26">
+     <tr id="row-26-1-">
+      <th id="cell26-1-1" style="text-align:right;vertical-align:top;background-color:#F2F2F2;">
+       <span id="bold" style="font-weight:bold;">
+        Key
+       </span>
+      </th>
+
+      <th id="cell26-1-2" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+       <span id="bold" style="font-weight:bold;">
+        Value
+       </span>
+      </th>
+
+      <th id="cell26-1-3" style="text-align:justify;vertical-align:top;background-color:#F2F2F2;">
+       <span id="bold" style="font-weight:bold;">
+        Description
+       </span>
+      </th>
+     </tr>
+     <tr id="row-26-2-">
+
+      <td id="cell26-2-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">bg</code></span>
+      </td>
+      <td id="cell26-2-2" style="text-align:justify;vertical-align:top;">
+       Background color
+      </td>
+      <td id="cell26-2-3" style="text-align:justify;vertical-align:top;">
+       Colour name
+      </td>
+     </tr>
+     <tr id="row-26-3-">
+
+      <td id="cell26-3-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">fg</code></span>
+      </td>
+      <td id="cell26-3-2" style="text-align:justify;vertical-align:top;">
+       Color of the text
+      </td>
+      <td id="cell26-3-3" style="text-align:justify;vertical-align:top;">
+       Color name
+      </td>
+     </tr>
+     <tr id="row-26-4-">
+
+      <td id="cell26-4-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">halign</code></span>
+      </td>
+      <td id="cell26-4-2" style="text-align:justify;vertical-align:top;">
+       Horizontal alignment of the text
+      </td>
+      <td id="cell26-4-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">l</code></span>
+       (left), <span style="color:#054C5C;"><code class="verb">c</code></span>
+       (center), <span style="color:#054C5C;"><code class="verb">r</code></span>
+       (right)
+      </td>
+     </tr>
+     <tr id="row-26-5-">
+
+      <td id="cell26-5-1" style="text-align:right;vertical-align:top;background-color:#FAFAFA;"> <span style="color:#054C5C;"><code class="verb">valign</code></span>
+      </td>
+      <td id="cell26-5-2" style="text-align:justify;vertical-align:top;">
+       Vertical alignment of the text
+      </td>
+      <td id="cell26-5-3" style="text-align:justify;vertical-align:top;"> <span style="color:#054C5C;"><code class="verb">t</code></span>
+       (top), <span style="color:#054C5C;"><code class="verb">m</code></span>
+       (middle), <span style="color:#054C5C;"><code class="verb">b</code></span>
+       (bottom), <span style="color:#054C5C;"><code class="verb">h</code></span>
+       (head), <span style="color:#054C5C;"><code class="verb">f</code></span>
+       (foot)
+      </td>
+     </tr>
+    </table>
+    <p class="noindent">
+     As a trick, you can omit the name of the keys <span style="color:#054C5C;"><code class="verb">bg</code></span>, <span style="color:#054C5C;"><code class="verb">halign</code></span>
+     and <span style="color:#054C5C;"><code class="verb">valign</code></span>
+     and simply enter their value, separated by a comma:
+    </p>
+    
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb147" style="padding:20px;border-radius: 3px;"><a id="x8-84002r188"></a><span style="color:#008700;"><italic>% \usepackage{color}</italic></span> 
+<a id="x8-84004r189"></a><span style="color:#008700;"><italic>% \usepackage{tabularray} </italic></span> 
+<a id="x8-84006r190"></a> 
+<a id="x8-84008r191"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}{</span> 
+<a id="x8-84010r192"></a>      row<span style="color:#2B2BFF;">{</span>odd<span style="color:#2B2BFF;">}</span>     = <span style="color:#2B2BFF;">{</span>red<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-84012r193"></a>      cell<span style="color:#2B2BFF;">{</span>2<span style="color:#2B2BFF;">}{</span>2-3<span style="color:#2B2BFF;">}</span> = <span style="color:#2B2BFF;">{</span>green<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-84014r194"></a>      column<span style="color:#2B2BFF;">{</span>1<span style="color:#2B2BFF;">}</span>    = <span style="color:#2B2BFF;">{</span>blue, fg = white<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-84016r195"></a>      cell<span style="color:#2B2BFF;">{</span>3<span style="color:#2B2BFF;">}{</span>1<span style="color:#2B2BFF;">}</span>   = <span style="color:#2B2BFF;">{</span>r<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-84018r196"></a>      cell<span style="color:#2B2BFF;">{</span>2<span style="color:#2B2BFF;">}{</span>3<span style="color:#2B2BFF;">}</span>   = <span style="color:#2B2BFF;">{</span>r<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-84020r197"></a>      cell<span style="color:#2B2BFF;">{</span>2<span style="color:#2B2BFF;">}{</span>2<span style="color:#2B2BFF;">}</span>   = <span style="color:#2B2BFF;">{</span>c<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-84022r198"></a>      cell<span style="color:#2B2BFF;">{</span>3<span style="color:#2B2BFF;">}{</span>3<span style="color:#2B2BFF;">}</span>   = <span style="color:#2B2BFF;">{</span>c<span style="color:#2B2BFF;">}</span> 
+<a id="x8-84024r199"></a><span style="color:#2B2BFF;">}</span> 
+<a id="x8-84026r200"></a>A very very long text <span style="color:#2B2BFF;">&amp;</span> A very very long text <span style="color:#2B2BFF;">&amp;</span> A very very long text  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-84028r201"></a>Left                  <span style="color:#2B2BFF;">&amp;</span> Center                <span style="color:#2B2BFF;">&amp;</span> Right                  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-84030r202"></a>Right                 <span style="color:#2B2BFF;">&amp;</span> Left                  <span style="color:#2B2BFF;">&amp;</span> Center 
+<a id="x8-84032r203"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     which  is  typed  as  following:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <table class="tabularray tblr" id="tbl-27">
+      <tr id="row-27-1-">
+       <td id="cell27-1-1" style="text-align:justify;vertical-align:top;background-color:#0000FF;color:#FFFFFF;">
+        A very very long text
+       </td>
+
+       <td id="cell27-1-2" style="text-align:justify;vertical-align:top;background-color:#FF0000;">
+        A very very long text
+       </td>
+
+       <td id="cell27-1-3" style="text-align:justify;vertical-align:top;background-color:#FF0000;">
+        A very very long text
+       </td>
+      </tr>
+      <tr id="row-27-2-">
+
+       <td id="cell27-2-1" style="text-align:justify;vertical-align:top;background-color:#0000FF;color:#FFFFFF;">
+        Left
+       </td>
+
+       <td id="cell27-2-2" style="text-align:center;vertical-align:top;background-color:#00FF00;">
+        Center
+       </td>
+
+       <td id="cell27-2-3" style="text-align:right;vertical-align:top;background-color:#00FF00;">
+        Right
+       </td>
+      </tr>
+      <tr id="row-27-3-">
+
+       <td id="cell27-3-1" style="text-align:right;vertical-align:top;background-color:#0000FF;color:#FFFFFF;">
+        Right
+       </td>
+
+       <td id="cell27-3-2" style="text-align:justify;vertical-align:top;background-color:#FF0000;">
+        Left
+       </td>
+
+       <td id="cell27-3-3" style="text-align:center;vertical-align:top;background-color:#FF0000;">
+        Center
+       </td>
+      </tr>
+     </table>
+    </div>
+    <a id="subsubsection*.11">
+    </a>
+    <h5 class="subsubsectionHead">
+     <a id="x8-85000">
+     </a>
+     Adding  Borders
+    </h5>
+    <p class="noindent">
+     To add borders to the table, we use other “superkeys” like <span style="color:#054C5C;"><code class="verb">cell</code></span>
+     or <span style="color:#054C5C;"><code class="verb">row</code></span>. However, instead, we use <span style="color:#054C5C;"><code class="verb">hlines</code></span>
+     to set all horizontal
+borders, <span style="color:#054C5C;"><code class="verb">hline</code></span>
+     to set specific horizontal borders, <span style="color:#054C5C;"><code class="verb">vlines</code></span>
+     to set all vertical borders and <span style="color:#054C5C;"><code class="verb">vline</code></span>
+     to set specific vertical borders.
+    </p>
+    
+    <p class="noindent">
+     With those superkeys, we can set several options: the thickness of the border, the color of the border and its style
+( <span style="color:#054C5C;"><code class="verb">solid</code></span>, <span style="color:#054C5C;"><code class="verb">dashed</code></span>
+     or <span style="color:#054C5C;"><code class="verb">dotted</code></span>
+     ). If the brackets are empty, a normal black border will be used. See this basic example:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <table class="tabularray tblr" id="tbl-28">
+      <tr id="row-28-1-">
+       <td id="cell28-1-1" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        A1
+       </td>
+       <td id="cell28-1-2" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        B1
+       </td>
+       <td id="cell28-1-3" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;border-right:0.79701px solid #000000;">
+        C1
+       </td>
+      </tr>
+      <tr id="row-28-2-">
+       <td id="cell28-2-1" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        A2
+       </td>
+       <td id="cell28-2-2" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        B2
+       </td>
+       <td id="cell28-2-3" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;border-right:0.79701px solid #000000;">
+        C2
+       </td>
+      </tr>
+      <tr id="row-28-3-">
+       <td id="cell28-3-1" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-bottom:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        A3
+       </td>
+       <td id="cell28-3-2" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-bottom:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        B3
+       </td>
+       <td id="cell28-3-3" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-bottom:0.79701px solid #000000;border-left:0.79701px solid #000000;border-right:0.79701px solid #000000;">
+        C3
+       </td>
+      </tr>
+
+     </table>
+    </div>
+    <p class="noindent">
+     typed  as:
+    </p>
+    
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb148" style="padding:20px;border-radius: 3px;"><a id="x8-85002r208"></a><span style="color:#008700;"><italic>% \usepackage{tabularray} </italic></span> 
+<a id="x8-85004r209"></a> 
+<a id="x8-85006r210"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}{</span> 
+<a id="x8-85008r211"></a>      vlines = <span style="color:#2B2BFF;">{}</span>, 
+<a id="x8-85010r212"></a>      hlines = <span style="color:#2B2BFF;">{}</span> 
+<a id="x8-85012r213"></a><span style="color:#2B2BFF;">}</span> 
+<a id="x8-85014r214"></a>A1 <span style="color:#2B2BFF;">&amp;</span> B1 <span style="color:#2B2BFF;">&amp;</span> C1  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-85016r215"></a>A2 <span style="color:#2B2BFF;">&amp;</span> B2 <span style="color:#2B2BFF;">&amp;</span> C2  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-85018r216"></a>A3 <span style="color:#2B2BFF;">&amp;</span> B3 <span style="color:#2B2BFF;">&amp;</span> C3 
+<a id="x8-85020r217"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     or  this  more  complex  example:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <table class="tabularray tblr" id="tbl-29">
+      <tr id="row-29-1-">
+       <td id="cell29-1-1" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:5.97766px solid #000000;">
+        A1
+       </td>
+       <td id="cell29-1-2" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;">
+        B1
+       </td>
+       <td id="cell29-1-3" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-right:5.97766px solid #000000;">
+        C1
+       </td>
+       _
+      </tr>
+      <tr id="row-29-2-">
+       <td id="cell29-2-1" style="text-align:justify;vertical-align:top;border-top:0.79701px dotted #0000FF;border-left:5.97766px solid #000000;">
+        A2
+       </td>
+       <td id="cell29-2-2" style="text-align:justify;vertical-align:top;border-top:0.79701px dotted #0000FF;">
+        B2
+       </td>
+       <td id="cell29-2-3" style="text-align:justify;vertical-align:top;border-top:0.79701px dotted #0000FF;border-right:5.97766px solid #000000;">
+        C2
+       </td>
+       _
+      </tr>
+      <tr id="row-29-3-">
+       <td id="cell29-3-1" style="text-align:justify;vertical-align:top;border-bottom:0.79701px solid #000000;border-left:5.97766px solid #000000;">
+        A3
+       </td>
+       <td id="cell29-3-2" style="text-align:justify;vertical-align:top;border-bottom:0.79701px solid #000000;">
+        B3
+       </td>
+       <td id="cell29-3-3" style="text-align:justify;vertical-align:top;border-bottom:0.79701px solid #000000;border-right:5.97766px solid #000000;">
+        C3
+       </td>
+       _
+      </tr>
+
+     </table>
+    </div>
+    <p class="noindent">
+     implemented  using:
+    </p>
+    
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb149" style="padding:20px;border-radius: 3px;"><a id="x8-85022r222"></a><span style="color:#008700;"><italic>% \usepackage{color}</italic></span> 
+<a id="x8-85024r223"></a><span style="color:#008700;"><italic>% \usepackage{tabularray} </italic></span> 
+<a id="x8-85026r224"></a> 
+<a id="x8-85028r225"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}{</span> 
+<a id="x8-85030r226"></a>      vline<span style="color:#2B2BFF;">{</span>1,4<span style="color:#2B2BFF;">}</span> = <span style="color:#2B2BFF;">{</span>3pt<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-85032r227"></a>      hline<span style="color:#2B2BFF;">{</span>1,4<span style="color:#2B2BFF;">}</span> = <span style="color:#2B2BFF;">{}</span>, 
+<a id="x8-85034r228"></a>      hline<span style="color:#2B2BFF;">{</span>2<span style="color:#2B2BFF;">}</span>   = <span style="color:#2B2BFF;">{</span>blue,dotted<span style="color:#2B2BFF;">}</span> 
+<a id="x8-85036r229"></a><span style="color:#2B2BFF;">}</span> 
+<a id="x8-85038r230"></a>A1 <span style="color:#2B2BFF;">&amp;</span> B1 <span style="color:#2B2BFF;">&amp;</span> C1  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-85040r231"></a>A2 <span style="color:#2B2BFF;">&amp;</span> B2 <span style="color:#2B2BFF;">&amp;</span> C2  <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-85042r232"></a>A3 <span style="color:#2B2BFF;">&amp;</span> B3 <span style="color:#2B2BFF;">&amp;</span> C3 
+<a id="x8-85044r233"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <a id="subsubsection*.12">
+    </a>
+    <h5 class="subsubsectionHead">
+     <a id="x8-86000">
+     </a>
+     Merging  Cells
+    </h5>
+    <p class="noindent">
+     It is way easier to merge columns or rows with <span style="color:#054C5C;"><code class="verb">tblr</code></span>
+     than <span style="color:#054C5C;"><code class="verb">tabular</code></span>. To do so, you
+only have to use the <span style="color:#054C5C;"><code class="verb">r</code></span>
+     key to set the number of rows or <span style="color:#054C5C;"><code class="verb">c</code></span>
+     to set the number of cells.
+    </p>
+    <div class="warning">
+     <p class="noindent">
+      you can only use these keys with the cell superkey and they must be surrounded by distinct brackets.
+     </p>
+    </div>
+    <p class="noindent">
+     Also, unlike with tabular, you don’t omit ampersands. See the following example:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <table class="tabularray tblr" id="tbl-30">
+      <tr id="row-30-1-">
+       <td colspan="\lTblrCellColSpanInt " id="cell30-1-1" style="text-align:center;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;border-right:0.79701px solid #000000;">
+        A1
+       </td>
+      </tr>
+      <tr id="row-30-2-">
+       <td id="cell30-2-1" rowspan="\lTblrCellRowSpanInt " style="text-align:justify;border-top:0.79701px solid #000000;border-bottom:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        A2
+       </td>
+       <td id="cell30-2-2" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        B2
+       </td>
+       <td id="cell30-2-3" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        C2
+       </td>
+       <td id="cell30-2-4" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;border-right:0.79701px solid #000000;">
+        D2
+       </td>
+      </tr>
+      <tr id="row-30-3-">
+       <td id="cell30-3-2" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        B3
+       </td>
+       <td colspan="\lTblrCellColSpanInt " id="cell30-3-3" rowspan="\lTblrCellRowSpanInt " style="text-align:center;border-top:0.79701px solid #000000;border-bottom:0.79701px solid #000000;border-left:0.79701px solid #000000;border-right:0.79701px solid #000000;">
+        C3
+       </td>
+      </tr>
+      <tr id="row-30-4-">
+       <td id="cell30-4-2" style="text-align:justify;vertical-align:top;border-top:0.79701px solid #000000;border-bottom:0.79701px solid #000000;border-left:0.79701px solid #000000;">
+        B4
+       </td>
+      </tr>
+
+     </table>
+    </div>
+    <p class="noindent">
+     Typed  as  following:
+    </p>
+    
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb150" style="padding:20px;border-radius: 3px;"><a id="x8-86002r238"></a><span style="color:#008700;"><italic>% \usepackage{tabularray} </italic></span> 
+<a id="x8-86004r239"></a> 
+<a id="x8-86006r240"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}{</span> 
+<a id="x8-86008r241"></a>      vlines = <span style="color:#2B2BFF;">{}</span>, 
+<a id="x8-86010r242"></a>      hlines = <span style="color:#2B2BFF;">{}</span>, 
+<a id="x8-86012r243"></a>      cell<span style="color:#2B2BFF;">{</span>1<span style="color:#2B2BFF;">}{</span>1<span style="color:#2B2BFF;">}</span> = <span style="color:#2B2BFF;">{</span>c = 4<span style="color:#2B2BFF;">}{</span>halign = c<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-86014r244"></a>      cell<span style="color:#2B2BFF;">{</span>2<span style="color:#2B2BFF;">}{</span>1<span style="color:#2B2BFF;">}</span> = <span style="color:#2B2BFF;">{</span>r = 3<span style="color:#2B2BFF;">}{</span>valign = m<span style="color:#2B2BFF;">}</span>, 
+<a id="x8-86016r245"></a>      cell<span style="color:#2B2BFF;">{</span>3<span style="color:#2B2BFF;">}{</span>3<span style="color:#2B2BFF;">}</span> = <span style="color:#2B2BFF;">{</span>c = 2, r = 2<span style="color:#2B2BFF;">}{</span>c,m<span style="color:#2B2BFF;">}</span> 
+<a id="x8-86018r246"></a><span style="color:#2B2BFF;">}</span> 
+<a id="x8-86020r247"></a>A1 <span style="color:#2B2BFF;">&amp;</span>    <span style="color:#2B2BFF;">&amp;</span>    <span style="color:#2B2BFF;">&amp;</span>    <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-86022r248"></a>A2 <span style="color:#2B2BFF;">&amp;</span> B2 <span style="color:#2B2BFF;">&amp;</span> C2 <span style="color:#2B2BFF;">&amp;</span> D2 <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-86024r249"></a>  <span style="color:#2B2BFF;">&amp;</span> B3 <span style="color:#2B2BFF;">&amp;</span> C3 <span style="color:#2B2BFF;">&amp;</span>    <span style="color:#2B2BFF;">\\</span> 
+<a id="x8-86026r250"></a>  <span style="color:#2B2BFF;">&amp;</span> B4 <span style="color:#2B2BFF;">&amp;</span>    <span style="color:#2B2BFF;">&amp;</span> 
+<a id="x8-86028r251"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tblr<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+   </article>
+   <footer>
+    <div class="next">
+     <p class="noindent">
+      <a href="AcademicWritingLectureBookch7.html" style="float: right;">
+       Next Chapter →
+      </a>
+      <a href="AcademicWritingLectureBookch5.html" style="float: left;">
+       ← Previous Chapter
+      </a>
+      <a href="index.html">
+       TOP
+      </a>
+     </p>
+    </div>
+   </footer>
+  </div>
+  <p class="noindent">
+   <a id="tailAcademicWritingLectureBookch6.html">
+   </a>
+  </p>
+ </body>
+</html>

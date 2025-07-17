@@ -1,0 +1,2931 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+ <head>
+  <title>
+   8 Cross-Referencing
+  </title>
+    <link rel='icon' type='image/x-icon' href='figures/logo.svg'></link>
+  <meta charset="utf-8"/>
+  <meta content="ParSnip" name="generator"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <link href="AcademicWritingLectureBook.css" rel="stylesheet" type="text/css"/>
+  <meta content="AcademicWritingLectureBook.tex" name="src"/>
+  <script async="async" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js" type="text/javascript">
+  </script>
+  <link href="flatweb.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+  </script>
+  <script src="flatjs.js">
+  </script>
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+  <script type="module">
+   import pdfjsDist from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.93/+esm'
+  </script>
+  <script>
+   function moveTOC() { 
+var htmlShow = document.getElementsByClassName("wide"); 
+if (htmlShow[0].style.display === "none") { 
+htmlShow[0].style.display = "block"; 
+} else { 
+htmlShow[0].style.display = "none"; 
+} 
+}
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js">
+  </script>
+  <script src="texlive.js">
+  </script>
+  <header>
+  </header>
+ </head>
+ <body id="top">
+  <nav class="wide">
+   <div class="contents">
+    <h3 style="font-weight:lighter; padding: 20px 0 20px 0;">
+     8
+   
+     
+   
+
+   Cross-Referencing
+    </h3>
+    <h4 style="font-weight:lighter">
+     Chapter Table of Contents
+    </h4>
+    <ul>
+     <div class="chapterTOCS">
+      <li>
+       <span class="sectionToc">
+        <small>
+         8.1
+        </small>
+        <a href="#x10-980008.1">
+         The Purpose of Cross-Referencing
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="sectionToc">
+        <small>
+         8.2
+        </small>
+        <a href="#x10-990008.2">
+         Making LaTeX do the Work
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         8.2.1
+        </small>
+        <a href="#x10-1000008.2.1">
+         Referencing Items
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="subsectionToc" style="font-size:12px;margin:0px;">
+        <small>
+         8.2.2
+        </small>
+        <a href="#x10-1010008.2.2">
+         Cross-Referencing in Math
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="sectionToc">
+        <small>
+         8.3
+        </small>
+        <a href="#x10-1020008.3">
+         Pointing to a Page using the varioref Package
+        </a>
+       </span>
+      </li>
+      <li>
+       <span class="sectionToc">
+        <small>
+         8.4
+        </small>
+        <a href="#x10-1030008.4">
+         The cleveref Package
+        </a>
+       </span>
+      </li>
+     </div>
+    </ul>
+    <div class="prev-next" style="text-align: center">
+     <p class="noindent">
+      <a href="AcademicWritingLectureBookch9.html" style="float:right; font-size:10px">
+       NEXT →
+      </a>
+      <a href="AcademicWritingLectureBookch7.html" style="float:left; font-size:10px">
+       ← PREV
+      </a>
+      <a href="index.html">
+       TOP
+      </a>
+     </p>
+    </div>
+    <div id="author-info" style="bottom: 0; padding-bottom: 10px;">
+     <div id="author-logo">
+      <img src="figures/logo.svg" style="margin: 10px 0;"/>
+      <div>
+       <div>
+        <h4 style="color:#7aa0b8; font-weight:lighter;">
+         WebBook | D. T. McGuiness, P.hD
+        </h4>
+       </div>
+      </div>
+      <div id="author-text" style="bottom: 0; padding-top: 50px;border-top: solid 1px #3b4b5e;font-size: 12px;text-align: right;">
+       <p>
+        <b>
+         Authors Note
+        </b>
+        The website you are viewing is auto-generated
+    using ParSnip and therefore subject to slight errors in
+    typography and formatting. When in doubt, please consult the
+    LectureBook.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <div class="page">
+   <article class="chapter">
+    <h1 class="chapterHead">
+     <div class="number">
+      8
+     </div>
+     <a id="x10-970008">
+     </a>
+     Cross-Referencing
+    </h1><button id='toc-button' onclick='moveTOC()'>TOC</button>
+    <div class="section-control" style="text-align: center">
+     <a id="prev-section" onclick="goPrev()" style="float:left;">
+      ← Previous Section
+     </a>
+     <a id="next-section" onclick="goNext()" style="float:right;">
+      Next Section →
+     </a>
+    </div>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.8.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      8.1
+     </small>
+     <a id="x10-980008.1">
+     </a>
+     The Purpose of Cross-Referencing
+    </h2>
+    <p class="noindent">
+     Cross reference is the technical term for
+     <alert style="color: #821131;">
+      quoting yourself
+     </alert> <a id="x10-98001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-nielsen1999mediostructures">[27]</a></span>. This is what you do when you say
+something like,
+    </p>
+    <p class="noindent">
+    </p>
+    <blockquote class="quotation">
+     <p class="indent">
+      <italic>
+       “As I said previously in the last chapter, …”
+      </italic>
+     </p>
+    </blockquote>
+    <p class="noindent">
+     To get serious for a moment, in a written article we may often have occasion to refer the reader to
+something mentioned earlier
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        1
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         1
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       or sometimes to something yet to be said
+      </span>
+     </span>
+     in the
+     <alert style="color: #821131;">
+      same
+     </alert>
+     document. This could be:
+    </p>
+    <ul class="itemize1">
+     <li class="itemize">
+      <p class="noindent">
+       To
+tie
+your
+argument
+back
+to
+a
+section,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       To
+point
+the
+reader
+to
+a
+figure/table
+in
+some
+other
+section,
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Let
+the
+reader
+know
+additional
+information
+is
+in
+appendix,
+       <alert style="color: #821131;">
+        <span id="bold" style="font-weight:bold;">
+         <sup class="textsuperscript">
+          2
+         </sup>
+        </span>
+       </alert>
+       <span class="marginnote">
+        <alert style="color: #821131;">
+         <span id="bold" style="font-weight:bold;">
+          <sup class="textsuperscript">
+           2
+          </sup>
+         </span>
+        </alert>
+        <span style="color:#313244;">
+         A
+supplementary
+material
+placed
+at
+the
+end
+of
+a
+document
+and
+provides
+additional
+information
+which
+are
+relevant
+to
+the
+main
+document
+but
+not
+essential
+for
+understanding
+its
+core
+content.
+        </span>
+       </span>
+      </p>
+     </li>
+     <li class="itemize">
+      <p class="noindent">
+       Referencing
+equation
+to
+follow
+up
+on
+an
+idea.
+      </p>
+     </li>
+    </ul>
+    <p class="noindent">
+     Such
+cross
+referencing
+can
+be
+done
+by
+hand,
+but
+if
+you
+revise
+                                                                                
+                                                                                
+your
+document
+and
+insert
+some
+new
+sections
+then
+changing
+all
+cross
+references
+manually
+is
+no
+easy
+task
+and
+just
+a
+labour
+which
+needs
+to
+be
+avoided.
+It
+is
+always
+better
+to
+automate
+such
+tedious
+tasks.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        3
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         3
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       After
+all
+what’s
+a
+computer
+for,
+if
+not
+to
+do
+such
+mundane
+jobs?
+      </span>
+     </span>
+    </p>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.8.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      8.2
+     </small>
+     <a id="x10-990008.2">
+     </a>
+     Making LaTeX do the Work
+    </h2>
+    <p class="noindent">
+     The basic method of using cross references, see
+     <span class="fbox">
+      Section
+      <a href="#x10-980008.1">
+       8.1
+      </a>
+     </span>
+     for what we mean by cross reference, in LaTeX is simple. Suppose
+somewhere in the second section of our article, you want to refer to the first section. We assign a
+     <alert style="color: #821131;">
+      key
+     </alert>
+     to the first section using the
+command:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb169" style="padding:20px;border-radius: 3px;"><a id="x10-99002r21"></a><span style="color:#2B2BFF;">\section</span><span style="color:#2B2BFF;">{</span>section name<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>key<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     and at the point in the second section where the
+     <alert style="color: #821131;">
+      reference is to be made
+     </alert>
+     , we type the command
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb170" style="padding:20px;border-radius: 3px;"><a id="x10-99004r26"></a><span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>key<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     Therefore the reference “see
+     <span class="fbox">
+      Section
+      <a href="#x10-980008.1">
+       8.1
+      </a>
+     </span>
+     …” in the first sentence of this section was produced by including the command <span style="color:#054C5C;"><code class="verb">\label{intro}</code></span>
+     in the command for the first section as follows:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb171" style="padding:20px;border-radius: 3px;"><a id="x10-99006r32"></a><span style="color:#2B2BFF;">\section</span><span style="color:#2B2BFF;">{</span>The Purpose of Cross-Referencing<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>intro<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     and the command <span style="color:#054C5C;"><code class="verb">\ref{intro}</code></span>
+     at the place of reference in the second section as
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb172" style="padding:20px;border-radius: 3px;"><a id="x10-99008r38"></a>..., see Section <span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>intro<span style="color:#2B2BFF;">}</span> for...</div></pre>
+    </div>
+    <div class="knowledge">
+     <p class="noindent">
+      The <span style="color:#054C5C;"><code class="verb">\label{key}</code></span>
+      for a section need not be given immediately after the <span style="color:#054C5C;"><code class="verb">\section{section name}</code></span>. It can be given anywhere within
+the section.
+     </p>
+    </div>
+    <p class="noindent">
+     The first time we run LaTeX on a file named, say, <span style="color:#054C5C;"><code class="verb">myfile.tex</code></span>
+     containing cross references, the reference information is written in
+an
+     <alert style="color: #821131;">
+      auxiliary file
+     </alert>
+     named <span style="color:#054C5C;"><code class="verb">myfile.aux</code></span>
+     and at the end of the run LaTeX prints a
+     <alert style="color: #821131;">
+      warning
+     </alert>
+     :
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      text
+     </div>
+     <pre><div class="language-text" id="fancyvrb173" style="padding:20px;border-radius: 3px;"><a id="x10-99010r43"></a>LaTeX Warning: There were undefined references. 
+<a id="x10-99012r44"></a> 
+<a id="x10-99014r45"></a>LaTeX Warning: Label(s) may have changed. 
+<a id="x10-99016r46"></a>           Rerun to get cross-references right. 
+<a id="x10-99018r47"></a></div></pre>
+    </div>
+    <p class="noindent">
+     There is no need for an alarm as it is normal for this to happen. When a document is compiled for the first time, the compiler
+doesn’t have an idea on where the references are so in the first run it collects all the information and locates all the references,
+and then a second run gets the references right. The same thing happens when you’ve changed the reference information in any
+way, say, by adding a new section.
+    </p>
+    <p class="noindent">
+     While
+the
+key
+in <span style="color:#054C5C;"><code class="verb">\label{key}</code></span>
+     can
+be
+any
+sequence
+of
+letters,
+digits
+or
+punctuation
+characters,
+it
+is
+convenient
+to
+use
+some
+mnemonic.
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        4
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         4
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       such
+as <span style="color:#054C5C;"><code class="verb">\label{limcon}</code></span>
+       for
+a
+section
+entitled
+“Limits
+and
+Continuity”
+rather
+than <span style="color:#054C5C;"><code class="verb">\label{ref98}</code></span>.
+      </span>
+     </span>
+    </p>
+    <div class="knowledge">
+     <p class="noindent">
+      Also,
+when
+                                                                                
+                                                                                
+                                                                             
+you
+make
+a
+reference,
+it’s
+better
+to
+type <span style="color:#054C5C;"><code class="verb">~\ref{limcon}</code></span>
+      than <span style="color:#054C5C;"><code class="verb">\ref{limcon}</code></span>
+      to
+prevent
+the
+possibility
+of
+the
+reference
+number
+falling
+off
+the
+edge.
+     </p>
+    </div>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.8.2.1" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      8.2.1
+     </small>
+     <a id="x10-1000008.2.1">
+     </a>
+     Referencing
+Items
+    </h3>
+    <p class="noindent">
+     In
+addition
+to
+sectioning
+commands
+such
+as <span style="color:#054C5C;"><code class="verb">\chapter</code></span>
+     or <span style="color:#054C5C;"><code class="verb">\section</code></span>,
+reference
+can
+also
+be
+made
+to
+an <span style="color:#054C5C;"><code class="verb">\item</code></span>
+     entry
+in
+an
+enumerate
+environment,
+by
+attaching
+a <span style="color:#054C5C;"><code class="verb">\label</code></span>.
+For
+example
+the
+input <a id="x10-100001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-empiricus2023outlines">[28]</a></span>:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb174" style="padding:20px;border-radius: 3px;"><a id="x10-100003r52"></a>In the classical <span style="color:#2B2BFF;">\emph</span><span style="color:#2B2BFF;">{</span>syllogism<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100005r53"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>enumerate<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100007r54"></a><span style="color:#2B2BFF;">\item</span> All men are mortal.<span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>pre1<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100009r55"></a><span style="color:#2B2BFF;">\item</span> Socrates is a man.<span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>pre2<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100011r56"></a><span style="color:#2B2BFF;">\item</span> So Socrates is a mortal.<span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>con<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100013r57"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>enumerate<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100015r58"></a>Statements (<span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>pre1<span style="color:#2B2BFF;">}</span>) and (<span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>pre2<span style="color:#2B2BFF;">}</span>) are the <span style="color:#2B2BFF;">\emph</span><span style="color:#2B2BFF;">{</span>premises<span style="color:#2B2BFF;">}</span> and 
+<a id="x10-100017r59"></a>statement (<span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>con<span style="color:#2B2BFF;">}</span>) is the conclusion.</div></pre>
+    </div>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      In the classical syllogism
+     </p>
+     <dl class="enumerate-enumitem">
+      <dt class="enumerate-enumitem">
+       1.
+      </dt>
+      <dd class="enumerate-enumitem">
+       All
+men
+are
+mortal.
+       <a id="x10-1000181">
+       </a>
+      </dd>
+      <dt class="enumerate-enumitem">
+       2.
+      </dt>
+      <dd class="enumerate-enumitem">
+       Socrates
+is
+a
+man.
+       <a id="x10-1000192">
+       </a>
+      </dd>
+      <dt class="enumerate-enumitem">
+       3.
+      </dt>
+      <dd class="enumerate-enumitem">
+       So
+Socrates
+is
+a
+mortal.
+       <a id="x10-1000203">
+       </a>
+      </dd>
+     </dl>
+     <p class="noindent">
+      Statements (
+      <a href="#x10-1000181">
+       1
+      </a>
+      ) and (
+      <a href="#x10-1000192">
+       2
+      </a>
+      ) are the premises and statement (
+      <a href="#x10-1000203">
+       3
+      </a>
+      ) is the conclusion.
+     </p>
+    </div>
+    <div class="warning">
+     <p class="noindent">
+      Be
+careful
+about
+references
+to
+tables
+or
+figures
+(i.e.,
+floats).
+For
+them,
+the <span style="color:#054C5C;"><code class="verb">\label</code></span>
+      command
+should
+be
+given
+after
+the <span style="color:#054C5C;"><code class="verb">\caption</code></span>
+      command
+or
+in
+its
+argument,
+as
+in
+the
+example
+below:
+     </p>
+    </div>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb175" style="padding:20px;border-radius: 3px;"><a id="x10-100022r64"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>table<span style="color:#2B2BFF;">}</span>[h] 
+<a id="x10-100024r65"></a> <span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>center<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100026r66"></a>   <span style="color:#2B2BFF;">\setlength</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\extrarowheight</span><span style="color:#2B2BFF;">}{</span>5pt<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100028r67"></a>   <span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>tabular<span style="color:#2B2BFF;">}{</span>|c|c|c|c|<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100030r68"></a>    <span style="color:#2B2BFF;">\hline</span> 
+<a id="x10-100032r69"></a>    Value of <span style="color:#800080;">$</span><span style="color:#2B2BFF;">x</span><span style="color:#800080;">$</span> <span style="color:#2B2BFF;">&amp;</span> 1 <span style="color:#2B2BFF;">&amp;</span> 2 <span style="color:#2B2BFF;">&amp;</span> 3<span style="color:#2B2BFF;">\\</span> 
+<a id="x10-100034r70"></a>    <span style="color:#2B2BFF;">\hline</span> 
+<a id="x10-100036r71"></a>    Value of <span style="color:#800080;">$</span><span style="color:#2B2BFF;">y</span><span style="color:#800080;">$</span> <span style="color:#2B2BFF;">&amp;</span> 1 <span style="color:#2B2BFF;">&amp;</span> 8 <span style="color:#2B2BFF;">&amp;</span> 27<span style="color:#2B2BFF;">\\</span> 
+<a id="x10-100038r72"></a>    <span style="color:#2B2BFF;">\hline</span> 
+<a id="x10-100040r73"></a>   <span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>tabular<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100042r74"></a>   <span style="color:#2B2BFF;">\caption</span><span style="color:#2B2BFF;">{</span>Observed values of <span style="color:#800080;">$</span><span style="color:#2B2BFF;">x</span><span style="color:#800080;">$</span> and <span style="color:#800080;">$</span><span style="color:#2B2BFF;">y</span><span style="color:#800080;">$</span><span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>tabxy<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100044r75"></a> <span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>center<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100046r76"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>table<span style="color:#2B2BFF;">}</span> 
+<a id="x10-100048r77"></a>Two possible relations betweeen <span style="color:#800080;">$</span><span style="color:#2B2BFF;">x</span><span style="color:#800080;">$</span> and <span style="color:#800080;">$</span><span style="color:#2B2BFF;">y</span><span style="color:#800080;">$</span> satisfying 
+<a id="x10-100050r78"></a>the data in Table<span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>tabxy<span style="color:#2B2BFF;">}</span> are <span style="color:#800080;">$</span><span style="color:#2B2BFF;">y</span>=<span style="color:#2B2BFF;">x</span><span style="color:#2B8554;"><span id="bold" style="font-weight:bold;">3</span></span><span style="color:#800080;">$</span> and 
+<a id="x10-100052r79"></a><span style="color:#800080;">$</span><span style="color:#2B2BFF;">y</span>=<span style="color:#2B8554;"><span id="bold" style="font-weight:bold;">6</span></span><span style="color:#2B2BFF;">x</span><span style="color:#2B8554;"><span id="bold" style="font-weight:bold;">2</span></span>-<span style="color:#2B8554;"><span id="bold" style="font-weight:bold;">11</span></span><span style="color:#2B2BFF;">x</span>+<span style="color:#2B8554;"><span id="bold" style="font-weight:bold;">6</span></span><span style="color:#800080;">$</span></div></pre>
+    </div>
+    <p class="noindent">
+     Which
+produces
+the
+following
+output:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <div class="center">
+      <p class="noindent">
+      </p>
+      <div class="tabular">
+       <table class="tabular" id="TBL-32" rules="groups">
+        <colgroup id="TBL-32-1g">
+         <col id="TBL-32-1"/>
+        </colgroup>
+        <colgroup id="TBL-32-2g">
+         <col id="TBL-32-2"/>
+        </colgroup>
+        <colgroup id="TBL-32-3g">
+         <col id="TBL-32-3"/>
+        </colgroup>
+        <colgroup id="TBL-32-4g">
+         <col id="TBL-32-4"/>
+        </colgroup>
+        <tr class="hline">
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+        </tr>
+        <tr id="TBL-32-1-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-32-1-1" style="text-align:center; white-space:nowrap;">
+          Value of
+          <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mi>
+            x
+           </mi>
+          </math>
+         </td>
+         <td class="td11" id="TBL-32-1-2" style="text-align:center; white-space:nowrap;">
+          1
+         </td>
+         <td class="td11" id="TBL-32-1-3" style="text-align:center; white-space:nowrap;">
+          2
+         </td>
+         <td class="td11" id="TBL-32-1-4" style="text-align:center; white-space:nowrap;">
+          3
+         </td>
+        </tr>
+        <tr class="hline">
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+        </tr>
+        <tr id="TBL-32-2-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-32-2-1" style="text-align:center; white-space:nowrap;">
+          Value of
+          <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mi>
+            y
+           </mi>
+          </math>
+         </td>
+         <td class="td11" id="TBL-32-2-2" style="text-align:center; white-space:nowrap;">
+          1
+         </td>
+         <td class="td11" id="TBL-32-2-3" style="text-align:center; white-space:nowrap;">
+          8
+         </td>
+         <td class="td11" id="TBL-32-2-4" style="text-align:center; white-space:nowrap;">
+          27
+         </td>
+        </tr>
+        <tr class="hline">
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+         <td>
+          <hr/>
+         </td>
+        </tr>
+        <tr id="TBL-32-3-" style="vertical-align:baseline;">
+         <td class="td11" id="TBL-32-3-1" style="text-align:center; white-space:nowrap;">
+         </td>
+        </tr>
+       </table>
+      </div>
+      <a id="x10-100053r1">
+      </a>
+      <figcaption class="caption">
+       <span class="id">
+        Table 8.1:
+       </span>
+       <span class="content">
+        Observed values of
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          x
+         </mi>
+        </math>
+        and
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mi>
+          y
+         </mi>
+        </math>
+       </span>
+      </figcaption>
+     </div>
+     <p class="noindent">
+      Two possible relations betweeen
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mi>
+        x
+       </mi>
+      </math>
+      and
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mi>
+        y
+       </mi>
+      </math>
+      satisfying the
+data in Table
+      <a href="#x10-100053r1">
+       8.1
+      </a>
+      are
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mi>
+        y
+       </mi>
+       <mo class="MathClass-rel" stretchy="false">
+        =
+       </mo>
+       <msup>
+        <mrow>
+         <mi>
+          x
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          3
+         </mn>
+        </mrow>
+       </msup>
+      </math>
+      and
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mi>
+        y
+       </mi>
+       <mo class="MathClass-rel" stretchy="false">
+        =
+       </mo>
+       <mn>
+        6
+       </mn>
+       <msup>
+        <mrow>
+         <mi>
+          x
+         </mi>
+        </mrow>
+        <mrow>
+         <mn>
+          2
+         </mn>
+        </mrow>
+       </msup>
+       <mo class="MathClass-bin" stretchy="false">
+        −
+       </mo>
+       <mn>
+        1
+       </mn>
+       <mn>
+        1
+       </mn>
+       <mi>
+        x
+       </mi>
+       <mo class="MathClass-bin" stretchy="false">
+        +
+       </mo>
+       <mn>
+        6
+       </mn>
+      </math>
+      .
+     </p>
+    </div>
+    <p class="noindent">
+     Think
+of
+a <span style="color:#054C5C;"><code class="verb">\caption</code></span>
+     command
+within
+a
+figure
+or
+table
+environment
+as
+a
+sort
+of
+sectioning
+command
+within
+the
+environment.
+Therefore,
+you
+can
+have
+several <span style="color:#054C5C;"><code class="verb">\caption</code></span>
+     and <span style="color:#054C5C;"><code class="verb">\label</code></span>
+     pairs
+within
+a
+single
+figure
+or
+table
+                                                                                
+                                                                                
+                                                                       
+environment.
+You
+can
+also
+make
+forward
+references
+in
+exactly
+the
+same
+way
+by <span style="color:#054C5C;"><code class="verb">\ref</code></span>
+     -ing
+to
+the
+key
+of
+some
+succeeding <span style="color:#054C5C;"><code class="verb">\label</code></span>.
+    </p>
+    <h3 class="subsectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#subsection.8.2.2" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      8.2.2
+     </small>
+     <a id="x10-1010008.2.2">
+     </a>
+     Cross-Referencing
+in
+Math
+    </h3>
+    <p class="noindent">
+     Mathematical
+documents
+heavily
+use
+cross
+references.
+There
+are
+references
+to
+theorems
+and
+equations
+and
+figures
+and
+whatnot.
+The
+method
+of
+reference
+is
+exactly
+as
+before.
+Therefore
+if
+you’ve
+defined <span style="color:#054C5C;"><code class="verb">\newtheorem{theorem}[subsection]</code></span>,
+then
+after
+typing
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb176" style="padding:20px;border-radius: 3px;"><a id="x10-101002r85"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>theorem<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>diffcon<span style="color:#2B2BFF;">}</span> 
+<a id="x10-101004r86"></a>  Every differentiable function is continuous 
+<a id="x10-101006r87"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>theorem<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     we
+get:
+and
+you
+can
+type
+elsewhere
+in
+the
+document
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb177" style="padding:20px;border-radius: 3px;"><a id="x10-101008r92"></a>The converse of Theorem <span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>diffcon<span style="color:#2B2BFF;">}</span> is false.</div></pre>
+    </div>
+    <p class="noindent">
+     to
+get:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      The
+converse
+of
+Theorem
+??
+is
+false.
+     </p>
+    </div>
+    <p class="noindent">
+     References
+can
+be
+made
+to
+equations
+as
+in
+the
+following
+examples:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb178" style="padding:20px;border-radius: 3px;"><a id="x10-101010r98"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>equation<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>sumsq<span style="color:#2B2BFF;">}</span> 
+<a id="x10-101012r99"></a> (x+y)2=x2+2xy+y2 
+<a id="x10-101014r100"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>equation<span style="color:#2B2BFF;">}</span> 
+<a id="x10-101016r101"></a>Changing <span style="color:#800080;">$</span><span style="color:#2B2BFF;">y</span><span style="color:#800080;">$</span> to <span style="color:#800080;">$</span>-<span style="color:#2B2BFF;">y</span><span style="color:#800080;">$</span> in Equation (<span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>sumsq<span style="color:#2B2BFF;">}</span>) gives the following</div></pre>
+    </div>
+    <p class="noindent">
+     gives:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <table class="equation">
+      <tr>
+       <td>
+        <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mstyle class="label" id="x10-101017r1">
+         </mstyle>
+         <msup>
+          <mrow>
+           <mo class="MathClass-open" stretchy="false">
+            (
+           </mo>
+           <mi>
+            x
+           </mi>
+           <mo class="MathClass-bin" stretchy="false">
+            +
+           </mo>
+           <mi>
+            y
+           </mi>
+           <mo class="MathClass-close" stretchy="false">
+            )
+           </mo>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mo class="MathClass-rel" stretchy="false">
+          =
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            x
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mo class="MathClass-bin" stretchy="false">
+          +
+         </mo>
+         <mn>
+          2
+         </mn>
+         <mi>
+          x
+         </mi>
+         <mi>
+          y
+         </mi>
+         <mo class="MathClass-bin" stretchy="false">
+          +
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            y
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </math>
+       </td>
+       <td class="eq-no">
+        (8.1)
+       </td>
+      </tr>
+     </table>
+     <p class="noindent">
+      Changing
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mi>
+        y
+       </mi>
+      </math>
+      to
+      <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+       <mo class="MathClass-bin" stretchy="false">
+        −
+       </mo>
+       <mi>
+        y
+       </mi>
+      </math>
+      in Equation (
+      <a href="#x10-101017r1">
+       8.1
+      </a>
+      ) gives the following
+     </p>
+    </div>
+    <p class="noindent">
+     If
+you
+load
+the
+package
+     <span id="bold" style="font-weight:bold;">
+      amsmath
+     </span>
+     ,
+you
+can
+use
+the
+command <span style="color:#054C5C;"><code class="verb">\eqref</code></span>
+     instead
+of <span style="color:#054C5C;"><code class="verb">\ref</code></span>
+     to
+make
+a
+reference
+to
+an
+equation.
+This
+automatically
+supplies
+the
+parentheses
+around
+the
+equation
+number
+and
+provides
+an
+italic
+correction
+before
+the
+closing
+parenthesis,
+if
+necessary.
+    </p>
+    <p class="noindent">
+     For
+example,
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb179" style="padding:20px;border-radius: 3px;"><a id="x10-101019r107"></a>Equation <span style="color:#2B2BFF;">\eqref</span><span style="color:#2B2BFF;">{</span>sumsq<span style="color:#2B2BFF;">}</span> gives the following ..........</div></pre>
+    </div>
+    <p class="noindent">
+     produces
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      Equation
+(
+      <a href="#x10-101017r1">
+       8.1
+      </a>
+      )
+gives
+the
+following
+…
+     </p>
+    </div>
+    <p class="noindent">
+     References
+can
+                                                                                
+                                                                                
+                                                                              
+be
+made
+to
+individual
+equations
+in
+multiline
+displays
+of
+equations
+produced
+by
+such
+environments
+as
+align
+or
+gather
+(defined
+in
+the
+amsmath
+package).
+The <span style="color:#054C5C;"><code class="verb">\label</code></span>
+     command
+can
+be
+used
+within
+such
+a
+structure
+for
+subnumbering
+as
+in
+the
+example
+below:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb180" style="padding:20px;border-radius: 3px;"><a id="x10-101021r113"></a>   <span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>align<span style="color:#2B2BFF;">}</span> 
+<a id="x10-101023r114"></a>   (x+y)2<span style="color:#2B2BFF;">&amp;</span>=x2+2xy+y2<span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>sum<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\\</span> 
+<a id="x10-101025r115"></a>   (x-y)2<span style="color:#2B2BFF;">&amp;</span>=x2-2xy+y2<span style="color:#2B2BFF;">\tag</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>sum<span style="color:#2B2BFF;">}</span>a<span style="color:#2B2BFF;">}</span> 
+<a id="x10-101027r116"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>align<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+     </p>
+     <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mtable class="align" columnalign="left" displaystyle="true">
+       <mtr>
+        <mtd class="align-odd" columnalign="right">
+         <msup>
+          <mrow>
+           <mo class="MathClass-open" stretchy="false">
+            (
+           </mo>
+           <mi>
+            x
+           </mi>
+           <mo class="MathClass-bin" stretchy="false">
+            +
+           </mo>
+           <mi>
+            y
+           </mi>
+           <mo class="MathClass-close" stretchy="false">
+            )
+           </mo>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </mtd>
+        <mtd class="align-even">
+         <mo class="MathClass-rel" stretchy="false">
+          =
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            x
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mo class="MathClass-bin" stretchy="false">
+          +
+         </mo>
+         <mn>
+          2
+         </mn>
+         <mi>
+          x
+         </mi>
+         <mi>
+          y
+         </mi>
+         <mo class="MathClass-bin" stretchy="false">
+          +
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            y
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mspace width="2em">
+         </mspace>
+        </mtd>
+        <mtd class="align-label" columnalign="right">
+         <mstyle class="label" id="x10-101029r2">
+         </mstyle>
+         <mstyle class="maketag">
+          <mtext>
+           (8.2)
+          </mtext>
+         </mstyle>
+         <mspace class="nbsp" width="0.33em">
+         </mspace>
+        </mtd>
+       </mtr>
+       <mtr>
+        <mtd class="align-odd" columnalign="right">
+         <msup>
+          <mrow>
+           <mo class="MathClass-open" stretchy="false">
+            (
+           </mo>
+           <mi>
+            x
+           </mi>
+           <mo class="MathClass-bin" stretchy="false">
+            −
+           </mo>
+           <mi>
+            y
+           </mi>
+           <mo class="MathClass-close" stretchy="false">
+            )
+           </mo>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+        </mtd>
+        <mtd class="align-even">
+         <mo class="MathClass-rel" stretchy="false">
+          =
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            x
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mo class="MathClass-bin" stretchy="false">
+          −
+         </mo>
+         <mn>
+          2
+         </mn>
+         <mi>
+          x
+         </mi>
+         <mi>
+          y
+         </mi>
+         <mo class="MathClass-bin" stretchy="false">
+          +
+         </mo>
+         <msup>
+          <mrow>
+           <mi>
+            y
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            2
+           </mn>
+          </mrow>
+         </msup>
+         <mspace width="2em">
+         </mspace>
+        </mtd>
+        <mtd class="align-label" columnalign="right">
+         <mstyle class="maketag">
+          <mtext>
+           (
+          </mtext>
+          <mtext class="label" xlink:href="#x10-101029r2" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink">
+           8.2
+          </mtext>
+          <mtext class="endlabel">
+           a)
+          </mtext>
+         </mstyle>
+         <mspace class="nbsp" width="0.33em">
+         </mspace>
+         <mstyle class="label" id="x10-101030r2">
+         </mstyle>
+        </mtd>
+       </mtr>
+      </mtable>
+     </math>
+    </div>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.8.3" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      8.3
+     </small>
+     <a id="x10-1020008.3">
+     </a>
+     Pointing
+to
+a
+Page
+using
+the
+varioref
+Package
+    </h2>
+    <p class="noindent">
+     In
+making
+a
+reference
+to
+a
+table
+or
+an
+equation,
+it
+is
+more
+to
+convenient
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        5
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         5
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       Of
+course,
+the
+convenience
+here
+is
+for
+the
+reader,
+not
+for
+the
+writer.
+      </span>
+     </span>
+     to
+give
+the
+page
+number
+of
+the
+reference
+also.
+    </p>
+    <p class="noindent">
+     The
+command:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb181" style="padding:20px;border-radius: 3px;"><a id="x10-102002r121"></a><span style="color:#2B2BFF;">\pageref</span><span style="color:#2B2BFF;">{</span>key<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     typesets
+the
+number
+of
+the
+page
+where
+                                                                                
+                                                                                
+                                                                              
+the
+command <span style="color:#054C5C;"><code class="verb">\label{key}</code></span>
+     was
+given.
+Therefore,
+for
+example
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb182" style="padding:20px;border-radius: 3px;"><a id="x10-102004r126"></a>see Table <span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>tabxy<span style="color:#2B2BFF;">}</span> in page <span style="color:#2B2BFF;">\pageref</span><span style="color:#2B2BFF;">{</span>tabxy<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     in
+this
+document
+produces
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      see
+Table
+      <a href="#x10-100053r1">
+       8.1
+      </a>
+      in
+page
+      <a href="#x10-100053r1">
+       265
+      </a>
+     </p>
+    </div>
+    <p class="noindent">
+     To
+avoid
+the
+tedium
+of
+repeated
+by
+typing
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb183" style="padding:20px;border-radius: 3px;"><a id="x10-102006r131"></a><span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>key<span style="color:#2B2BFF;">}</span> on page <span style="color:#2B2BFF;">\pageref</span><span style="color:#2B2BFF;">{</span>key<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     you
+can
+define
+the
+     <span id="bold" style="font-weight:bold;">
+      macro
+     </span>
+     :
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb184" style="padding:20px;border-radius: 3px;"><a id="x10-102008r136"></a><span style="color:#2B2BFF;">\newcommand</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\fullref</span><span style="color:#2B2BFF;">}</span>[1]<span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>#1<span style="color:#2B2BFF;">}</span> on page <span style="color:#2B2BFF;">\pageref</span><span style="color:#2B2BFF;">{</span>#1<span style="color:#2B2BFF;">}}</span></div></pre>
+    </div>
+    <p class="noindent">
+     and
+use <span style="color:#054C5C;"><code class="verb">\fullref</code></span>
+     for
+such
+references.
+However,
+the
+trouble
+is
+at
+times
+the
+referred
+object
+                                                                                
+                                                                                
+                                                                             
+and
+the
+reference
+to
+it
+fall
+on
+the
+same
+page
+     <alert style="color: #821131;">
+      <span id="bold" style="font-weight:bold;">
+       <sup class="textsuperscript">
+        6
+       </sup>
+      </span>
+     </alert>
+     <span class="marginnote">
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         6
+        </sup>
+       </span>
+      </alert>
+      <span style="color:#313244;">
+       With
+TeX this
+is
+unfortunately
+not
+possible
+until
+the
+document
+is
+compiled.
+      </span>
+     </span>
+     so
+you
+get
+a
+reference
+to
+the
+page
+number
+of
+the
+very
+page
+you
+are
+reading,
+which
+looks
+funny.
+    </p>
+    <p class="noindent">
+     This
+can
+be
+avoided
+by
+using
+the
+package
+     <a href="https://ctan.org/pkg/varioref?lang=en">
+      varioref
+     </a> <a id="x10-102009"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-mittelbach1995varioref">[29]</a></span>.
+If
+you
+load
+this
+package
+by
+including
+the
+following
+code
+snippet, <span style="color:#054C5C;"><code class="verb">\usepackage{varioref}</code></span>,
+in
+your
+preamble,
+then
+                                                                                
+                                                                                
+                                                                             
+you
+can
+use
+the
+command:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb185" style="padding:20px;border-radius: 3px;"><a id="x10-102011r141"></a><span style="color:#2B2BFF;">\vref</span><span style="color:#2B2BFF;">{</span>key<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     to
+refer
+to
+an
+object
+we’ve
+marked
+with <span style="color:#054C5C;"><code class="verb">\label{key}</code></span>
+     elsewhere
+in
+the
+document.
+The
+action
+of <span style="color:#054C5C;"><code class="verb">\vref</code></span>
+     varies
+according
+to
+the
+page(s)
+where
+the
+referred
+object
+and
+the
+references
+are
+typeset
+by
+TeX in
+the
+final
+output.
+    </p>
+    <p class="noindent">
+    </p>
+    <dl class="enumerate-enumitem">
+     <dt class="enumerate-enumitem">
+      1.
+     </dt>
+     <dd class="enumerate-enumitem">
+      If
+the
+object
+and
+the
+reference
+are
+on
+the
+same
+page, <span style="color:#054C5C;"><code class="verb">\vref</code></span>
+      produces
+only
+a <span style="color:#054C5C;"><code class="verb">\ref</code></span>
+      suppressing <span style="color:#054C5C;"><code class="verb">\pageref</code></span>
+      so
+that
+only
+the
+number
+pointing
+to
+the
+object
+is
+typeset,
+without
+any
+reference
+to
+the
+page
+number.
+     </dd>
+     <dt class="enumerate-enumitem">
+      2.
+     </dt>
+     <dd class="enumerate-enumitem">
+      If
+the
+object
+and
+the
+reference
+are
+on
+different
+pages
+whose
+numbers
+differ
+by
+more
+than
+one, <span style="color:#054C5C;"><code class="verb">\vref</code></span>
+      produces
+both <span style="color:#054C5C;"><code class="verb">\ref</code></span>
+      and <span style="color:#054C5C;"><code class="verb">\pageref</code></span>.
+     </dd>
+     <dt class="enumerate-enumitem">
+      3.
+     </dt>
+     <dd class="enumerate-enumitem">
+      If
+the
+object
+and
+the
+reference
+fall
+on
+pages
+whose
+numbers
+differ
+by
+one,
+      <alert style="color: #821131;">
+       <span id="bold" style="font-weight:bold;">
+        <sup class="textsuperscript">
+         7
+        </sup>
+       </span>
+      </alert>
+      <span class="marginnote">
+       <alert style="color: #821131;">
+        <span id="bold" style="font-weight:bold;">
+         <sup class="textsuperscript">
+          7
+         </sup>
+        </span>
+       </alert>
+       <span style="color:#313244;">
+        that
+is,
+                                                                                
+                                                                                
+                                                                              
+on
+successive
+pages
+       </span>
+      </span> <span style="color:#054C5C;"><code class="verb">\vref</code></span>
+      produces <span style="color:#054C5C;"><code class="verb">\ref</code></span>
+      followed
+by
+the
+phrase
+“on
+the
+preceding
+page”
+or
+“on
+the
+following
+page”
+depending
+on
+whether
+the
+object
+or
+the
+reference
+occurs
+first.
+Moreover,
+in
+the
+next
+occurrence
+of <span style="color:#054C5C;"><code class="verb">\vref</code></span>
+      in
+a
+situation
+of
+the
+same
+type,
+the
+phrases
+are
+changed
+to
+“on
+the
+next
+page”
+and
+the
+“page
+before”
+respectively.
+     </dd>
+    </dl>
+    <p class="noindent">
+     This
+is
+the
+default
+behaviour
+of <span style="color:#054C5C;"><code class="verb">\vref</code></span>
+     in
+the <span style="color:#054C5C;"><code class="verb">article</code></span>
+     class.
+If
+the
+article
+class
+is
+used
+with
+the <span style="color:#054C5C;"><code class="verb">twoside</code></span>
+     option
+or
+if
+the <span style="color:#054C5C;"><code class="verb">book</code></span>
+     class
+is
+used,
+then
+the
+behaviour
+in
+(3)
+above
+is
+a
+bit
+different.
+    </p>
+    <p class="noindent">
+    </p>
+    <dl class="enumerate-enumitem">
+     <dt class="enumerate-enumitem">
+      1.
+     </dt>
+     <dd class="enumerate-enumitem">
+      If
+the
+object
+and
+the
+reference
+fall
+on
+the
+two
+sides
+of
+the
+same
+leaf,
+the
+behavior
+of <span style="color:#054C5C;"><code class="verb">\vref</code></span>
+      is
+as
+in
+(3)
+above.
+     </dd>
+     <dt class="enumerate-enumitem">
+      2.
+     </dt>
+     <dd class="enumerate-enumitem">
+      If
+the
+object
+and
+the
+reference
+                                                                                
+                                                                                
+     
+fall
+on
+pages
+forming
+a
+double
+spread
+(that
+is,
+a
+page
+of
+even
+number
+followed
+by
+the
+next
+page),
+then <span style="color:#054C5C;"><code class="verb">\vref</code></span>
+      produces <span style="color:#054C5C;"><code class="verb">\ref</code></span>
+      followed
+by
+the
+phrase
+“on
+the
+facing
+page”.
+Moreover,
+in
+the
+next
+occurence
+of <span style="color:#054C5C;"><code class="verb">\vref</code></span>
+      in
+a
+situation
+of
+the
+same
+type,
+the
+phrases
+are
+changed
+to
+“on
+the
+preceding
+page”
+and
+“on
+the
+next
+page”
+respectively.
+     </dd>
+    </dl>
+    <p class="noindent">
+     The
+phrases
+used
+in
+the
+various
+                                                                                
+                                                                                
+                                                                            
+cases
+considered
+above
+can
+be
+customized
+by
+redefining
+the
+commands
+used
+in
+generating
+them.
+For
+the <span style="color:#054C5C;"><code class="verb">article</code></span>
+     class
+without
+the <span style="color:#054C5C;"><code class="verb">twoside</code></span>
+     option,
+reference
+to
+the
+previous
+page
+uses
+the
+command <span style="color:#054C5C;"><code class="verb">\reftextbefore</code></span>
+     and
+reference
+to
+the
+next
+page
+uses <span style="color:#054C5C;"><code class="verb">\reftextafter</code></span>.
+    </p>
+    <p class="noindent">
+     In
+the
+case
+of
+the <span style="color:#054C5C;"><code class="verb">article</code></span>
+     class
+with
+the <span style="color:#054C5C;"><code class="verb">twoside</code></span>
+     option
+or
+the <span style="color:#054C5C;"><code class="verb">book</code></span>
+     class,
+the
+commands <span style="color:#054C5C;"><code class="verb">\reftextfaceafter</code></span>
+     and <span style="color:#054C5C;"><code class="verb">\reftextfacebefore</code></span>
+     are
+used
+in
+the
+case
+of
+reference
+to
+                                                                                
+                                                                                
+                                                                               
+a
+page
+in
+a
+double
+spread.
+The
+default
+definitions
+of
+these
+commands
+are
+given
+below.
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb186" style="padding:20px;border-radius: 3px;"><a id="x10-102018r147"></a><span style="color:#2B2BFF;">\newcommand</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\reftextbefore</span><span style="color:#2B2BFF;">}</span> 
+<a id="x10-102020r148"></a><span style="color:#2B2BFF;">{</span>on the <span style="color:#2B2BFF;">\reftextvario</span><span style="color:#2B2BFF;">{</span>preceding page<span style="color:#2B2BFF;">}{</span>page before<span style="color:#2B2BFF;">}}</span> 
+<a id="x10-102022r149"></a><span style="color:#2B2BFF;">\newcommand</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\reftextafter</span><span style="color:#2B2BFF;">}</span> 
+<a id="x10-102024r150"></a><span style="color:#2B2BFF;">{</span>on the <span style="color:#2B2BFF;">\reftextvario</span><span style="color:#2B2BFF;">{</span>following<span style="color:#2B2BFF;">}{</span>next<span style="color:#2B2BFF;">}</span> page<span style="color:#2B2BFF;">}</span> 
+<a id="x10-102026r151"></a><span style="color:#2B2BFF;">\newcommand</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\reftextfacebefore</span><span style="color:#2B2BFF;">}</span> 
+<a id="x10-102028r152"></a><span style="color:#2B2BFF;">{</span>on the <span style="color:#2B2BFF;">\reftextvario</span><span style="color:#2B2BFF;">{</span>facing<span style="color:#2B2BFF;">}{</span>preceding<span style="color:#2B2BFF;">}</span> page<span style="color:#2B2BFF;">}</span> 
+<a id="x10-102030r153"></a><span style="color:#2B2BFF;">\newcommand</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\reftextfaceafter</span><span style="color:#2B2BFF;">}</span> 
+<a id="x10-102032r154"></a><span style="color:#2B2BFF;">{</span>on the <span style="color:#2B2BFF;">\reftextvario</span><span style="color:#2B2BFF;">{</span>facing<span style="color:#2B2BFF;">}{</span>next<span style="color:#2B2BFF;">}{</span>page<span style="color:#2B2BFF;">}}</span></div></pre>
+    </div>
+    <p class="noindent">
+     In
+all
+these,
+the
+two
+<alert style="color: #821131;">(2)</alert> arguments
+of
+the
+command <span style="color:#054C5C;"><code class="verb">\reftextvario</code></span>
+     are
+phrases
+alternatively
+used
+in
+the
+repeated
+use
+of
+the
+reference
+as
+mentioned
+above.
+You
+can
+customize
+the
+phrases
+generated
+in
+various
+situations
+by
+redefining
+these
+with
+phrases
+of
+your
+choice
+in
+the
+arguments
+of <span style="color:#054C5C;"><code class="verb">\reftextvario</code></span>.
+    </p>
+    <p class="noindent">
+     If
+you
+                                                                                
+                                                                                
+                                                                            
+want
+to
+refer
+only
+to
+a
+page
+number
+using <span style="color:#054C5C;"><code class="verb">\varioref</code></span>,
+you
+can
+use
+the
+command:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb187" style="padding:20px;border-radius: 3px;"><a id="x10-102034r159"></a><span style="color:#2B2BFF;">\vpageref</span><span style="color:#2B2BFF;">{</span>key<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     to
+produce
+the
+page
+number
+of
+the
+object
+marked
+with <span style="color:#054C5C;"><code class="verb">\label{key}</code></span>.
+The
+phrases
+used
+in
+the
+various
+special
+cases
+are
+the
+same
+as
+described
+above,
+except
+that
+when
+the
+referred
+object
+and
+the
+reference
+fall
+on
+the
+same
+page,
+either
+the
+phrase
+“on
+this
+page”
+or
+“on
+the
+                                                                                
+                                                                                
+                                                                           
+current
+page”
+is
+produced.
+The
+command
+used
+to
+generate
+these
+is <span style="color:#054C5C;"><code class="verb">\reftextcurrent</code></span>
+     whose
+default
+definition
+is:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb188" style="padding:20px;border-radius: 3px;"><a id="x10-102036r164"></a><span style="color:#2B2BFF;">\newcommand</span><span style="color:#2B2BFF;">{</span><span style="color:#2B2BFF;">\reftextcurrent</span><span style="color:#2B2BFF;">}</span> 
+<a id="x10-102038r165"></a>             <span style="color:#2B2BFF;">{</span>on <span style="color:#2B2BFF;">\reftextvario</span><span style="color:#2B2BFF;">{</span>this<span style="color:#2B2BFF;">}{</span>the current<span style="color:#2B2BFF;">}</span> page<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     You
+can
+change
+the
+phrases
+“this”
+and
+“the
+current”
+globally
+by
+redefining
+this
+command.
+You
+can
+also
+make
+some
+local
+changes
+by
+using
+the
+two
+<alert style="color: #821131;">(2)</alert> optional
+arguments
+that <span style="color:#054C5C;"><code class="verb">\vpageref</code></span>
+     allows.
+Thus
+you
+can
+use
+the
+command:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb189" style="padding:20px;border-radius: 3px;"><a id="x10-102040r170"></a><span style="color:#2B2BFF;">\vpageref</span>[same page phrase][other page phrase]<span style="color:#2B2BFF;">{</span>key<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     to
+refer
+to
+the
+page
+number
+                                                                                
+                                                                                
+                                                                              
+of
+the
+object
+marked
+with <span style="color:#054C5C;"><code class="verb">\label{key}</code></span>.
+The
+same
+page
+phrase
+will
+be
+used
+if
+the
+object
+and
+the
+reference
+fall
+on
+the
+same
+page
+and
+the
+phrase
+other
+page
+phrase
+will
+be
+used,
+if
+they
+fall
+on
+different
+pages.
+Therefore
+for
+example,
+the
+command:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb190" style="padding:20px;border-radius: 3px;"><a id="x10-102042r175"></a>see the <span style="color:#2B2BFF;">\vpageref</span>[above table][table]<span style="color:#2B2BFF;">{</span>tabxy<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     given
+in
+this
+document
+will
+produce
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="quoteblock">
+     <p class="noindent">
+      see
+the
+table
+on
+page 265
+     </p>
+    </div>
+    <h2 class="sectionHead">
+     <a aria-label="Link to this section in PDF version" class="pdf-link" href="AcademicWritingLectureBook.pdf#section.8.4" style="color: red;  position: absolute;  left: -30px;" target="_blank">
+      <svg class="bi bi-file-pdf" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+       </path>
+       <path d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
+       </path>
+      </svg>
+     </a>
+     <small class="titlemark">
+      8.4
+     </small>
+     <a id="x10-1030008.4">
+     </a>
+     The
+cleveref
+Package
+    </h2>
+    <p class="noindent">
+     Using
+standard
+cross-referencing
+in
+LaTeX only
+produces
+the
+label
+number,
+a
+name
+describing
+the
+label
+such
+as
+figure,
+chapter
+or
+equation
+has
+to
+be
+added
+manually.
+The
+     <span id="bold" style="font-weight:bold;">
+      cleveref
+     </span>
+     package
+overcomes
+this
+limitation
+by
+automatically
+producing
+the
+label
+name
+and
+number.
+It
+further
+allows
+cross-referencing
+ranges
+of
+labels
+and
+multiple
+labels
+of
+the
+same
+or
+different
+kinds,
+including
+auto-sorting
+and
+compression
+of
+labels <a id="x10-103001"></a><span class="cite"><a href="AcademicWritingLectureBookad1.html#X0-tomtex2013">[30]</a></span>.
+    </p>
+    <p class="noindent">
+     The
+package
+implements <span style="color:#054C5C;"><code class="verb">\cref</code></span>
+     for
+basic
+cross-referencing.
+The
+command
+is
+used
+in
+the
+same
+way
+as
+the
+standard <span style="color:#054C5C;"><code class="verb">\ref</code></span>
+     command.
+Besides
+the
+label
+number
+it
+also
+produces
+the
+reference
+kind.
+    </p>
+    <p class="noindent">
+     Here
+is
+an
+example:
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb191" style="padding:20px;border-radius: 3px;"><a id="x10-103003r183"></a><span style="color:#2B2BFF;">\documentclass</span>[11pt]<span style="color:#2B2BFF;">{</span>article<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103005r184"></a><span style="color:#2B2BFF;">\usepackage</span><span style="color:#2B2BFF;">{</span>graphicx<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103007r185"></a><span style="color:#2B2BFF;">\usepackage</span><span style="color:#2B2BFF;">{</span>amsmath<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103009r186"></a><span style="color:#2B2BFF;">\usepackage</span><span style="color:#2B2BFF;">{</span>cleveref<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103011r187"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103013r188"></a> 
+<a id="x10-103015r189"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>align<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103017r190"></a>y<span style="color:#2B2BFF;">&amp;</span>=a<span style="color:#2B2BFF;">_</span>1x+b<span style="color:#2B2BFF;">_</span>1<span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>eqn:1<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103019r191"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>align<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103021r192"></a> 
+<a id="x10-103023r193"></a><span style="color:#2B2BFF;">\noindent</span> 
+<a id="x10-103025r194"></a>Standard equation reference (<span style="color:#2B2BFF;">\textbackslash</span> ref): <span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>eqn:1<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\\</span> 
+<a id="x10-103027r195"></a>Cleveref equation reference (<span style="color:#2B2BFF;">\textbackslash</span> cref): <span style="color:#2B2BFF;">\cref</span><span style="color:#2B2BFF;">{</span>eqn:1<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103029r196"></a> 
+<a id="x10-103031r197"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>figure<span style="color:#2B2BFF;">}</span>[ht]<span style="color:#2B2BFF;">\centering\rule</span><span style="color:#2B2BFF;">{</span>0.5<span style="color:#2B2BFF;">\linewidth</span><span style="color:#2B2BFF;">}{</span>0.1<span style="color:#2B2BFF;">\linewidth</span><span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\caption</span><span style="color:#2B2BFF;">{</span>First figure<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>fig:1<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>figure<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103033r198"></a> 
+<a id="x10-103035r199"></a><span style="color:#2B2BFF;">\noindent</span> 
+<a id="x10-103037r200"></a>Standard figure reference (<span style="color:#2B2BFF;">\textbackslash</span> ref): <span style="color:#2B2BFF;">\ref</span><span style="color:#2B2BFF;">{</span>fig:1<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\\</span> 
+<a id="x10-103039r201"></a>Cleveref figure reference (<span style="color:#2B2BFF;">\textbackslash</span> cref): <span style="color:#2B2BFF;">\cref</span><span style="color:#2B2BFF;">{</span>fig:1<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103041r202"></a> 
+<a id="x10-103043r203"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     To
+cross-reference
+multiple
+labels
+of
+the
+same
+or
+different
+kinds,
+the <span style="color:#054C5C;"><code class="verb">\cref</code></span>
+     command
+is
+used.
+Labels
+are
+separated
+by
+commas
+without
+white-space <span style="color:#054C5C;">(<code class="verb">\cref{ref1,ref2,etc.}</code>)</span>.
+For
+a
+range
+of
+the
+same
+                                                                                
+                                                                                
+                                                                            
+label
+kind,
+the
+command <span style="color:#054C5C;"><code class="verb">\crefrange{first}{last}</code></span>
+     is
+available.
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb192" style="padding:20px;border-radius: 3px;"><a id="x10-103045r208"></a><span style="color:#2B2BFF;">\documentclass</span>[11pt]<span style="color:#2B2BFF;">{</span>article<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103047r209"></a><span style="color:#2B2BFF;">\usepackage</span><span style="color:#2B2BFF;">{</span>graphicx<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103049r210"></a><span style="color:#2B2BFF;">\usepackage</span><span style="color:#2B2BFF;">{</span>amsmath<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103051r211"></a><span style="color:#2B2BFF;">\usepackage</span><span style="color:#2B2BFF;">{</span>cleveref<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103053r212"></a> 
+<a id="x10-103055r213"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103057r214"></a> 
+<a id="x10-103059r215"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>align<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103061r216"></a>y<span style="color:#2B2BFF;">&amp;</span>=a<span style="color:#2B2BFF;">_</span>1x+b<span style="color:#2B2BFF;">_</span>1<span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>eqn:1<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\\</span> 
+<a id="x10-103063r217"></a>y<span style="color:#2B2BFF;">&amp;</span>=a<span style="color:#2B2BFF;">_</span>2x+b<span style="color:#2B2BFF;">_</span>2<span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>eqn:2<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\\</span> 
+<a id="x10-103065r218"></a>y<span style="color:#2B2BFF;">&amp;</span>=a<span style="color:#2B2BFF;">_</span>3x+b<span style="color:#2B2BFF;">_</span>3<span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>eqn:3<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\\</span> 
+<a id="x10-103067r219"></a>y<span style="color:#2B2BFF;">&amp;</span>=a<span style="color:#2B2BFF;">_</span>4x+b<span style="color:#2B2BFF;">_</span>4<span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>eqn:4<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103069r220"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>align<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103071r221"></a> 
+<a id="x10-103073r222"></a><span style="color:#2B2BFF;">\noindent</span> 
+<a id="x10-103075r223"></a>Range example: <span style="color:#2B2BFF;">\crefrange</span><span style="color:#2B2BFF;">{</span>eqn:1<span style="color:#2B2BFF;">}{</span>eqn:4<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103077r224"></a> 
+<a id="x10-103079r225"></a><span style="color:#2B2BFF;">\begin</span><span style="color:#2B2BFF;">{</span>figure<span style="color:#2B2BFF;">}</span>[ht]<span style="color:#2B2BFF;">\centering\rule</span><span style="color:#2B2BFF;">{</span>0.5<span style="color:#2B2BFF;">\linewidth</span><span style="color:#2B2BFF;">}{</span>0.1<span style="color:#2B2BFF;">\linewidth</span><span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\caption</span><span style="color:#2B2BFF;">{</span>First figure<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\label</span><span style="color:#2B2BFF;">{</span>fig:1<span style="color:#2B2BFF;">}</span><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>figure<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103081r226"></a> 
+<a id="x10-103083r227"></a><span style="color:#2B2BFF;">\noindent</span> 
+<a id="x10-103085r228"></a>Mixed references example: <span style="color:#2B2BFF;">\cref</span><span style="color:#2B2BFF;">{</span>eqn:1,eqn:3,eqn:4,fig:1<span style="color:#2B2BFF;">}</span> 
+<a id="x10-103087r229"></a> 
+<a id="x10-103089r230"></a><span style="color:#2B2BFF;">\end</span><span style="color:#2B2BFF;">{</span>document<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+    <p class="noindent">
+     By
+default,
+label
+names
+are
+produced
+with
+a
+small
+initial
+letter.
+To
+capitalize
+the
+first
+letter
+at
+the
+beginning
+of
+a
+sentence,
+use <span style="color:#054C5C;"><code class="verb">\Cref</code></span>
+     and <span style="color:#054C5C;"><code class="verb">\Crefrange</code></span>
+     instead.
+    </p>
+    <p class="noindent">
+     For
+capitalization
+of
+all
+label
+names
+throughout
+the
+document,
+load
+the
+package
+with
+the
+capitalise
+option.
+    </p>
+    <p class="noindent">
+    </p>
+    <div class="code-block">
+     <div class="code-lang">
+      latex
+     </div>
+     <pre><div class="language-latex" id="fancyvrb193" style="padding:20px;border-radius: 3px;"><a id="x10-103091r235"></a><span style="color:#2B2BFF;">\usepackage</span>[capitalise]<span style="color:#2B2BFF;">{</span>cleveref<span style="color:#2B2BFF;">}</span></div></pre>
+    </div>
+   </article>
+   <footer>
+    <div class="next">
+     <p class="noindent">
+      <a href="AcademicWritingLectureBookch9.html" style="float: right;">
+       Next Chapter →
+      </a>
+      <a href="AcademicWritingLectureBookch7.html" style="float: left;">
+       ← Previous Chapter
+      </a>
+      <a href="index.html">
+       TOP
+      </a>
+     </p>
+    </div>
+   </footer>
+  </div>
+  <p class="noindent">
+   <a id="tailAcademicWritingLectureBookch8.html">
+   </a>
+  </p>
+ </body>
+</html>

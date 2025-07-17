@@ -14,6 +14,7 @@
 
 - *WARNING:* This is the content only covered by me as this lecture is shared by
   both me and Dipl.-Ing. Dr. techn. Phillip Kronthaler.
+  
 - The goal of this lecture is to teach the newcoming students on how to
   prepare scientific documents and learn academic typesetting practices.
     
@@ -21,12 +22,12 @@
 | Official Name      | Presenting & Moderating in English |
 | Lecture Code       | SWE                                |
 | Module Code        | MECH-B-2-SWE-ENG-ILV               |
-| Degree             | M.Sc                               |
+| Degree             | B.Sc                               |
 | Program Name       | Mechatronik                        |
 | Lecture Name       | Academic Writing                   |
 | Semester           | 2                                  |
 | Season             | WS                                 |
-| Room Type          | ILV                                |
+| Room Type          | Lecture Room / Online              |
 | Assignments        | Personal Assignment                |
 | Lecturer           | D. T. McGuiness, P. Kronthaler     |
 | Module Responsible | SaH                                |
@@ -57,22 +58,25 @@
 ** Grading of the Lecture
 
 - There is only ONE assignment required of student which will be focused on
-  preparing an academic paper using LaTeX
+  preparing an academic paper using LaTeX.
    
 | ASSIGNMENT TYPE     | VALUE | QUANTITY |
 | Personal Assignment |   100 |        1 |
-| SUM                 |   100 |          |
+| SUM                 |   100 |        1 |
 
 ** Lecture Sources
 
 The following is a reference material table with useful resources which
 complement well with the lecture.
 
-| AUTHOR                 | TITLE                       | PUBLISHER              |
-| Indian TeX Users Group | LaTeX Tutorials: A primer   | Indian TEX Users Group |
-| Frank Mittelbach       | The LaTeX Companion Part I  | Addison-Wesley         |
-| Frank Mittelbach       | The LaTeX Companion Part II | Addison-Wesley         |
-| Donald Knuth           | The TeXBook                 | Addison-Wesley         |
+| AUTHOR                        | TITLE                                | PUBLISHER              |
+| Indian TeX Users Group        | LaTeX Tutorials: A primer            | Indian TEX Users Group |
+| Frank Mittelbach              | The LaTeX Companion Part I           | Addison-Wesley         |
+| Frank Mittelbach              | The LaTeX Companion Part II          | Addison-Wesley         |
+| Leslie Lamport                | LaTeX: A Document Preparation System | Addison-Wesley         |
+| Donald Knuth                  | The TeXBook                          | Addison-Wesley         |
+| Helmut Kopka, Patrick W. Daly | Guide to LaTeX                       | Addison-Wesley         |
+| Wikibook                      | LaTeX Wikibook                       | Wikibooks              |
 
 ** Content and Unit Distribution
 
@@ -80,13 +84,12 @@ complement well with the lecture.
 - The content and unit distribution of the lecture is as follows where a unit
   is defined as 45 min lecture.
     
-| TOPIC                   | UNITS | SELF STUDY |
-| Introduction            |     4 |          8 |
-| Looking at the Basics   |     4 |          8 |
-| The Document            |     4 |          8 |
-| Typesetting Mathematics |     4 |          8 |
-| Cross Referencing       |     4 |          8 |
-| SUM                     |    20 |         40 |
+| ORDER | TOPIC                             | UNITS | SELF STUDY |
+|     1 | Introduction and Basics           |     4 |          8 |
+|     2 | Document and Content              |     4 |          8 |
+|     3 | Typesetting Mathematics           |     4 |          8 |
+|     4 | Floats Glossaries and References  |     3 |          8 |
+|     5 | SUM                               |    15 |         30 |
 
 ** Lecture Table of Contents
 
@@ -101,9 +104,7 @@ complement well with the lecture.
     - A Hello, World!
   - Installation
     - Windows
-    - macOS
-  - TeX Studio Crash Course
-- Looking at the Basics
+    - Creating a Document
   - The Process of LaTeX
     - A Small Example
     - What is the Point of LaTeX
@@ -131,6 +132,11 @@ complement well with the lecture.
     - Abstract
     - Dividing the Document
     - Additional Information
+  - Borrowing Text
+  - Making Lists
+    - Using Bullet Lists
+    - Ordered Lists
+    - Description Lists
 - Typesetting Mathematics
   - True Purpose of TeX
   - Fundamentals
@@ -150,7 +156,26 @@ complement well with the lecture.
     - Putting Symbols Over or Under
   - New Operators
   - Fonts for Mathematics
-- Cross-Referencing
+- Float Environments
+  - The figure Environment
+    - Creating floating figures
+    - Figure Placement
+    - Customising the float placement
+      - Figure Fractions
+    - Using Graphics in LaTeX
+      - The includegraphics command
+      - Graphics Search Path
+      - Graphics Extensions
+  - The Table Environment
+  - Introduction
+  - Using Glossaries
+    - Defining a Glossary Entry
+      - Defining Symbols
+      - Defining Acronyms
+    - Using in the Text
+      - General References
+      - Referring Acronyms
+    - Displaying the Glossary
   - The Purpose of Cross-Referencing
   - Making LaTeX do the Work
     - Referencing Items

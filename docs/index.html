@@ -18,6 +18,19 @@
   <script src="flatjs.js">
   </script>
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+  <script type="module">
+   import pdfjsDist from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.93/+esm'
+  </script>
+  <script>
+   function moveTOC() { 
+var htmlShow = document.getElementsByClassName("wide"); 
+if (htmlShow[0].style.display === "none") { 
+htmlShow[0].style.display = "block"; 
+} else { 
+htmlShow[0].style.display = "none"; 
+} 
+}
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js">
   </script>
   <script src="texlive.js">
@@ -26,7 +39,7 @@
   </header>
  </head>
  <body>
-  <!--l. 101-->
+  <!--l. 108-->
   <nav class="wide">
    <div class="contents">
     <h3 style="font-weight:lighter;padding: 20px 0 20px 0;">
@@ -47,13 +60,24 @@
       </div>
      </div>
     </div>
-    <div id="author-info" style="position: absolute; bottom: 0; padding-bottom: 10px;">
+    <div id="author-info" style="padding-bottom: 10px;">
      <div id="author-logo">
-      <img src="figures/logo.svg" style="margin: 10px 0; width: 75%;"/>
+      <img src="figures/logo.svg" style="margin: 10px 0; width: 100%;"/>
      </div>
      <h4 style="color:#7aa0b8; font-weight:lighter;">
       WebBook | D. T. McGuiness, P.hD
      </h4>
+     <div id="author-text" style="bottom: 0; padding-top: 50px;border-top: solid 1px #3b4b5e;font-size: 12px;text-align: right;">
+      <p>
+       <b>
+        Authors Note
+       </b>
+       The website you are viewing is auto-generated
+    using ParSnip and therefore subject to slight errors in
+    typography and formatting. When in doubt, please consult the
+    LectureBook.
+      </p>
+     </div>
     </div>
    </div>
   </nav>
@@ -62,6 +86,17 @@
     <h1 class="chapterHead">
      Academic Writing
     </h1>
+    <div class="warning">
+     <p class="noindent">
+       <b> Warning: </b> This is just a gentle reminder that the WebBook which
+       you are viewing is auto-generated from the LectureBook using ParSnip and
+       therefore is subject to typographical and page-formatting mistakes. If
+       there is any confusion caused by the formatting of the information, please
+       consult the LectureBook.
+     </p>
+    </div>
+<h2> Table of Contents </h2>
+<p>The contents of the lecture is as follows</p>
     <div class="tableofcontents">
      <span class="chapterToc">
       1
@@ -163,14 +198,14 @@
      <br/>
      <span class="subsectionToc">
       2.1.1
-      <a href="AcademicWritingLectureBookch2.html#x4-160002.1.1" id="QQ2-4-21">
+      <a href="AcademicWritingLectureBookch2.html#x4-160002.1.1" id="QQ2-4-23">
        A Small Example
       </a>
      </span>
      <br/>
      <span class="subsectionToc">
       2.1.2
-      <a href="AcademicWritingLectureBookch2.html#x4-170002.1.2" id="QQ2-4-22">
+      <a href="AcademicWritingLectureBookch2.html#x4-170002.1.2" id="QQ2-4-24">
        What is the Point of LaTeX
       </a>
      </span>
@@ -184,42 +219,42 @@
      <br/>
      <span class="subsectionToc">
       2.2.1
-      <a href="AcademicWritingLectureBookch2.html#x4-190002.2.1" id="QQ2-4-24">
+      <a href="AcademicWritingLectureBookch2.html#x4-190002.2.1" id="QQ2-4-26">
        The Use of Spaces
       </a>
      </span>
      <br/>
      <span class="subsectionToc">
       2.2.2
-      <a href="AcademicWritingLectureBookch2.html#x4-200002.2.2" id="QQ2-4-25">
+      <a href="AcademicWritingLectureBookch2.html#x4-200002.2.2" id="QQ2-4-27">
        Quotations
       </a>
      </span>
      <br/>
      <span class="subsectionToc">
       2.2.3
-      <a href="AcademicWritingLectureBookch2.html#x4-210002.2.3" id="QQ2-4-26">
+      <a href="AcademicWritingLectureBookch2.html#x4-210002.2.3" id="QQ2-4-28">
        Dashes
       </a>
      </span>
      <br/>
      <span class="subsectionToc">
       2.2.4
-      <a href="AcademicWritingLectureBookch2.html#x4-220002.2.4" id="QQ2-4-27">
+      <a href="AcademicWritingLectureBookch2.html#x4-220002.2.4" id="QQ2-4-29">
        Accents
       </a>
      </span>
      <br/>
      <span class="subsectionToc">
       2.2.5
-      <a href="AcademicWritingLectureBookch2.html#x4-230002.2.5" id="QQ2-4-30">
+      <a href="AcademicWritingLectureBookch2.html#x4-230002.2.5" id="QQ2-4-32">
        Special Symbols
       </a>
      </span>
      <br/>
      <span class="subsectionToc">
       2.2.6
-      <a href="AcademicWritingLectureBookch2.html#x4-240002.2.6" id="QQ2-4-32">
+      <a href="AcademicWritingLectureBookch2.html#x4-240002.2.6" id="QQ2-4-34">
        Position of Text
       </a>
      </span>
@@ -233,7 +268,7 @@
      <br/>
      <span class="subsectionToc">
       2.3.1
-      <a href="AcademicWritingLectureBookch2.html#x4-260002.3.1" id="QQ2-4-34">
+      <a href="AcademicWritingLectureBookch2.html#x4-260002.3.1" id="QQ2-4-36">
        Type Style
       </a>
      </span>
@@ -245,12 +280,481 @@
       </a>
      </span>
      <br/>
+     <span class="chapterToc">
+      3
+      <a href="AcademicWritingLectureBookch3.html#x5-280003">
+       The Document
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      3.1
+      <a href="AcademicWritingLectureBookch3.html#x5-290003.1">
+       The Document Class
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      3.1.1
+      <a href="AcademicWritingLectureBookch3.html#x5-300003.1.1" id="QQ2-5-43">
+       Font Size
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      3.1.2
+      <a href="AcademicWritingLectureBookch3.html#x5-310003.1.2" id="QQ2-5-44">
+       Paper Size
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      3.1.3
+      <a href="AcademicWritingLectureBookch3.html#x5-320003.1.3" id="QQ2-5-46">
+       Page Formats
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      3.2
+      <a href="AcademicWritingLectureBookch3.html#x5-330003.2">
+       Page Style
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      3.2.1
+      <a href="AcademicWritingLectureBookch3.html#x5-340003.2.1" id="QQ2-5-49">
+       Heading Declarations
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      3.3
+      <a href="AcademicWritingLectureBookch3.html#x5-350003.3">
+       Page Numbering
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      3.4
+      <a href="AcademicWritingLectureBookch3.html#x5-360003.4">
+       Formatting Lengths
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      3.5
+      <a href="AcademicWritingLectureBookch3.html#x5-370003.5">
+       Parts of a Document
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      3.5.1
+      <a href="AcademicWritingLectureBookch3.html#x5-380003.5.1" id="QQ2-5-54">
+       The Title
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      3.5.2
+      <a href="AcademicWritingLectureBookch3.html#x5-390003.5.2" id="QQ2-5-55">
+       Abstract
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      3.5.3
+      <a href="AcademicWritingLectureBookch3.html#x5-400003.5.3" id="QQ2-5-56">
+       Dividing the Document
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      3.5.4
+      <a href="AcademicWritingLectureBookch3.html#x5-410003.5.4" id="QQ2-5-57">
+       Example
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      3.5.5
+      <a href="AcademicWritingLectureBookch3.html#x5-450003.5.5" id="QQ2-5-61">
+       Additional Information
+      </a>
+     </span>
+     <br/>
+     <span class="chapterToc">
+      4
+      <a href="AcademicWritingLectureBookch4.html#x6-460004">
+       Displaying Content
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      4.1
+      <a href="AcademicWritingLectureBookch4.html#x6-470004.1">
+       Borrowing Text
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      4.2
+      <a href="AcademicWritingLectureBookch4.html#x6-480004.2">
+       Making Lists
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      4.2.1
+      <a href="AcademicWritingLectureBookch4.html#x6-490004.2.1" id="QQ2-6-66">
+       Using Bullet Lists
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      4.2.2
+      <a href="AcademicWritingLectureBookch4.html#x6-500004.2.2" id="QQ2-6-67">
+       Ordered Lists
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      4.2.3
+      <a href="AcademicWritingLectureBookch4.html#x6-510004.2.3" id="QQ2-6-68">
+       Description Lists
+      </a>
+     </span>
+     <br/>
+     <span class="chapterToc">
+      5
+      <a href="AcademicWritingLectureBookch5.html#x7-520005">
+       Typesetting Mathematics
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      5.1
+      <a href="AcademicWritingLectureBookch5.html#x7-530005.1">
+       True Purpose of TeX
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      5.2
+      <a href="AcademicWritingLectureBookch5.html#x7-540005.2">
+       Fundamentals
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.2.1
+      <a href="AcademicWritingLectureBookch5.html#x7-550005.2.1" id="QQ2-7-72">
+       Superscripts and Subscripts
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.2.2
+      <a href="AcademicWritingLectureBookch5.html#x7-560005.2.2" id="QQ2-7-73">
+       Roots
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.2.3
+      <a href="AcademicWritingLectureBookch5.html#x7-570005.2.3" id="QQ2-7-74">
+       Symbols in Mathematics
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      5.3
+      <a href="AcademicWritingLectureBookch5.html#x7-580005.3">
+       Custom Commands
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      5.4
+      <a href="AcademicWritingLectureBookch5.html#x7-590005.4">
+       Additional Math
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.4.1
+      <a href="AcademicWritingLectureBookch5.html#x7-600005.4.1" id="QQ2-7-77">
+       Single Equations
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.4.2
+      <a href="AcademicWritingLectureBookch5.html#x7-610005.4.2" id="QQ2-7-78">
+       Groups of Equations
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.4.3
+      <a href="AcademicWritingLectureBookch5.html#x7-620005.4.3" id="QQ2-7-79">
+       Numbered Equations
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      5.5
+      <a href="AcademicWritingLectureBookch5.html#x7-630005.5">
+       Additional Commands
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.5.1
+      <a href="AcademicWritingLectureBookch5.html#x7-640005.5.1" id="QQ2-7-81">
+       Matrices
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.5.2
+      <a href="AcademicWritingLectureBookch5.html#x7-650005.5.2" id="QQ2-7-82">
+       Dots
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.5.3
+      <a href="AcademicWritingLectureBookch5.html#x7-660005.5.3" id="QQ2-7-83">
+       Delimiters
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.5.4
+      <a href="AcademicWritingLectureBookch5.html#x7-670005.5.4" id="QQ2-7-84">
+       Putting One Over Another
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      5.5.5
+      <a href="AcademicWritingLectureBookch5.html#x7-680005.5.5" id="QQ2-7-85">
+       Putting Symbols Over or Under
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      5.6
+      <a href="AcademicWritingLectureBookch5.html#x7-690005.6">
+       New Operators
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      5.7
+      <a href="AcademicWritingLectureBookch5.html#x7-700005.7">
+       Fonts for Mathematics
+      </a>
+     </span>
+     <br/>
+     <span class="chapterToc">
+      6
+      <a href="AcademicWritingLectureBookch6.html#x8-710006">
+       Float Environments
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      6.1
+      <a href="AcademicWritingLectureBookch6.html#x8-720006.1">
+       The figure Environment
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      6.1.1
+      <a href="AcademicWritingLectureBookch6.html#x8-730006.1.1" id="QQ2-8-90">
+       Creating floating figures
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      6.1.2
+      <a href="AcademicWritingLectureBookch6.html#x8-740006.1.2" id="QQ2-8-91">
+       Figure Placement
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      6.1.3
+      <a href="AcademicWritingLectureBookch6.html#x8-750006.1.3" id="QQ2-8-92">
+       Customising the float placement
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      6.1.4
+      <a href="AcademicWritingLectureBookch6.html#x8-770006.1.4" id="QQ2-8-94">
+       Using Graphics in LaTeX
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      6.2
+      <a href="AcademicWritingLectureBookch6.html#x8-810006.2">
+       The Table Environment
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      6.2.1
+      <a href="AcademicWritingLectureBookch6.html#x8-820006.2.1" id="QQ2-8-99">
+       tabularray Package
+      </a>
+     </span>
+     <br/>
+     <span class="chapterToc">
+      7
+      <a href="AcademicWritingLectureBookch7.html#x9-870007">
+       Glossaries
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      7.1
+      <a href="AcademicWritingLectureBookch7.html#x9-880007.1">
+       Introduction
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      7.2
+      <a href="AcademicWritingLectureBookch7.html#x9-890007.2">
+       Using Glossaries
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      7.2.1
+      <a href="AcademicWritingLectureBookch7.html#x9-900007.2.1" id="QQ2-9-107">
+       Defining a Glossary Entry
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      7.2.2
+      <a href="AcademicWritingLectureBookch7.html#x9-930007.2.2" id="QQ2-9-110">
+       Using in the Text
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      7.2.3
+      <a href="AcademicWritingLectureBookch7.html#x9-960007.2.3" id="QQ2-9-114">
+       Displaying the Glossary
+      </a>
+     </span>
+     <br/>
+     <span class="chapterToc">
+      8
+      <a href="AcademicWritingLectureBookch8.html#x10-970008">
+       Cross-Referencing
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      8.1
+      <a href="AcademicWritingLectureBookch8.html#x10-980008.1">
+       The Purpose of Cross-Referencing
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      8.2
+      <a href="AcademicWritingLectureBookch8.html#x10-990008.2">
+       Making LaTeX do the Work
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      8.2.1
+      <a href="AcademicWritingLectureBookch8.html#x10-1000008.2.1" id="QQ2-10-118">
+       Referencing Items
+      </a>
+     </span>
+     <br/>
+     <span class="subsectionToc">
+      8.2.2
+      <a href="AcademicWritingLectureBookch8.html#x10-1010008.2.2" id="QQ2-10-120">
+       Cross-Referencing in Math
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      8.3
+      <a href="AcademicWritingLectureBookch8.html#x10-1020008.3">
+       Pointing to a Page using the varioref Package
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      8.4
+      <a href="AcademicWritingLectureBookch8.html#x10-1030008.4">
+       The cleveref Package
+      </a>
+     </span>
+     <br/>
+     <span class="chapterToc">
+      9
+      <a href="AcademicWritingLectureBookch9.html#x11-1040009">
+       Supplemental Information
+      </a>
+     </span>
+     <br/>
+     <span class="sectionToc">
+      9.1
+      <a href="AcademicWritingLectureBookch9.html#x11-1050009.1">
+       Tables
+      </a>
+     </span>
+     <br/>
      <span class="addchapToc">
-      <a href="AcademicWritingLectureBookad1.html#x6-29000" id="QQ2-6-40">
+      <a href="AcademicWritingLectureBookad1.html#x13-107000" id="QQ2-13-128">
        Bibliography
       </a>
      </span>
     </div>
+<div class='copyright-info' style='font-size: 14px; border-top: solid 1px #dee9ed;'>
+<h2>Copyright Information</h2><br>
+<p>(2025, D. T. McGuines, Ph.D)<br /><br/>
+This document includes the contents of Academic Writing, official name
+being <em>Presenting and Moderating in English</em>, taught at MCI in
+the Mechatronik. This document is the part of the module
+MECH-B-2-SWE-ENG-ILV taught in the B.Sc degree.<br/><br/>
+All relevant code of the document is done using <em>SageMath</em> where
+stated and Python v3.13.5.<br />
+This document was compiled with LuaTeX  v1.22.0, and all editing were
+done using GNU Emacs v30.1 using AUCTeX  and org-mode package.<br /><br/>
+This document is based on the following books and resources shown in no
+particular order:<br/><br/>
+<em>LaTeX Tutorials: A primer</em> by Indian TeX Users Group , Indian
+TEX Users Group <em>The LaTeX Companion Part I</em> by Frank Mittelbach
+, Addison-Wesley <em>The LaTeX Companion Part II</em> by Frank
+Mittelbach , Addison-Wesley <em>LaTeX: A Document Preparation
+System</em> by Leslie Lamport , Addison-Wesley <em>The TeXBook</em> by
+Donald Knuth , Addison-Wesley <em>Guide to LaTeX</em> by Helmut Kopka,
+Patrick W. Daly , Addison-Wesley <em>LaTeX Wikibook</em> by Wikibook ,
+Wikibooks<br/>
+<br />
+The document is designed with no intention of publication and has only
+been designed for education purposes.<br /><br/>
+The current maintainer of this work along with the primary
+lecturer<br />
+is D. T. McGuines, Ph.D.   (dtm@mci4me.at).</p>
+</div>
    </article>
   </div>
   <!--l. 8-->

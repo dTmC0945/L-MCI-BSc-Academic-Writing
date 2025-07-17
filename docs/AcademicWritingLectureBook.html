@@ -12,16 +12,83 @@
  <link rel="stylesheet" type="text/css" href="flatweb.css"> 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
  <script src="flatjs.js"></script> <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script> 
+<script type="module"> import pdfjsDist from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.3.93/+esm' </script>  
+<script>  
+function moveTOC() { 
+var htmlShow = document.getElementsByClassName("wide"); 
+if (htmlShow[0].style.display === "none") { 
+htmlShow[0].style.display = "block"; 
+} else { 
+htmlShow[0].style.display = "none"; 
+} 
+}  
+</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script> 
  <script src="texlive.js"> </script> 
 <header>  
 </header> 
 </head><body 
 >                                                                                
                                                                                 
+<!--l. 2--><p class="noindent" >
                                                                                 
                                                                                 
-<!--l. 101--><p class="noindent" ><a 
+</p><!--l. 4--><p class="noindent" ><span 
+class="ec-lmr-7">(2025, D. T. McGuines, Ph.D) </span><br 
+class="newline" />
+</p><!--l. 8--><p class="noindent" ><span 
+class="ec-lmr-7">Current version is 2025.WS. </span><br 
+class="newline" />
+</p><!--l. 10--><p class="noindent" ><span 
+class="ec-lmr-7">This document includes the contents of Academic Writing, official name being </span><italic>Presenting and Moderating in English</italic><span 
+class="ec-lmr-7">, taught at</span>
+<span 
+class="ec-lmr-7">MCI in the Mechatronik. This document is the part of the module MECH-B-2-SWE-ENG-ILV taught in the B.Sc degree.</span>
+<br 
+class="newline" />
+</p><!--l. 16--><p class="noindent" ><span 
+class="ec-lmr-7">All relevant code of the document is done using </span><italic>SageMath</italic> <span 
+class="ec-lmr-7">where stated and Python v3.13.5. </span><br 
+class="newline" />
+</p><!--l. 19--><p class="noindent" ><span 
+class="ec-lmr-7">This document was compiled with LuaTeX v1.22.0, and all editing were done using GNU Emacs v30.1 using AUCTeX and</span>
+<span 
+class="ec-lmr-7">org-mode package. </span><br 
+class="newline" />
+</p><!--l. 23--><p class="noindent" ><span 
+class="ec-lmr-7">This document is based on the following books and resources shown in no particular order: </span><br 
+class="newline" />
+</p><!--l. 25--><p class="noindent" ><italic>LaTeX Tutorials: A primer</italic> <span 
+class="ec-lmr-7">by Indian TeX Users Group , Indian TEX Users Group </span><italic>The LaTeX Companion Part I</italic> <span 
+class="ec-lmr-7">by Frank</span>
+<span 
+class="ec-lmr-7">Mittelbach , Addison-Wesley </span><italic>The LaTeX Companion Part II</italic> <span 
+class="ec-lmr-7">by Frank Mittelbach , Addison-Wesley </span><italic>LaTeX: A Document
+Preparation System</italic> <span 
+class="ec-lmr-7">by Leslie Lamport , Addison-Wesley </span><italic>The TeXBook</italic> <span 
+class="ec-lmr-7">by Donald Knuth , Addison-Wesley </span><italic>Guide
+to LaTeX</italic> <span 
+class="ec-lmr-7">by Helmut Kopka, Patrick W. Daly , Addison-Wesley </span><italic>LaTeX Wikibook</italic> <span 
+class="ec-lmr-7">by Wikibook , Wikibooks</span>
+<br 
+class="newline" /><br 
+class="newline" /><br 
+class="newline" /><span 
+class="ec-lmr-7">The document is designed with no intention of publication and has only been designed for education purposes.</span>
+<br 
+class="newline" />
+</p><!--l. 37--><p class="noindent" ><span 
+class="ec-lmr-7">The current maintainer of this work along with the primary lecturer </span><br 
+class="newline" /><span 
+class="ec-lmr-7">is D. T. McGuines, Ph.D.  (dtm@mci4me.at).</span>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+</p><!--l. 108--><p class="noindent" ><a 
  id="chapter*.1"></a>
 </p>
 <div class="tableofcontents">
@@ -36,15 +103,77 @@ href="AcademicWritingLectureBookch1.html#x3-80001.3" id="QQ2-3-10">Current State
 <br /><span class="sectionToc" >1.4  <a 
 href="AcademicWritingLectureBookch1.html#x3-110001.4" id="QQ2-3-15">Installation</a></span>
 <br /><span class="chapterToc" >2 <a 
-href="AcademicWritingLectureBookch2.html#x4-140002" id="QQ2-4-19">Looking at the Basics</a></span>
+href="AcademicWritingLectureBookch2.html#x4-140002" id="QQ2-4-21">Looking at the Basics</a></span>
 <br /><span class="sectionToc" >2.1  <a 
-href="AcademicWritingLectureBookch2.html#x4-150002.1" id="QQ2-4-20">The Process of LaTeX</a></span>
+href="AcademicWritingLectureBookch2.html#x4-150002.1" id="QQ2-4-22">The Process of LaTeX</a></span>
 <br /><span class="sectionToc" >2.2  <a 
-href="AcademicWritingLectureBookch2.html#x4-180002.2" id="QQ2-4-23">Basics of Typesetting</a></span>
+href="AcademicWritingLectureBookch2.html#x4-180002.2" id="QQ2-4-25">Basics of Typesetting</a></span>
 <br /><span class="sectionToc" >2.3  <a 
-href="AcademicWritingLectureBookch2.html#x4-250002.3" id="QQ2-4-33">Fonts</a></span>
+href="AcademicWritingLectureBookch2.html#x4-250002.3" id="QQ2-4-35">Fonts</a></span>
 <br /><span class="sectionToc" >2.4  <a 
-href="AcademicWritingLectureBookch2.html#x4-270002.4" id="QQ2-4-37">Type Size</a></span>
+href="AcademicWritingLectureBookch2.html#x4-270002.4" id="QQ2-4-39">Type Size</a></span>
+<br /><span class="chapterToc" >3 <a 
+href="AcademicWritingLectureBookch3.html#x5-280003" id="QQ2-5-41">The Document</a></span>
+<br /><span class="sectionToc" >3.1  <a 
+href="AcademicWritingLectureBookch3.html#x5-290003.1" id="QQ2-5-42">The Document Class</a></span>
+<br /><span class="sectionToc" >3.2  <a 
+href="AcademicWritingLectureBookch3.html#x5-330003.2" id="QQ2-5-47">Page Style</a></span>
+<br /><span class="sectionToc" >3.3  <a 
+href="AcademicWritingLectureBookch3.html#x5-350003.3" id="QQ2-5-50">Page Numbering</a></span>
+<br /><span class="sectionToc" >3.4  <a 
+href="AcademicWritingLectureBookch3.html#x5-360003.4" id="QQ2-5-52">Formatting Lengths</a></span>
+<br /><span class="sectionToc" >3.5  <a 
+href="AcademicWritingLectureBookch3.html#x5-370003.5" id="QQ2-5-53">Parts of a Document</a></span>
+<br /><span class="chapterToc" >4 <a 
+href="AcademicWritingLectureBookch4.html#x6-460004" id="QQ2-6-63">Displaying Content</a></span>
+<br /><span class="sectionToc" >4.1  <a 
+href="AcademicWritingLectureBookch4.html#x6-470004.1" id="QQ2-6-64">Borrowing Text</a></span>
+<br /><span class="sectionToc" >4.2  <a 
+href="AcademicWritingLectureBookch4.html#x6-480004.2" id="QQ2-6-65">Making Lists</a></span>
+<br /><span class="chapterToc" >5 <a 
+href="AcademicWritingLectureBookch5.html#x7-520005" id="QQ2-7-69">Typesetting Mathematics</a></span>
+<br /><span class="sectionToc" >5.1  <a 
+href="AcademicWritingLectureBookch5.html#x7-530005.1" id="QQ2-7-70">True Purpose of TeX</a></span>
+<br /><span class="sectionToc" >5.2  <a 
+href="AcademicWritingLectureBookch5.html#x7-540005.2" id="QQ2-7-71">Fundamentals</a></span>
+<br /><span class="sectionToc" >5.3  <a 
+href="AcademicWritingLectureBookch5.html#x7-580005.3" id="QQ2-7-75">Custom Commands</a></span>
+<br /><span class="sectionToc" >5.4  <a 
+href="AcademicWritingLectureBookch5.html#x7-590005.4" id="QQ2-7-76">Additional Math</a></span>
+<br /><span class="sectionToc" >5.5  <a 
+href="AcademicWritingLectureBookch5.html#x7-630005.5" id="QQ2-7-80">Additional Commands</a></span>
+<br /><span class="sectionToc" >5.6  <a 
+href="AcademicWritingLectureBookch5.html#x7-690005.6" id="QQ2-7-86">New Operators</a></span>
+<br /><span class="sectionToc" >5.7  <a 
+href="AcademicWritingLectureBookch5.html#x7-700005.7" id="QQ2-7-87">Fonts for Mathematics</a></span>
+<br /><span class="chapterToc" >6 <a 
+href="AcademicWritingLectureBookch6.html#x8-710006" id="QQ2-8-88">Float Environments</a></span>
+<br /><span class="sectionToc" >6.1  <a 
+href="AcademicWritingLectureBookch6.html#x8-720006.1" id="QQ2-8-89">The figure Environment</a></span>
+<br /><span class="sectionToc" >6.2  <a 
+href="AcademicWritingLectureBookch6.html#x8-810006.2" id="QQ2-8-98">The Table Environment</a></span>
+<br /><span class="chapterToc" >7 <a 
+href="AcademicWritingLectureBookch7.html#x9-870007" id="QQ2-9-104">Glossaries</a></span>
+<br /><span class="sectionToc" >7.1  <a 
+href="AcademicWritingLectureBookch7.html#x9-880007.1" id="QQ2-9-105">Introduction</a></span>
+<br /><span class="sectionToc" >7.2  <a 
+href="AcademicWritingLectureBookch7.html#x9-890007.2" id="QQ2-9-106">Using Glossaries</a></span>
+<br /><span class="chapterToc" >8 <a 
+href="AcademicWritingLectureBookch8.html#x10-970008" id="QQ2-10-115">Cross-Referencing</a></span>
+<br /><span class="sectionToc" >8.1  <a 
+href="AcademicWritingLectureBookch8.html#x10-980008.1" id="QQ2-10-116">The Purpose of Cross-Referencing</a></span>
+<br /><span class="sectionToc" >8.2  <a 
+href="AcademicWritingLectureBookch8.html#x10-990008.2" id="QQ2-10-117">Making LaTeX do the Work</a></span>
+<br /><span class="sectionToc" >8.3  <a 
+href="AcademicWritingLectureBookch8.html#x10-1020008.3" id="QQ2-10-121">Pointing to a Page using the varioref Package</a></span>
+<br /><span class="sectionToc" >8.4  <a 
+href="AcademicWritingLectureBookch8.html#x10-1030008.4" id="QQ2-10-122">The cleveref Package</a></span>
+                                                                                
+                                                                                
+<br /><span class="chapterToc" >9 <a 
+href="AcademicWritingLectureBookch9.html#x11-1040009" id="QQ2-11-123">Supplemental Information</a></span>
+<br /><span class="sectionToc" >9.1  <a 
+href="AcademicWritingLectureBookch9.html#x11-1050009.1" id="QQ2-11-124">Tables</a></span>
 </div>
                                                                                 
                                                                                 
@@ -63,11 +192,55 @@ href="AcademicWritingLectureBookch2.html#x4-270002.4" id="QQ2-4-37">Type Size</a
                                                                                 
                                                                                 
                                                                                 
+
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 2--><p class="noindent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 8--><p class="noindent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+<!--l. 2--><p class="noindent" >
+                                                                                
+                                                                                
+</p>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
 <!--l. 1--><p class="noindent" >
                                                                                 
                                                                                 
 </p><!--l. 1--><p class="noindent" ><a 
- id="chapter*.3"></a>
+ id="chapter*.18"></a>
 </p> 
 </body> 
 </html>
