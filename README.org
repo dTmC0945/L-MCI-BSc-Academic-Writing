@@ -12,8 +12,6 @@
 
 ** Lecture Information
 
-- *WARNING:* This is the content only covered by me as this lecture is shared by
-  both me and Dipl.-Ing. Dr. techn. Phillip Kronthaler.
   
 - The goal of this lecture is to teach the newcoming students on how to
   prepare scientific documents and learn academic typesetting practices.
@@ -69,14 +67,15 @@
 The following is a reference material table with useful resources which
 complement well with the lecture.
 
-| AUTHOR                        | TITLE                                | PUBLISHER              |
-| Indian TeX Users Group        | LaTeX Tutorials: A primer            | Indian TEX Users Group |
-| Frank Mittelbach              | The LaTeX Companion Part I           | Addison-Wesley         |
-| Frank Mittelbach              | The LaTeX Companion Part II          | Addison-Wesley         |
-| Leslie Lamport                | LaTeX: A Document Preparation System | Addison-Wesley         |
-| Donald Knuth                  | The TeXBook                          | Addison-Wesley         |
-| Helmut Kopka, Patrick W. Daly | Guide to LaTeX                       | Addison-Wesley         |
-| Wikibook                      | LaTeX Wikibook                       | Wikibooks              |
+| AUTHOR                               | TITLE                                | PUBLISHER              |
+| Indian TeX Users Group               | LaTeX Tutorials: A primer            | Indian TEX Users Group |
+| Frank Mittelbach                     | The LaTeX Companion Part I           | Addison-Wesley         |
+| Frank Mittelbach                     | The LaTeX Companion Part II          | Addison-Wesley         |
+| Leslie Lamport                       | LaTeX: A Document Preparation System | Addison-Wesley         |
+| Donald Knuth                         | The TeXBook                          | Addison-Wesley         |
+| Helmut Kopka, Patrick W. Daly        | Guide to LaTeX                       | Addison-Wesley         |
+| Wikibook                             | LaTeX Wikibook                       | Wikibooks              |
+| P. Abrahams, K. Hargreaves, K. Berry | TeX for the Impatient                | CTAN                   |
 
 ** Content and Unit Distribution
 
