@@ -1,0 +1,341 @@
+%%% latex-lecture.tex --- practical latex guide
+%
+% Copyright (c) 2025 DTMc
+
+% ---------------------------------------------------------------------------------------------
+
+% To start with any type of document we need to have a `documentclass'.  a `documentclass' is a
+% command which houses all the necessary information about how the document should be
+% formatted. This command tells us a couple of things:
+%
+% 1. How should the margins be?
+% 2. Defining the sectioning commands.
+% 3. Describing the useful environments.
+%
+% Here we add the following optionals (i.e., items in square brackets [ ] separated by by comma
+% (,) ).  Let's have a look at the options we have given in the class
+%
+% a4paper : Here we ask the document page size to be that of A4,
+% 10pt    : Here we ask the document to have a font size of 10pt.
+%
+% Here the unit `pt' is defined as point and the conversion is (those of you who are
+% interested) is:
+%
+% 72 pt = 1 inch = 2.54 cm
+%
+% Finally here we describe the `type' of the document we are working. The standard LaTeX
+% supports three (3) types out-of-the-box:
+%
+% book    : for long documentation work (i..e, book, thesis)
+% article : for writing short works (i.e., academic paper)
+% report  : for working with long(ish) documents (technical reports)
+\documentclass[a4paper, 10pt]{book}
+
+% PREAMBLE ------------------------------------------------------------------------------------
+
+% Once we have described our document let's add some sugar to it and use additional
+% packages. When it comes to anything an important principle to use is `DO NOT REINVENT THE
+% WHEEL' and this also applies to working with LaTeX. There are over 1000 packages available
+% for you to use in your work, and the best part is, because the work is open-source, you can
+% use it in your work.
+%
+% Let's load some packages
+%
+% Starting with `siunitx'. This package allows you to write units consistently, meaning the
+% spacing within units and how their font will be represented will always be correct.
+\usepackage{siunitx}
+
+% \setcounter{secnumdepth}{0}
+
+\usepackage{lipsum} 
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+% For typesetting mathematical equations.
+\usepackage{amsmath}
+
+\definecolor{mcitest}{HTML}{234fa3}
+%opening
+\title{First Lecture in Latex}
+\author{Daniel}
+
+
+% \setlength{\marginparwidth}{15cm}
+
+% BEGINNING OF THE DOCUMENT -------------------------------------------------------------------
+
+% For us to work with LaTeX, as I have mentioned we need to tell what kind of document we are
+% working. Here we may have chosen book, article, or report. Once chosen we still need to tell
+% where the document is being written. For that we need to wrap all the content we are writing
+% in an `environment', which is of the following form:
+%
+% \begin{document}
+% ...
+% \end{document}
+%
+
+\begin{document}
+
+% A useful feature of LaTeX is the generation of Table of Contents is handled automatically
+% by the use of the command `\tableofcontents'.
+\tableofcontents
+
+% These commands might be needed if the content is stretched through the page. The following
+% commands basically does the following:
+% `\vspace*{\fill}' : Creates and infinitely stretchable invisible space so the content in
+%                     the page is not stretched.
+% `\pagebreak'      : Tells latex that the page is finished and proceed onto the next page.
+\vspace*{\fill}
+\pagebreak
+
+% To start working properly, lets begin with a chapter.  The table has each SECTIONING-COMMAND
+% in LaTeX.  All are available in all of LaTeX's standard document classes `book', `report',
+% and `article', except that `\chapter' is not available in `article'.
+% 
+% Sectioning unit    Command            Level
+% --------------------------------------------------------------------
+% Part               `\part'            -1 (`book', `report'), 0
+%                                       (`article')
+% Chapter            `\chapter'         0
+% Section            `\section'         1
+% Subsection         `\subsection'      2
+% Subsubsection      `\subsubsection'   3
+% Paragraph          `\paragraph'       4
+% Subparagraph       `\subparagraph'    5
+\chapter{First Steps in \LaTeX}
+
+To start let's use a very famous passage from a very famous book:
+
+% Please observe that the each empty space between paragraphs tells latex to break the content
+% into a new paragraph. To tell that it is a new paragraph Latex adds and `indent'. Of course
+% if we want to disable the indentation, all we have to do is write `\noindent' at the
+% beginning of the paragraph
+
+It was the best of times, it was the worst of times, it was the age of wisdom, it was the age
+of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season
+of Light, it was the season of Darkness, it was the spring of hope, it was the winter of
+despair, we had everything before us, we had nothing before us, we were all going direct to
+Heaven, we were all going direct the other way--in short, the period was so far like the
+present period, that some of its noisiest authorities insisted on its being received, for good
+or for evil, in the superlative degree of comparison only. \\
+
+% Please observe that at the end of the aforementioned paragraph we have added a `\\'. This
+% forces the content to be finished and added an additional empty line.
+
+\noindent It was the best of times, it was the worst of times, it was the age of wisdom, it was
+the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the
+season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of
+despair, we had everything before us, we had nothing before us, we were all going direct to
+Heaven, we were all going direct the other way--in short, the period was so far like the
+present period, that some of its noisiest authorities insisted on its being received, for good
+or for evil, in the superlative degree of comparison only.
+
+% Finally if we want to have NO indentation across the document we just add
+% \setlength{\parindent}{0pt}
+% to the preamble. The reason we write it in the preamble is that the code affects all
+% the indentation below and to make sure it affects the whole document, we place it
+% in the preamble.
+
+% Let's now write a section which if we recall is one level below the `chapter'. Please
+% observe the numbering of the section. In a chapter the number is a single value whereas
+% in a section the numbering is two. The first digit represents the chapter and the second
+% digit represents the section value.
+
+\section{A Gentle Introduction}
+
+% If we want to have this section unnumbered (i.e., have no number on its left and have no
+% mention of it in the table of contents) we just add an asterisks (*) shown as:
+%
+% \section*{A Gentle Introduction}
+
+\subsection{A Letter of Introduction}
+
+% Let's write a nice introductory text. We start with a `center' environment which as the name
+% suggest is an environment where all the content it contains is centered. Here we also use the
+% command `\\' but here, if you notice, we added a spacing optional value of `[0.75cm]' value.
+% this tells latex how much spacing will be forced once the line is broken.
+
+\begin{center}
+	MCI Mechatronics \\[0.75cm]
+	Welcomes You!
+\end{center}
+
+% Let's write a nice line with no indent and also have some colour. In latex colour does not
+% come out of the box so we need to use a package called
+%
+% \usepackage{xcolor}
+%
+% in our preamble. Once done we can use the command with the following syntax:
+%
+% `\textcolor{<colour>}{<text to be colourised>}'
+%
+% Here we are using the colour `mcitest' we have defined in the preamble.
+
+\noindent This is \textcolor{mcitest}{to certify} that you have chosen to be engineers by the
+times your degree is finished!!
+
+% The `flushright' environment pushes all the text to be right-aligned.
+\begin{flushright}
+	The Lecturer \\
+	D. T. McGuiness
+\end{flushright}
+
+\subsection{Font modifiers}
+
+The following is a showcase of how fonts can be changed in \LaTeX.
+
+\noindent This is a \textbf{bold} text. \\ % Create bold text
+This is \texttt{Hello, World!} example. \\ % Create typewriter (i.e., code) text
+This is \textit{Italic} text. \\           % Create italic text
+This is \textsl{slanted} text. \\          % Create slanted text 
+This is \textsc{small caps} text. \\       % Create small-caps text 
+This is \textsf{Sans serif} text. {\marginpar{\footnotesize\begin{flushleft}
+				This is a margin text that I am currently writing to I can look back at it later
+			\end{flushleft}}}\\
+
+
+% The following standard type size commands are supported by LaTeX.  The
+% table shows the command name and the corresponding actual font size used
+% (in points) with the `10pt', `11pt', and `12pt' document size options,
+% respectively (*note Document class options::).
+% 
+% Command                     `10pt'    `11pt'    `12pt'
+% --------------------------------------------------------
+% `\tiny'                     5         6         6
+% `\scriptsize'               7         8         8
+% `\footnotesize'             8         9         10
+% `\small'                    9         10        10.95
+% `\normalsize' (default)     10        10.95     12
+% `\large'                    12        12        14.4
+% `\Large'                    14.4      14.4      17.28
+% `\LARGE'                    17.28     17.28     20.74
+% `\huge'                     20.74     20.74     24.88
+% `\Huge'                     24.88     24.88     24.88
+%
+% We put the curly brackets (i.e., { } ) to limit the effect of the font modifiers. If the
+% brackets were not present every content after the invocation of the command would be changed.
+
+{\Huge This is a Huge Text!!} and this is normalsize \textcolor{green}{This is something I need
+	to look back!!!}
+
+\paragraph{This is a paragraph} And I can continue on the same line. Paragraph is unique in the
+sense that it does not cause the line to be broken but allows the content to continue on the
+line itself. This is generally useful if we want to emphasise the content.
+
+% Finally as a gentle anectode we can use the `quote' or `quotation' environments to show
+% quotes within the document.
+
+% Both environments indent margins on both sides by `\leftmargin' and the text is
+% right-justified.
+% 
+% They differ in how they treat paragraphs.  In the `quotation' environment, paragraphs are
+% indented by 1.5em and the space between paragraphs is small.  In the `quote' environment,
+% paragraphs are not indented and there is vertical space between paragraphs.
+
+\begin{quote}
+	\lipsum[1-2]
+\end{quote}
+
+\section{Working with Lists}
+
+% To produce a list we need to use the `itemize' environment. This produces an ``unordered
+% list'', sometimes called a bullet list.  There must be at least one `\item' within the
+% environment; having none causes the LaTeX error:
+
+% Something's wrong--perhaps a missing \item
+
+Let's write a list
+
+\begin{itemize}
+	\item This is an item,
+	\item So is this one,
+	\item and why not a third one but this time the line is much longer than it should be
+	      %
+	      \begin{itemize}
+		      \item this is a sub item
+		      \item this is another one
+	      \end{itemize}
+	      %
+\end{itemize}
+
+Let's do an enumerated list. To change the behaviour of the \texttt{enumerated} list we use
+\texttt{enumitem} package. Change the numbering by using label.
+
+\begin{enumerate}[label=(\Roman*).]
+	\item This is my first item,
+	\item This is my second item,
+	\item and this is my final item.
+	      %
+	      \begin{enumerate}
+		      \item This is a sublist,
+		      \item and this is my second item within the sub list
+	      \end{enumerate}
+	      %
+\end{enumerate}
+
+If I want to continue the numbering I use \texttt{resume} option.
+
+\begin{enumerate}[label=(\Roman*)., resume]
+	\item Now we continue where we left off.
+\end{enumerate}
+
+\subsubsection{Description Lists}
+
+Used for describing items,
+
+\begin{description}
+	\item[LaTeX] A very powerful text description language.
+\end{description}
+
+\subsubsection{Verbatim Environment}
+
+Allows you to print without worrying about escape characters.
+
+\begin{verbatim}
+	This text will be printed as is without any
+	modification. I can use control characters (\,$,%)
+	without any problems.
+\end{verbatim}
+
+
+\chapter{Typesetting Mathematics}
+
+A straight line is represented with $ax + by + c =0$, where $a$, $b$, and $c$ are
+\textbf{constants}.
+
+We can also use \texttt{equation} environment as well.
+
+\begin{equation}
+	x^{n + 2} + y^{n} = z^{n} \quad n>2
+\end{equation}
+
+To use \textbf{superscripts} use \textasciicircum, and to use \textbf{subscripts} use \_
+
+\begin{equation}
+	x_{n} + y_{n} = z_{n}
+\end{equation}
+
+We can also use both at the same time
+
+\begin{equation}
+	x_{n}^{b} + y_{n}^{a} = z_{p}^{g}
+\end{equation}
+
+You can have superscripts of superscripts
+
+\begin{equation}\label{eq:supersuper}
+	{{x^{2}}^{3}}^4 \qquad {{y_{2}}_{3}}_{4}
+\end{equation}
+
+I am referencing equation \ref{eq:supersuper}.
+
+\begin{equation*}
+	\int_{0}^{100}x^{2}\,dx = A
+\end{equation*}
+
+\end{document}
+
+
+% ---------------------------------------------------------------------------------------------
+%
+% latex-lecture.tex ends here
